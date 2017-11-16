@@ -1,0 +1,195 @@
+/*---------- Botôes ----------*/
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    .button4:hover {background-color: #e7e7e7;}
+
+        .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+    }
+.button1:hover {
+    background-color: #000000;
+    color: white;
+}
+        .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #0000FF;
+    }
+        
+        .button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    }
+        .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    }
+.button4:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+        .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid yellow;
+    }
+
+.buttonA {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 3px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+.buttonA1 {
+    background-color: white;
+    color: black; /* fonte */
+    border: 2px solid #9900cc;
+    }
+.buttonA1:hover {
+    background-color: #000000;
+    color: white;
+}
+
+ /*---------- Botões Cidade Pronteira -----*/
+
+        .buttonPr {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    .button4:hover {background-color: #e7e7e7;}
+
+        .buttonPr1 {
+    background-color: #00cc66;
+    color: black;
+    border: 1px solid #000000;
+    }
+        .buttonPr1:hover {
+    background-color: #006633;
+    color: white;
+    }
+
+ /*---------- Fontes HTML ----------*/  
+
+        p {
+            color: ;
+        } 
+        
+        h1{
+            color: red;
+        }
+
+/*---------- Geral ----------*/
+
+    body{
+	background-image: url('Imagem/foto-index-4.png');
+	background-repeat: repeat;
+	background-position: left top;
+    }
+
+/*---------- Tabelas -----------*/
+
+.caixa{
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+}
+/*----------- Logo / caixas -----------*/
+
+hr {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+#logo img{
+    margin-top: 10px;
+}
+
+/*--------- MODAL -----------*/
+.window{
+    display:none;
+    width:300px; /*-- tamanho do modal aberto --*/
+    height:300px; /*-- tamanho do modal aberto --*/
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
+
+/*------ dadosPronteira.inc | Sair Cidade -----*/
+
+.sairCidadeP{
+    text-align: center;
+}
+.sairCidadeP img{
+
+    border-width: 1px;
+    border-color: black;
+}
+
+/*------ Coisas Pagina de CASH -----*/
+
+.botaoCenter{
+    text-align: center;
+}
+.imgCenter{
+    text-align: center;
+}

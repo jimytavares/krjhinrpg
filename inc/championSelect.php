@@ -124,18 +124,13 @@
          <div class="row">
 
             <div class="col-sm-4">
-               <div class="row">
-                   <div class="col-sm-5">
+               
+                   
                         <a href="RPG%20-%20Sword.php"> <img src="Imagem/perso/lvs/guerreiro.gif" /> </a>
                         <p> <b>Guerreiro</b> <br /> Status: Força, agilidade, dextreza e vida. </p>   
                         <a href="RPG%20-%20Sword.php"> <button type="button" class="btn buttonPr1">Selecionar Classe</button> </a>
-                   </div>
-                   <div class="col-sm-5">
-                        <a href="RPG.php"> <img src="Imagem/perso/lvs/assasino.gif" /> </a>
-                        <p><b>Assasino</b> <br /> Status: Inteligencia, dextreza e agilidade. </p>
-                        <button type="button" class="btn btn-primary disabled">Desabilitado temporariamente</button>
-                   </div>
-               </div>
+                    
+              
             </div>
 
             <div class="col-sm-4">

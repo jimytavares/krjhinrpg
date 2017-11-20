@@ -23,7 +23,7 @@
 
         if ( $loginUser == "jimydickson" && $senhaUser == 123456 || $loginUser == "admin" && $senhaUser == "admin" )
         {
-            include ( 'inc/championSelect.php' );
+            include ( 'inc/championSelect2.php' );
         } else{
             echo "Login ou Senha Incorreto";
         }

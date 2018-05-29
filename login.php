@@ -13,7 +13,7 @@
         .error {color: #FF0000;}
         body
         {
-            background-image: url('Imagem/wallpaper12_1280x720.jpg');
+            background-image: url('Imagem/background-krrog.png');
             background-color: ;
             background-repeat: no-repeat;
             background-position: left top;

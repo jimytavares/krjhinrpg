@@ -13,10 +13,11 @@
         .error {color: #FF0000;}
         body
         {
-            background-image: url('Imagem/background-krrog.png');
+            background-image: url('Imagem/fundo01.jpg');
+            background-size: cover
             background-color: ;
             background-repeat: no-repeat;
-            background-position: left top;
+            background-position:;
         }
         .margin-top-form 
         {
@@ -27,12 +28,16 @@
         {
             background-color: red;
         }
+        .containerex{
+            width: ;
+            padding-right: 600px;
+        }
     </style>
 
 </head>
 <body>  
-        <div class="margin-top-form"> 
-          <img src="Imagem/Mob2022.gif">
+    <div class="margin-top-form"> 
+        <!--<img src="Imagem/Mob2022.gif">-->
     </div>
     
 
@@ -63,35 +68,46 @@
     <!-- doasdoasldolas -->
     <div class="margin-top-form">        
     <div class="container">
+    <div class="containerex">
+        
+        <div class="row">
+            <div class="col">
+                
+                <div class="box-parent-login">
+                <div class="well bg-white box-login">
+                    <img src="Imagem/2222.png">
+                    <!--<h1 class="ls-login-logo">기아보</h1>-->
+                    <form method="" action="Verificando-Login.php" role="form">
+                                <fieldset>
 
-        <div class="box-parent-login">
-        <div class="well bg-white box-login">
-            <h1 class="ls-login-logo">기아보</h1>
-            <form method="" action="loginChampionSelect.php" role="form">
-                        <fieldset>
+                                        <div class="form-group ls-login-user">
+                                            <label for="user">Usuário</label>
+                                            <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário" name="usuario">
+                                        </div>
 
-                                <div class="form-group ls-login-user">
-                                    <label for="user">Usuário</label>
-                                    <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário" name="usuario">
-                                </div>
+                                        <div class="form-group ls-login-password">
+                                            <label for="pwd">Senha</label>
+                                            <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha" name="senha">
+                                        </div>
 
-                                <div class="form-group ls-login-password">
-                                    <label for="pwd">Senha</label>
-                                    <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha" name="senha">
-                                </div>
+                                        <a href="#" class="ls-login-forgot" style="text-align:left; color:;">Esqueci minha senha</a>
 
-                                <a href="#" class="ls-login-forgot">Esqueci minha senha</a>
-
-                                <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
-                                <p class="txt-center ls-login-signup">Não possui um usuário na Locaweb?
-                                    <a href="#">Cadastre-se agora</a>
-                                </p>
-
-                        </fieldset>
-                    </form>
+                                        <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
+                                        <p class="txt-center ls-login-signup" style="text-align:left;">Não possui um usuário na 기아보?
+                                            <a href="#">Cadastre-se agora</a>
+                                        </p>
+                                        <p style="text-align:right; color:orange;">Copyright © JihnDickson</p>
+                                </fieldset>
+                            </form>
+                            </div>
+                 </div>
+                
             </div>
-            </div>
-    </div>        
+            <div class="col">ex</div>
+        </div> <!-- rox compelta -->
+        
+    </div>    
+    </div>  <!-- container -->      
     </div>
     
 </body>

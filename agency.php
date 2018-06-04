@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
     <head>
       <meta charset="utf-8">
       <title>Deft | CodeRare</title>
@@ -19,7 +19,7 @@
       <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
 
       <!--  Resources style ================== -->
-      <link href="css/theme-FuchiStudio.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/texxte.css" rel="stylesheet" type="text/css" media="all"/>
     </head>
     <body>
       <section class="animsition">
@@ -276,37 +276,70 @@
             </ul>
           </div> -->
             
+<!-- ###################### 01: AÇÕES ########################## -->
+            
           <div id="subscribe">
+              
               <h1 style="text-align:center; color: white;"><b>Ações do Jogo</b></h1>
-              <div class="row">
-                  <div class="col-sm-7">
-                        <form action="" method="post">  
-                            <p>    <b>Ações do Jogo:</b> 
-                                    <img src="Imagem/perso/lvs/sowrdGIF.gif" />
-                            </p> 
-                            <input type="text" name="valor" value="">
-                            <button type="button" class="btn btn-success">Seguir</button>
-                                    <br>
-                         </form>
+              
+                <div class="service row">
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-heart"></i>
+                    <h6>STATUS</h6>
                   </div>
-                  
-                  <div class="col-sm-4">
-                        <form action="" method="post">  
-                            <p>
-                                <b>Códigos:</b>
-                                    <img src="Imagem/codigos.gif"/>
-                            </p> 
-                            <input type="text" name="valor" value="">
-                            <button type="button" class="btn btn-danger btn-sm">Seguir</button>
-                                    <br>
-                         </form>
+
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-erlenmeyer-flask"></i>
+                    <h6>ITENS</h6>
                   </div>
-               </div>
+
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-waterdrop"></i>
+                    <h6>SKILL'S</h6>
+                  </div>
+
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-code"></i>
+                    <h6>CÓDIGOS</h6>
+                  </div>
+                </div>
+              
+              <BR/>
+              
+              <form action="" method="post">  
+                <p>    <b>Action The Game</b> 
+                        <img src="Imagem/perso/lvs/sowrdGIF.gif" />
+                </p> 
+                <input type="text" name="valor" value="">
+                <button class="buttonA buttonA1">Seguir</button>
+                        <br>
+             </form>
+              
+            <!-- <form id="contact_form" class="row" method="post" action="agency.php">
+                <div class="col-sm-6 col-xs-12">
+                  <input type="text" name="valor" value="" class="input-name" placeholder="Ações do Jogo">
+                  <!--<input type="email" name="email" class="input-email" placeholder="Teletransporte"> 
+                </div>
+
+                 <!--<div class="col-sm-6 col-xs-12">
+                  <textarea name="message" class="input-message" placeholder="Message"></textarea>
+                </div> 
+
+                <div class="col-sm-12 col-xs-12">
+                  <button type="submit" class="submit">SEGUIR</button>
+                </div>
+              </form> -->
+              
+              <!---- Caminho Fogo ou Gelo ---->
+              <?php include ('inc/caminhoFogoGelo.inc'); ?>
               
           </div>
 
-          <div class="about">
-            <h2>Get started fast with one of our unique, pre-built concepts.</h2>
+<!-- ###################### 02: MENU GERAL ########################## -->            
+            
+<div class="about">
+    
+            <h2>Menu Geal do Jogo</h2>
             <p>
               Customers love our block-based approach to template building,
               it makes assembling beautiful pages fast and enjoyable, leaving
@@ -321,54 +354,76 @@
 
             <div class="service row">
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-heart"></i>
-                <h6>SIMPLE</h6>
+                <i class="ion-icecream"></i>
+                <h6>LOJA</h6>
               </div>
 
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-erlenmeyer-flask"></i>
-                <h6>CREATIVE</h6>
+                <i class="ion-earth"></i>
+                <h6>MAPA</h6>
               </div>
 
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-waterdrop"></i>
-                <h6>SMOOTH</h6>
+                <i class="ion-document-text"></i>
+                <h6>MISSÕES</h6>
               </div>
 
               <div class="feature col-sm-3 col-xs-3">
                 <i class="ion-code"></i>
-                <h6>STABLE</h6>
+                <h6>PERSONAGENS</h6>
               </div>
             </div>
-          </div>
+    
+</div>
+            
+<!-- ###################### 03: STATUS PREMIUM ########################## -->
 
           <div class="pricing">
             <div class="row">
               <div class="offers col-sm-8 col-xs-8">
                 <ul class="col-sm-6 col-xs-6">
-                  <li>Hosting</li>
-                  <li>Web Security</li>
-                  <li>Domain</li>
+                  <li>Ataque: 00</li>
+                  <li>Defesa: 00</li>
+                  <li>Magia: 00</li>
                 </ul>
 
                 <ul class="col-sm-6 col-xs-6">
-                  <li>24/7 Support</li>
-                  <li>Email Hosting</li>
-                  <li>Premium DNS</li>
+                  <li>HP: 00</li>
+                  <li>MP: 00</li>
+                  <li>Vel.Atk: 00</li>
                 </ul>
               </div>
 
               <div class="price col-sm-4 col-xs-4">
-                <h5 class="rate">29</h5>
-                <p><strong>Per Month</strong></p>
+                <h5 class="rate">99</h5>
+                <p><strong>Distribuir</strong></p>
               </div>
             </div>
           </div>
 
-          <div id="contact" class="row">
-              <h2>Get in <strong>touch</strong>, we'd love to hear from you.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<!-- ###################### 04: VALIANT FORCE ########################## -->            
+            
+<div id="contact" class="row">
+    
+            
+              <h2 style="color:purple;">Evoluções <strong>Swordman</strong>, no geral.</h2>
+              <p style="color:black;">Todas as evoluções e skills da classe Swordman em todo o andamento do jogo. </p>
 
+            <div class="row">
+                <span class="col-sm-6 col-xs-12">
+                  <img src="Imagem/classes/swordman-01.jpg"  alt="This is my work" class="img-responsive" width="245" height="325"/>
+                </span>
+                <span class="col-sm-6 col-xs-12">
+                  <img src="Imagem/classes/swordman-02.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
+                </span>
+                <span class="col-sm-6 col-xs-12">
+                  <img src="Imagem/classes/swordman-03.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
+                </span>
+                <span class="col-sm-6 col-xs-12">
+                  <img src="Imagem/classes/swordman-04.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
+                </span>
+              </div>
+    
               <address class="row">
                 <span class="col-sm-6 col-xs-12">
                   <i class="ion-location"></i>
@@ -385,7 +440,7 @@
                 </span>
               </address>
 
-              <form id="contact_form" class="row" method="post" action="php/mailer.php">
+             <!-- <form id="contact_form" class="row" method="post" action="php/mailer.php">
                 <div class="col-sm-6 col-xs-12">
                   <input type="name" name="name" class="input-name" placeholder="Name">
                   <input type="email" name="email" class="input-email" placeholder="Email">
@@ -403,8 +458,10 @@
                   <span class="success col-sm-12 col-xs-12"></span>
                   <span class="error col-sm-12 col-xs-12"></span>
                 </div>
-              </form>
+              </form> -->
           </div>
+            
+<!-- ###################### 05: FOOTER ########################## -->            
 
           <footer>
             <p class="uppercase">© Deft - Made With Love <i class="ion-heart"></i></p>

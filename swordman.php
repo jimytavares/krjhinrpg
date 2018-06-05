@@ -3,7 +3,7 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <title>Deft | CodeRare</title>
+      <title>RPG | JhinLindo</title>
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
       <!-- Favicon ================== -->
@@ -350,24 +350,24 @@
               </div>
 
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-earth"></i>
+                <i class="ion-earth" data-toggle="modal" data-target="#modalmapa"></i>
                 <h6>MAPA</h6>
               </div>
 
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-document-text"></i>
+                <i class="ion-document-text" data-toggle="collapse" data-target="#trogglemissoes"></i>
                 <h6>MISSÕES</h6>
               </div>
 
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-code"></i>
+                <i class="ion-code" data-toggle="collapse" data-target="#trogglepersonagem"></i>
                 <h6>PERSONAGENS</h6>
               </div>
             </div>
     
             <hr style="border-width: 3px;">
     
-            <div id="troggleloja" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
                 <table class="table">
                   <thead style="background-color:#011627; color:#ffffff;">
                     <tr>
@@ -382,23 +382,45 @@
                       <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
                       <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
                       <td>Otto</td>
-                      <td><button type="button" class="btn btn-primary">Primary</button></td>
+                      <td><button type="button" class="btn btn-primary">Criar</button></td>
                     </tr>
                     <tr>
                       <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
                       <td>Adquirir 100 toras de madeira na floresta.</td>
                       <td>Thornton</td>
-                      <td><button type="button" class="btn btn-primary">Primary</button></td>
+                      <td><button type="button" class="btn btn-primary">Criar</button></td>
                     </tr>
                     <tr>
                       <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
                       <td>Conseguir 20 pedras sagradas.</td>
                       <td>the Bird</td>
-                      <td><button type="button" class="btn btn-primary">Primary</button></td>
+                      <td><button type="button" class="btn btn-primary">Criar</button></td>
                     </tr>
                   </tbody>
                 </table>
             </div>
+    
+            <div class="modal fade" id="modalmapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">WORLD MAP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Imagem/world-map.jpg" width="1080" height="520"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            
     
 </div>
             

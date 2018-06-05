@@ -156,7 +156,7 @@
                         
                         <a href="gallery-single.htm" ><img src="Imagem/perso/lvs/guerreiro.gif" alt="Gallery" ></a>
                         <span class="project-details"><a href="gallery-single.htm">Guerreiro</a>Status: Força, agilidade, dextreza e vida.
-                        <a href="RPG%20-%20Sword.php"> <button type="button" class="btn buttonPr1">Selecionar Classe</button> </a></span>
+                        <a href="swordman.php"> <button type="button" class="btn buttonPr1">Selecionar Classe</button> </a></span>
                     </li>
 
                     <!-- Gallery Item 2 -->

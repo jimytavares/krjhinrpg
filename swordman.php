@@ -61,12 +61,14 @@
                 </p>
                 
                 <div class="center" style="padding-left: 180px;">
+                    
                     <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#demo">O Jogo</button>
                       <div id="demo" class="collapse">
                            <br/>
                         <b>O Jogo:</b> flui e tem consequência de acordo com suas escolhas no "Action the game".<br />Existe ações("Action the game") especificas para cada missão, o "Action the game" são suas decisões.<br /> Se você iniciar um missão X e usa no "Action the game" errado, você voltara para o inicio do jogo, assim perdendo todo progresso.
                             <br />
                       </div>
+                    
                       <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#tele">Teletransporte</button>
                       <div id="tele" class="collapse">
                              <br/>
@@ -99,9 +101,9 @@
                         De acordo com os leveis que você vai conseguindo durante o jogo seu personagem ganhara também status por cada nível
                             <br />
                         independete dos itens adquiridos no decorrer do game.
-                     </div>
+                      </div>
 
-                        <button type="button" class="btn btn-danger btn-xs" data-toggle="collapse" data-target="#codigos">Codigos</button>
+                      <button type="button" class="btn btn-danger btn-xs" data-toggle="collapse" data-target="#codigos">Codigos</button>
                       <div id="codigos" class="collapse">
                             <br />
                         <b>Códigod do Jogo:</b> Algumas missões podem liberar código, que lhe darão itens ou missões secretas
@@ -339,22 +341,11 @@
             
 <div class="about">
     
-            <h2>Menu Geal do Jogo</h2>
-            <p>
-              Customers love our block-based approach to template building,
-              it makes assembling beautiful pages fast and enjoyable, leaving
-               more time to craft your perfect layout. love our block-based
-              approach to template building, it makes assembling beautiful pages
-              fast and enjoyable, leaving more time to craft your perfect layout.
-            </p>
-
-            <p>
-              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-            </p>
+            <h2 style="text-align:center;">Menu Geal do Jogo</h2>
 
             <div class="service row">
               <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-icecream"></i>
+                <i class="ion-icecream" data-toggle="collapse" data-target="#troggleloja"></i>
                 <h6>LOJA</h6>
               </div>
 
@@ -374,11 +365,49 @@
               </div>
             </div>
     
+            <hr style="border-width: 3px;">
+    
+            <div id="troggleloja" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                <table class="table">
+                  <thead style="background-color:#011627; color:#ffffff;">
+                    <tr>
+                      <th scope="col">Recompensa</th>
+                      <th scope="col">Missão</th>
+                      <th scope="col">Dificuldade</th>
+                      <th scope="col">Adquirir</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                      <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
+                      <td>Otto</td>
+                      <td><button type="button" class="btn btn-primary">Primary</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                      <td>Adquirir 100 toras de madeira na floresta.</td>
+                      <td>Thornton</td>
+                      <td><button type="button" class="btn btn-primary">Primary</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                      <td>Conseguir 20 pedras sagradas.</td>
+                      <td>the Bird</td>
+                      <td><button type="button" class="btn btn-primary">Primary</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+    
 </div>
             
 <!-- ###################### 03: STATUS PREMIUM ########################## -->
 
-          <div class="pricing">
+<div class="pricing">
+    
+            <p>Classe: </p>        
+    
             <div class="row">
               <div class="offers col-sm-8 col-xs-8">
                 <ul class="col-sm-6 col-xs-6">
@@ -399,7 +428,8 @@
                 <p><strong>Distribuir</strong></p>
               </div>
             </div>
-          </div>
+    
+</div>
 
 <!-- ###################### 04: VALIANT FORCE ########################## -->            
             
@@ -411,7 +441,7 @@
 
             <div class="row">
                 <span class="col-sm-6 col-xs-12">
-                  <img src="Imagem/classes/swordman-01.jpg"  alt="This is my work" class="img-responsive" width="245" height="325"/>
+                  <img src="Imagem/classes/swordman-01.png"  alt="This is my work" class="img-responsive" width="215" height="345"/>
                 </span>
                 <span class="col-sm-6 col-xs-12">
                   <img src="Imagem/classes/swordman-02.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>

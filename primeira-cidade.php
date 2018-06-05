@@ -55,7 +55,7 @@
     <div class="container">
     <div class="containerex">
         
-        <h1 style="font-size:50px;">Bem vindo à <b>Portuaria</b></h1>
+        <h1 style="font-size:50px; ">Bem vindo à <b>Portuaria</b></h1>
         <img src="Imagem/Mob2022.gif"/>
         <button type="button" class="button">Click Me!</button>
         

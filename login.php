@@ -2,12 +2,15 @@
 <html>
 <head>
 
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Meu CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<link href="css/style.css" rel="stylesheet" type="text/css" /> -->
     
     <style>
         .error {color: #FF0000;}
@@ -35,37 +38,8 @@
     </style>
 
 </head>
-<body>  
-    <div class="margin-top-form"> 
-        <!--<img src="Imagem/Mob2022.gif">-->
-    </div>
+<body>
     
-
-
-          <!--<form method="" action="loginChampionSelect.php">
-
-            <div class="form-group">
-              <label for="user"> <h2>Usário:</h2> </label>
-              <input type="text" name="usuario" class="aa" id="email" placeholder="Inserir Usuário">
-            </div>
-
-            <div class="form-group">
-              <label for="pwd"> <h2>Senha:</h2> </label>
-              <input type="password" name="senha" class="form-control" id="pwd" placeholder="Digitar Senha">
-            </div>
-
-            <!--<div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-            </div> 
-
-            <button type="submit" class="btn btn-success btn-lg">Logar</button>
-
-          </form>
-
-        </div>
-    </div> -->
-    
-    <!-- doasdoasldolas -->
     <div class="margin-top-form">        
     <div class="container">
     <div class="containerex">
@@ -93,7 +67,7 @@
                                         <a href="#" class="ls-login-forgot" style="text-align:left; color:;">Esqueci minha senha</a>
 
                                         <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
-                                        <p class="txt-center ls-login-signup" style="text-align:left;">Não possui um usuário na 기아보?
+                                        <p class="txt-center ls-login-signup" style="text-align:left;">Não possui um usuário no 기아보?
                                             <a href="#">Cadastre-se agora</a>
                                         </p>
                                         <p style="text-align:right; color:orange;">Copyright © JihnDickson</p>
@@ -103,12 +77,17 @@
                  </div>
                 
             </div>
-            <div class="col">ex</div>
-        </div> <!-- rox compelta -->
+        </div>
         
     </div>    
-    </div>  <!-- container -->      
+    </div>      
     </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     
 </body>
 </html>

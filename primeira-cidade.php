@@ -15,8 +15,8 @@
         .error {color: #FF0000;}
         body
         {
-            background-image: url('Imagem/city-number01.jpg');
-            background-size: cover
+            background-image: url('Imagem/city-number02.png');
+            background-size: cover;
             background-color: ;
             background-repeat: no-repeat;
             background-position:;
@@ -107,14 +107,10 @@
             color: white;
         }
         #col01{
-            padding-top: 120px;
+            padding-top: 100px;
         }
         #col02{
             padding-top: 30px;
-        }
-        #background-icon{
-            font-size: 30px;
-            color:#3366cc;
         }
         .imgbutton{
             opacity: 1.0;
@@ -141,12 +137,12 @@
         
         <div class="">
         
-            <div class="row" id="row">
+            <div class="row" id="">
                 <div class="col" id="col01">
-                      <h1 style="font-size:50px; ">Bem vindo à <b>Portuaria</b></h1>
-                      <img src="Imagem/testebutton.png" class="imgbutton"/>
-                      <img src="Imagem/infobutton.png" class="imgbutton "/>
-                      <img src="Imagem/npcbutton.png" class="imgbutton"/>
+                      <h1 style="font-size:50px; color:white;">Bem vindo à <b>Portuaria</b></h1> <br/><br/>
+                      <img src="Imagem/testebutton1.png" class="imgbutton"/>
+                      <img src="Imagem/infobutton1.png" class="imgbutton "/>
+                      <img src="Imagem/npcbutton1.png" class="imgbutton"/>
                 </div>
 
                 <div class="col" id="col02">

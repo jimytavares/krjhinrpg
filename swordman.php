@@ -2,11 +2,11 @@
 
 <html>
     <head>
+        
       <meta charset="utf-8">
       <title>RPG | JhinLindo</title>
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-      <!-- Favicon ================== -->
       <!-- Standard -->
       <link rel="shortcut icon" href="img/favicon-144.png">
       <!-- Retina iPad Touch Icon-->
@@ -18,8 +18,15 @@
       <!-- Standard iPhone Touch Icon-->
       <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
 
-      <!--  Resources style ================== -->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        
+      <!--  Meu CSS -->
       <link href="css/texxte.css" rel="stylesheet" type="text/css" media="all"/>
+        
     </head>
     <body>
       <section class="animsition">
@@ -127,7 +134,197 @@
 
         <div id="rightSide">
 
-         <!-- <div class="project">
+            
+<!-- ###################### 01: AÇÕES ########################## -->
+            
+<div id="subscribe">
+              
+              <h1 style="text-align:center; color: white;"><b>Ações do Jogo</b></h1>
+                
+                <div class="service row">
+                  <div class="feature col-sm-3 col-xs-3" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <i class="ion-heart"></i>
+                    <h6>STATUS</h6>
+                  </div>
+
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-erlenmeyer-flask"></i>
+                    <h6>ITENS</h6>
+                  </div>
+
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-waterdrop"></i>
+                    <h6>SKILL'S</h6>
+                  </div>
+
+                  <div class="feature col-sm-3 col-xs-3">
+                    <i class="ion-code"></i>
+                    <h6>CÓDIGOS</h6>
+                  </div>
+                </div>
+              
+              <BR/>
+              
+              <form action="" method="post">  
+                <p>    <b>Action The Game</b> 
+                        <img src="Imagem/perso/lvs/sowrdGIF.gif" />
+                </p> 
+                <input type="text" name="valor" value="">
+                <button class="buttonA buttonA1">Seguir</button>
+                        <br>
+             </form>
+              
+        <!-- ********** MODAL ********* -->
+
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      ...
+                    </div>
+                  </div>
+                </div>
+    
+            <!-- <form id="contact_form" class="row" method="post" action="agency.php">
+                <div class="col-sm-6 col-xs-12">
+                  <input type="text" name="valor" value="" class="input-name" placeholder="Ações do Jogo">
+                  <!--<input type="email" name="email" class="input-email" placeholder="Teletransporte"> 
+                </div>
+
+                 <!--<div class="col-sm-6 col-xs-12">
+                  <textarea name="message" class="input-message" placeholder="Message"></textarea>
+                </div> 
+
+                <div class="col-sm-12 col-xs-12">
+                  <button type="submit" class="submit">SEGUIR</button>
+                </div>
+              </form> -->
+              
+              <!---- Caminho Fogo ou Gelo ---->
+              <?php include ('inc/caminhoFogoGelo.inc'); ?>
+              
+</div>
+
+<!-- ###################### 02: MENU GERAL ########################## -->            
+            
+<div class="about">
+    
+            <h2 style="text-align:center;">Menu Geal do Jogo</h2>
+
+            <div class="service row">
+              <div class="feature col-sm-3 col-xs-3">
+                <i class="ion-icecream" data-toggle="collapse" data-target="#troggleloja"></i>
+                <h6>LOJA</h6>
+              </div>
+
+              <div class="feature col-sm-3 col-xs-3">
+                <i class="ion-earth" data-toggle="modal" data-target="#modalmapa"></i>
+                <h6>MAPA</h6>
+              </div>
+
+              <div class="feature col-sm-3 col-xs-3">
+                <i class="ion-document-text" data-toggle="collapse" data-target="#trogglemissoes"></i>
+                <h6>MISSÕES</h6>
+              </div>
+
+              <div class="feature col-sm-3 col-xs-3">
+                <i class="ion-code" data-toggle="collapse" data-target="#trogglepersonagem"></i>
+                <h6>Evoluções</h6>
+              </div>
+            </div>
+    
+            <hr style="border-width: 3px;">
+    
+        <!-- **** MODAL **** -->
+            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                <table class="table">
+                  <thead style="background-color:#011627; color:#ffffff;">
+                    <tr>
+                      <th scope="col">Recompensa</th>
+                      <th scope="col">Missão</th>
+                      <th scope="col">Dificuldade</th>
+                      <th scope="col">Adquirir</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                      <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
+                      <td>Otto</td>
+                      <td><button type="button" class="btn btn-primary">Criar</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                      <td>Adquirir 100 toras de madeira na floresta.</td>
+                      <td>Thornton</td>
+                      <td><button type="button" class="btn btn-primary">Criar</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                      <td>Conseguir 20 pedras sagradas.</td>
+                      <td>the Bird</td>
+                      <td><button type="button" class="btn btn-primary">Criar</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+    
+
+            <div class="modal fade" id="modalmapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">WORLD MAP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Imagem/world-map.jpg" width="1080" height="520"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            
+    
+</div>
+            
+<!-- ###################### 03: STATUS PREMIUM ########################## -->
+
+<div class="pricing">
+    
+            <p>Classe: </p>        
+    
+            <div class="row">
+              <div class="offers col-sm-8 col-xs-8">
+                <ul class="col-sm-6 col-xs-6">
+                  <li>Ataque: 00</li>
+                  <li>Defesa: 00</li>
+                  <li>Magia: 00</li>
+                </ul>
+
+                <ul class="col-sm-6 col-xs-6">
+                  <li>HP: 00</li>
+                  <li>MP: 00</li>
+                  <li>Vel.Atk: 00</li>
+                </ul>
+              </div>
+
+              <div class="price col-sm-4 col-xs-4">
+                <h5 class="rate">99</h5>
+                <p><strong>Distribuir</strong></p>
+              </div>
+            </div>
+    
+</div>
+
+<!-- ########## PERSONAGENS ######### --> 
+            
+<div class="project">
             <ul class="gallery project_navigation">
               <li class="item col-sm-6 col-xs-12">
                 <figure>
@@ -157,7 +354,7 @@
 
               <li class="item col-sm-6 col-xs-12">
                 <figure>
-                  <img src="img/typing-vintage-technology-keyboard.jpg"  alt="This is my work" class="img-responsive" />
+                  <img src="Imagem/classes/swordman-02.png"  alt="This is my work" class="img-responsive" />
                   <figcaption class="caption">
                     <div class="photo-details">
                       <h4>Typing</h4>
@@ -183,13 +380,13 @@
 
               <li class="item col-sm-6 col-xs-12">
                 <figure>
-                  <img src="img/guitar.jpg"  alt="This is my work" class="img-responsive" />
+                  <img src="Imagem/classes/swordman-03.png"  alt="This is my work" class="img-responsive" />
                   <figcaption class="caption">
                     <div class="photo-details">
-                      <h4>Guitar</h4>
-                      <span>By Code Rare</span>
+                      <h4>Swordman lv: 60</h4>
+                      <span>Swordman de Classe 3</span>
                     </div>
-                    <a href="#project5" class="view">VIEW</a>
+                    <a href="#project5" class="view">Detalhe</a>
                   </figcaption>
                 </figure>
               </li>
@@ -276,184 +473,9 @@
                 </div>
               </li>
             </ul>
-          </div> -->
+</div>             
             
-<!-- ###################### 01: AÇÕES ########################## -->
-            
-          <div id="subscribe">
-              
-              <h1 style="text-align:center; color: white;"><b>Ações do Jogo</b></h1>
-              
-                <div class="service row">
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-heart"></i>
-                    <h6>STATUS</h6>
-                  </div>
-
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-erlenmeyer-flask"></i>
-                    <h6>ITENS</h6>
-                  </div>
-
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-waterdrop"></i>
-                    <h6>SKILL'S</h6>
-                  </div>
-
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-code"></i>
-                    <h6>CÓDIGOS</h6>
-                  </div>
-                </div>
-              
-              <BR/>
-              
-              <form action="" method="post">  
-                <p>    <b>Action The Game</b> 
-                        <img src="Imagem/perso/lvs/sowrdGIF.gif" />
-                </p> 
-                <input type="text" name="valor" value="">
-                <button class="buttonA buttonA1">Seguir</button>
-                        <br>
-             </form>
-              
-            <!-- <form id="contact_form" class="row" method="post" action="agency.php">
-                <div class="col-sm-6 col-xs-12">
-                  <input type="text" name="valor" value="" class="input-name" placeholder="Ações do Jogo">
-                  <!--<input type="email" name="email" class="input-email" placeholder="Teletransporte"> 
-                </div>
-
-                 <!--<div class="col-sm-6 col-xs-12">
-                  <textarea name="message" class="input-message" placeholder="Message"></textarea>
-                </div> 
-
-                <div class="col-sm-12 col-xs-12">
-                  <button type="submit" class="submit">SEGUIR</button>
-                </div>
-              </form> -->
-              
-              <!---- Caminho Fogo ou Gelo ---->
-              <?php include ('inc/caminhoFogoGelo.inc'); ?>
-              
-          </div>
-
-<!-- ###################### 02: MENU GERAL ########################## -->            
-            
-<div class="about">
-    
-            <h2 style="text-align:center;">Menu Geal do Jogo</h2>
-
-            <div class="service row">
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-icecream" data-toggle="collapse" data-target="#troggleloja"></i>
-                <h6>LOJA</h6>
-              </div>
-
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-earth" data-toggle="modal" data-target="#modalmapa"></i>
-                <h6>MAPA</h6>
-              </div>
-
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-document-text" data-toggle="collapse" data-target="#trogglemissoes"></i>
-                <h6>MISSÕES</h6>
-              </div>
-
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-code" data-toggle="collapse" data-target="#trogglepersonagem"></i>
-                <h6>PERSONAGENS</h6>
-              </div>
-            </div>
-    
-            <hr style="border-width: 3px;">
-    
-            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
-                <table class="table">
-                  <thead style="background-color:#011627; color:#ffffff;">
-                    <tr>
-                      <th scope="col">Recompensa</th>
-                      <th scope="col">Missão</th>
-                      <th scope="col">Dificuldade</th>
-                      <th scope="col">Adquirir</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
-                      <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
-                      <td>Otto</td>
-                      <td><button type="button" class="btn btn-primary">Criar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
-                      <td>Adquirir 100 toras de madeira na floresta.</td>
-                      <td>Thornton</td>
-                      <td><button type="button" class="btn btn-primary">Criar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
-                      <td>Conseguir 20 pedras sagradas.</td>
-                      <td>the Bird</td>
-                      <td><button type="button" class="btn btn-primary">Criar</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-    
-            <div class="modal fade" id="modalmapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">WORLD MAP</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="Imagem/world-map.jpg" width="1080" height="520"/>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                    <button type="button" class="btn btn-primary">Salvar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            
-    
-</div>
-            
-<!-- ###################### 03: STATUS PREMIUM ########################## -->
-
-<div class="pricing">
-    
-            <p>Classe: </p>        
-    
-            <div class="row">
-              <div class="offers col-sm-8 col-xs-8">
-                <ul class="col-sm-6 col-xs-6">
-                  <li>Ataque: 00</li>
-                  <li>Defesa: 00</li>
-                  <li>Magia: 00</li>
-                </ul>
-
-                <ul class="col-sm-6 col-xs-6">
-                  <li>HP: 00</li>
-                  <li>MP: 00</li>
-                  <li>Vel.Atk: 00</li>
-                </ul>
-              </div>
-
-              <div class="price col-sm-4 col-xs-4">
-                <h5 class="rate">99</h5>
-                <p><strong>Distribuir</strong></p>
-              </div>
-            </div>
-    
-</div>
-
-<!-- ###################### 04: VALIANT FORCE ########################## -->            
+<!-- ###################### 04: VALIANT FORCE ##########################           
             
 <div id="contact" class="row">
     
@@ -510,13 +532,13 @@
                   <span class="success col-sm-12 col-xs-12"></span>
                   <span class="error col-sm-12 col-xs-12"></span>
                 </div>
-              </form> -->
-          </div>
+              </form>
+</div> -->
             
 <!-- ###################### 05: FOOTER ########################## -->            
 
           <footer>
-            <p class="uppercase">© Deft - Made With Love <i class="ion-heart"></i></p>
+            <p class="uppercase">RPG © JhinDickson<i class="ion-heart"></i></p>
             <div class="drag">
               <i class="up ion-arrow-up-c"></i>
             </div>

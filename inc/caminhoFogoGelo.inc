@@ -21,7 +21,7 @@
                     print "O Mapa é composta por três tipos de terreno: <b>Cidade, floresta e área vulcanica.</b> <br />";
                     print "Deseja explorar/interagir com a cidade? <kbd>sim / não</kbd>";
                          
-                    echo '<form action="cidadePronteira1.php" method="post">
+                    echo '<form action="primeira-cidade.php" method="post">
 
                             <p><b>Action The Game:</b></p> 
                             <input type="text" name="valor" value="">

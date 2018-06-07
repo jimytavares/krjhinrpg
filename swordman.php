@@ -28,13 +28,14 @@
       <link href="css/texxte.css" rel="stylesheet" type="text/css" media="all"/>
         
     </head>
-    <body>
-      <section class="animsition">
+<body>
+<section class="animsition">
 
-        <div id="leftSide" class="gradient">
-          <div id="home" >
-            <!-- Your logo -->
-  			    <img src="Imagem/logo-game.png" alt="" style="text-align: center; padding-left: 200px; padding-top: 50px" />
+<div id="leftSide" class="gradient">
+    
+    <div id="home" >
+        
+  		    <img src="Imagem/logo-game.png" alt="" style="text-align: center; padding-left: 200px; padding-top: 50px" />
 
             <div style="color: white; padding-left: 30px;">
               
@@ -129,424 +130,436 @@
               <li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
             </ul>
 
-          </div>
+    </div>
+    
+</div>
+
+<div id="rightSide">
+
+            
+        <!-- ###################### 01: AÇÕES ########################## -->
+
+        <div id="subscribe">
+
+                      <h1 style="text-align:center; color: white;"><b>Ações do Jogo</b></h1>
+
+                        <div class="service row">
+                          <div class="feature col-sm-3 col-xs-3" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            <i class="ion-heart"></i>
+                            <h6>STATUS</h6>
+                          </div>
+
+                          <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-erlenmeyer-flask"></i>
+                            <h6>ITENS</h6>
+                          </div>
+
+                          <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-waterdrop"></i>
+                            <h6>SKILL'S</h6>
+                          </div>
+
+                          <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-code"></i>
+                            <h6>CÓDIGOS</h6>
+                          </div>
+                        </div>
+
+                      <BR/>
+
+                      <form action="" method="post">  
+                        <p>    <b>Action The Game</b> 
+                                <img src="Imagem/perso/lvs/sowrdGIF.gif" />
+                        </p> 
+                        <input type="text" name="valor" value="">
+                        <button class="buttonA buttonA1">Seguir</button>
+                                <br>
+                     </form>
+
+                <!-- ********** MODAL ********* -->
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              ...
+                            </div>
+                          </div>
+                        </div>
+
+                    <!-- <form id="contact_form" class="row" method="post" action="agency.php">
+                        <div class="col-sm-6 col-xs-12">
+                          <input type="text" name="valor" value="" class="input-name" placeholder="Ações do Jogo">
+                          <!--<input type="email" name="email" class="input-email" placeholder="Teletransporte"> 
+                        </div>
+
+                         <!--<div class="col-sm-6 col-xs-12">
+                          <textarea name="message" class="input-message" placeholder="Message"></textarea>
+                        </div> 
+
+                        <div class="col-sm-12 col-xs-12">
+                          <button type="submit" class="submit">SEGUIR</button>
+                        </div>
+                      </form> -->
+
+                      <!---- Caminho Fogo ou Gelo ---->
+                      <?php include ('inc/caminhoFogoGelo.inc'); ?>
+
         </div>
 
-        <div id="rightSide">
+        <!-- ###################### 02: MENU GERAL ########################## -->            
 
-            
-<!-- ###################### 01: AÇÕES ########################## -->
-            
-<div id="subscribe">
-              
-              <h1 style="text-align:center; color: white;"><b>Ações do Jogo</b></h1>
-                
-                <div class="service row">
-                  <div class="feature col-sm-3 col-xs-3" data-toggle="modal" data-target=".bd-example-modal-lg">
-                    <i class="ion-heart"></i>
-                    <h6>STATUS</h6>
-                  </div>
+        <div class="about">
 
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-erlenmeyer-flask"></i>
-                    <h6>ITENS</h6>
-                  </div>
+                    <h2 style="text-align:center;">Menu Geal do Jogo</h2>
 
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-waterdrop"></i>
-                    <h6>SKILL'S</h6>
-                  </div>
+                    <div class="service row">
+                      <div class="feature col-sm-3 col-xs-3">
+                        <i class="ion-icecream" data-toggle="collapse" data-target="#troggleloja"></i>
+                        <h6>LOJA</h6>
+                      </div>
 
-                  <div class="feature col-sm-3 col-xs-3">
-                    <i class="ion-code"></i>
-                    <h6>CÓDIGOS</h6>
-                  </div>
-                </div>
-              
-              <BR/>
-              
-              <form action="" method="post">  
-                <p>    <b>Action The Game</b> 
-                        <img src="Imagem/perso/lvs/sowrdGIF.gif" />
-                </p> 
-                <input type="text" name="valor" value="">
-                <button class="buttonA buttonA1">Seguir</button>
-                        <br>
-             </form>
-              
-        <!-- ********** MODAL ********* -->
+                      <div class="feature col-sm-3 col-xs-3">
+                        <i class="ion-earth" data-toggle="modal" data-target="#modalmapa"></i>
+                        <h6>MAPA</h6>
+                      </div>
 
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      ...
+                      <div class="feature col-sm-3 col-xs-3">
+                        <i class="ion-document-text" data-toggle="collapse" data-target="#trogglemissoes"></i>
+                        <h6>MISSÕES</h6>
+                      </div>
+
+                      <div class="feature col-sm-3 col-xs-3">
+                        <i class="ion-code" data-toggle="collapse" data-target="#trogglepersonagem"></i>
+                        <h6>Evoluções</h6>
+                      </div>
                     </div>
-                  </div>
-                </div>
-    
-            <!-- <form id="contact_form" class="row" method="post" action="agency.php">
-                <div class="col-sm-6 col-xs-12">
-                  <input type="text" name="valor" value="" class="input-name" placeholder="Ações do Jogo">
-                  <!--<input type="email" name="email" class="input-email" placeholder="Teletransporte"> 
-                </div>
 
-                 <!--<div class="col-sm-6 col-xs-12">
-                  <textarea name="message" class="input-message" placeholder="Message"></textarea>
-                </div> 
+                    <hr style="border-width: 3px;">
 
-                <div class="col-sm-12 col-xs-12">
-                  <button type="submit" class="submit">SEGUIR</button>
-                </div>
-              </form> -->
-              
-              <!---- Caminho Fogo ou Gelo ---->
-              <?php include ('inc/caminhoFogoGelo.inc'); ?>
-              
-</div>
-
-<!-- ###################### 02: MENU GERAL ########################## -->            
-            
-<div class="about">
-    
-            <h2 style="text-align:center;">Menu Geal do Jogo</h2>
-
-            <div class="service row">
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-icecream" data-toggle="collapse" data-target="#troggleloja"></i>
-                <h6>LOJA</h6>
-              </div>
-
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-earth" data-toggle="modal" data-target="#modalmapa"></i>
-                <h6>MAPA</h6>
-              </div>
-
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-document-text" data-toggle="collapse" data-target="#trogglemissoes"></i>
-                <h6>MISSÕES</h6>
-              </div>
-
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-code" data-toggle="collapse" data-target="#trogglepersonagem"></i>
-                <h6>Evoluções</h6>
-              </div>
-            </div>
-    
-            <hr style="border-width: 3px;">
-    
-        <!-- **** MODAL **** -->
-            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
-                <table class="table">
-                  <thead style="background-color:#011627; color:#ffffff;">
-                    <tr>
-                      <th scope="col">Recompensa</th>
-                      <th scope="col">Missão</th>
-                      <th scope="col">Dificuldade</th>
-                      <th scope="col">Adquirir</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
-                      <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
-                      <td>Otto</td>
-                      <td><button type="button" class="btn btn-primary">Criar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
-                      <td>Adquirir 100 toras de madeira na floresta.</td>
-                      <td>Thornton</td>
-                      <td><button type="button" class="btn btn-primary">Criar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
-                      <td>Conseguir 20 pedras sagradas.</td>
-                      <td>the Bird</td>
-                      <td><button type="button" class="btn btn-primary">Criar</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-    
-
-            <div class="modal fade" id="modalmapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">WORLD MAP</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="Imagem/world-map.jpg" width="1080" height="520"/>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                    <button type="button" class="btn btn-primary">Salvar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            
-    
-</div>
-            
-<!-- ###################### 03: STATUS PREMIUM ########################## -->
-
-<div class="pricing">
-    
-            <p>Classe: </p>        
-    
-            <div class="row">
-              <div class="offers col-sm-8 col-xs-8">
-                <ul class="col-sm-6 col-xs-6">
-                  <li>Ataque: 00</li>
-                  <li>Defesa: 00</li>
-                  <li>Magia: 00</li>
-                </ul>
-
-                <ul class="col-sm-6 col-xs-6">
-                  <li>HP: 00</li>
-                  <li>MP: 00</li>
-                  <li>Vel.Atk: 00</li>
-                </ul>
-              </div>
-
-              <div class="price col-sm-4 col-xs-4">
-                <h5 class="rate">99</h5>
-                <p><strong>Distribuir</strong></p>
-              </div>
-            </div>
-    
-</div>
-
-<!-- ########## PERSONAGENS ######### --> 
-            
-<div class="project">
-            <ul class="gallery project_navigation">
-              <li class="item col-sm-6 col-xs-12">
-                <figure>
-                  <img src="img/pexels-photo-14075.jpeg" alt="This is my work" class="img-responsive" />
-                  <figcaption class="caption">
-                    <div class="photo-details">
-                      <h4>Music Player</h4>
-                      <span>By Code Rare</span>
+                <!-- **** MODAL **** -->
+                    <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                        <table class="table">
+                          <thead style="background-color:#011627; color:#ffffff;">
+                            <tr>
+                              <th scope="col">Recompensa</th>
+                              <th scope="col">Missão</th>
+                              <th scope="col">Dificuldade</th>
+                              <th scope="col">Adquirir</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                              <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
+                              <td>Otto</td>
+                              <td><button type="button" class="btn btn-primary">Criar</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                              <td>Adquirir 100 toras de madeira na floresta.</td>
+                              <td>Thornton</td>
+                              <td><button type="button" class="btn btn-primary">Criar</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                              <td>Conseguir 20 pedras sagradas.</td>
+                              <td>the Bird</td>
+                              <td><button type="button" class="btn btn-primary">Criar</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
                     </div>
-                    <a href="#project1" class="view">VIEW</a>
-                  </figcaption>
-                </figure>
-              </li>
 
-              <li class="item col-sm-6 col-xs-12">
-                <figure>
-                  <img src="img/shells-massage-therapy-sand.jpg"  alt="This is my work" class="img-responsive" />
-                  <figcaption class="caption">
-                    <div class="photo-details">
-                      <h4>Sea Shells</h4>
-                      <span>By Code Rare</span>
+
+                    <div class="modal fade" id="modalmapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">WORLD MAP</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="Imagem/world-map.jpg" width="1080" height="520"/>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                            <button type="button" class="btn btn-primary">Salvar</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <a href="#project2" class="view">VIEW</a>
-                  </figcaption>
-                </figure>
-              </li>
 
-              <li class="item col-sm-6 col-xs-12">
-                <figure>
-                  <img src="Imagem/classes/swordman-02.png"  alt="This is my work" class="img-responsive" />
-                  <figcaption class="caption">
-                    <div class="photo-details">
-                      <h4>Typing</h4>
-                      <span>By Code Rare</span>
-                    </div>
-                    <a href="#project3" class="view">VIEW</a>
-                  </figcaption>
-                </figure>
-              </li>
 
-              <li class="item col-sm-6 col-xs-12">
-                <figure>
-                  <img src="img/hand-taking-photo-photography-vintage.jpg"  alt="This is my work" class="img-responsive" />
-                  <figcaption class="caption">
-                    <div class="photo-details">
-                      <h4>Camera</h4>
-                      <span>By Code Rare</span>
-                    </div>
-                    <a href="#project4" class="view">VIEW</a>
-                  </figcaption>
-                </figure>
-              </li>
-
-              <li class="item col-sm-6 col-xs-12">
-                <figure>
-                  <img src="Imagem/classes/swordman-03.png"  alt="This is my work" class="img-responsive" />
-                  <figcaption class="caption">
-                    <div class="photo-details">
-                      <h4>Swordman lv: 60</h4>
-                      <span>Swordman de Classe 3</span>
-                    </div>
-                    <a href="#project5" class="view">Detalhe</a>
-                  </figcaption>
-                </figure>
-              </li>
-
-              <li class="item col-sm-6 col-xs-12">
-                <figure>
-                  <img src="img/food-plate-yellow-white.jpg"  alt="This is my work" class="img img-responsive" />
-                  <figcaption class="caption">
-                    <div class="photo-details">
-                      <h4>Food</h4>
-                      <span>By Code Rare</span>
-                    </div>
-                    <a href="#project6" class="view">VIEW</a>
-
-                  </figcaption>
-                </figure>
-              </li>
-            </ul>
-
-            <ul class="project_info">
-              <li id="project1">
-                <div class="project_content">
-                  <h2>YOUR TITLE GOES HERE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                </div>
-              </li>
-
-              <li id="project2">
-                <div class="project_content">
-                  <h2>YOUR TITLE GOES HERE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                </div>
-              </li>
-
-              <li id="project3">
-                <div class="project_content">
-                  <h2>YOUR TITLE GOES HERE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                </div>
-              </li>
-
-              <li id="project4">
-                <div class="project_content">
-                  <h2>YOUR TITLE GOES HERE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                </div>
-              </li>
-
-              <li id="project5">
-                <div class="project_content">
-                  <h2>YOUR TITLE GOES HERE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                </div>
-              </li>
-
-              <li id="project6">
-                <div class="project_content">
-                  <h2>YOUR TITLE GOES HERE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-                  </p>
-                </div>
-              </li>
-            </ul>
-</div>             
-            
-<!-- ###################### 04: VALIANT FORCE ##########################           
-            
-<div id="contact" class="row">
-    
-            
-              <h2 style="color:purple;">Evoluções <strong>Swordman</strong>, no geral.</h2>
-              <p style="color:black;">Todas as evoluções e skills da classe Swordman em todo o andamento do jogo. </p>
-
-            <div class="row">
-                <span class="col-sm-6 col-xs-12">
-                  <img src="Imagem/classes/swordman-01.png"  alt="This is my work" class="img-responsive" width="215" height="345"/>
-                </span>
-                <span class="col-sm-6 col-xs-12">
-                  <img src="Imagem/classes/swordman-02.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
-                </span>
-                <span class="col-sm-6 col-xs-12">
-                  <img src="Imagem/classes/swordman-03.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
-                </span>
-                <span class="col-sm-6 col-xs-12">
-                  <img src="Imagem/classes/swordman-04.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
-                </span>
-              </div>
-    
-              <address class="row">
-                <span class="col-sm-6 col-xs-12">
-                  <i class="ion-location"></i>
-                  1355 Market Street, Suite 900
-                  San Francisco, CA 94103
-                </span>
-                <span class="col-sm-6 col-xs-12">
-                  <i class="ion-ios-telephone"></i>
-                  (123) 456-7890
-                </span>
-                <span class="col-sm-6 col-xs-12">
-                  <i class="ion-email"></i>
-                  hello@Code Rarecom
-                </span>
-              </address>
-
-             <!-- <form id="contact_form" class="row" method="post" action="php/mailer.php">
-                <div class="col-sm-6 col-xs-12">
-                  <input type="name" name="name" class="input-name" placeholder="Name">
-                  <input type="email" name="email" class="input-email" placeholder="Email">
-                </div>
-
-                <div class="col-sm-6 col-xs-12">
-                  <textarea name="message" class="input-message" placeholder="Message"></textarea>
-                </div>
-
-                <div class="col-sm-12 col-xs-12">
-                  <button class="submit">Send</button>
-                </div>
-
-                <div id="form-messages" class="col-sm-12 col-xs-12">
-                  <span class="success col-sm-12 col-xs-12"></span>
-                  <span class="error col-sm-12 col-xs-12"></span>
-                </div>
-              </form>
-</div> -->
-            
-<!-- ###################### 05: FOOTER ########################## -->            
-
-          <footer>
-            <p class="uppercase">RPG © JhinDickson<i class="ion-heart"></i></p>
-            <div class="drag">
-              <i class="up ion-arrow-up-c"></i>
-            </div>
-          </footer>
 
         </div>
-      </section>
 
+        <!-- ###################### 03: STATUS PREMIUM ########################## -->
+
+        <div class="pricing">
+
+                    <p>Classe: </p>        
+
+                    <div class="row">
+                      <div class="offers col-sm-8 col-xs-8">
+                        <ul class="col-sm-6 col-xs-6">
+                          <li>Ataque: 00</li>
+                          <li>Defesa: 00</li>
+                          <li>Magia: 00</li>
+                        </ul>
+
+                        <ul class="col-sm-6 col-xs-6">
+                          <li>HP: 00</li>
+                          <li>MP: 00</li>
+                          <li>Vel.Atk: 00</li>
+                        </ul>
+                      </div>
+
+                      <div class="price col-sm-4 col-xs-4">
+                        <h5 class="rate">99</h5>
+                        <p><strong>Distribuir</strong></p>
+                      </div>
+                    </div>
+
+        </div>
+
+        <!-- ###################### 04: MAPAS PARA TELETRANSPORTE ########################## --> 
+
+        <div class="project">
+            
+                    <h1 style="text-align:center;">Teletransporte <img src="Imagem/portal2.gif" />  </h1>
+                    <p style="color: grey; text-align:center;">Para se teletransporta para outra cidade, você precisa de 1 ticket ou <br/> 100 de gold. Selecione a cidade e clique em "Teletransporta".</p>
+            
+                    <ul class="gallery project_navigation">
+                      <li class="item col-sm-6 col-xs-12">
+                        <figure>
+                          <img src="Imagem/Cidades/aldebaran-city.jpg" alt="This is my work" class="img-responsive" />
+                          <figcaption class="caption">
+                            <div class="photo-details">
+                              <h4>Cidade de Al de Baran</h4>
+                              <span>Cidade das Magias</span>
+                            </div>
+                            <a href="#project1" class="view">INFO</a>
+                            <a href="#project1" class="view">Entrar!</a>
+                          </figcaption>
+                        </figure>
+                      </li>
+
+                      <li class="item col-sm-6 col-xs-12">
+                        <figure>
+                          <img src="Imagem/Cidades/payon-city.jpg"  alt="This is my work" class="img-responsive" />
+                          <figcaption class="caption">
+                            <div class="photo-details">
+                              <h4>Cidade de Payon</h4>
+                              <span>Fica na floresta perdida.</span>
+                            </div>
+                            <a href="#project2" class="view">INFO</a>
+                            <a href="#project2" class="view">Entrar!</a>
+                          </figcaption>
+                        </figure>
+                      </li>
+
+                      <li class="item col-sm-6 col-xs-12">
+                        <figure>
+                          <img src="Imagem/Cidades/desert-city.jpg"  alt="This is my work" class="img-responsive" />
+                          <figcaption class="caption">
+                            <div class="photo-details">
+                              <h4>Cidade de Morroc</h4>
+                              <span>Deserto completo.</span>
+                            </div>
+                            <a href="#project3" class="view">INFO</a>
+                            <a href="#project3" class="view">Entrar!</a>
+                          </figcaption>
+                        </figure>
+                      </li>
+
+                      <li class="item col-sm-6 col-xs-12">
+                        <figure>
+                          <img src="Imagem/Cidades/alberta-city.jpg"  alt="This is my work" class="img-responsive" />
+                          <figcaption class="caption">
+                            <div class="photo-details">
+                              <h4>Camera</h4>
+                              <span>By Code Rare</span>
+                            </div>
+                            <a href="#project4" class="view">INFO</a>
+                            <a href="#project4" class="view">Entrar!</a>
+                          </figcaption>
+                        </figure>
+                      </li>
+
+                      <li class="item col-sm-6 col-xs-12">
+                        <figure>
+                          <img src="Imagem/Cidades/morroc-city.jpg"  alt="This is my work" class="img-responsive" />
+                          <figcaption class="caption">
+                            <div class="photo-details">
+                              <h4>Swordman lv: 60</h4>
+                              <span>Swordman de Classe 3</span>
+                            </div>
+                            <a href="#project5" class="view">INFO</a>
+                            <a href="#project5" class="view">Entrar!</a>
+                          </figcaption>
+                        </figure>
+                      </li>
+
+                      <li class="item col-sm-6 col-xs-12">
+                        <figure>
+                          <img src="Imagem/Cidades/phantom-city.jpg"  alt="This is my work" class="img img-responsive" />
+                          <figcaption class="caption">
+                            <div class="photo-details">
+                              <h4>Food</h4>
+                              <span>By Code Rare</span>
+                            </div>
+                            <a href="#project6" class="view">INFO</a>
+                            <a href="#project6" class="view">Entrar!</a>
+
+                          </figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+
+                    <ul class="project_info">
+                      <li id="project1">
+                        <div class="project_content">
+                          <h2>YOUR TITLE GOES HERE</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="project2">
+                        <div class="project_content">
+                          <h2>YOUR TITLE GOES HERE</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="project3">
+                        <div class="project_content">
+                          <h2>YOUR TITLE GOES HERE</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="project4">
+                        <div class="project_content">
+                          <h2>YOUR TITLE GOES HERE</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="project5">
+                        <div class="project_content">
+                          <h2>YOUR TITLE GOES HERE</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="project6">
+                        <div class="project_content">
+                          <h2>YOUR TITLE GOES HERE</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+        </div>             
+
+        <!-- ###################### off: PERSONAGENS ANTIGO ########################## -->          
+
+        <div id="contact" class="row">
+
+
+                     <!-- <h2 style="color:purple;">Evoluções <strong>Swordman</strong>, no geral.</h2>
+                      <p style="color:black;">Todas as evoluções e skills da classe Swordman em todo o andamento do jogo. </p>
+
+                    <div class="row">
+                        <span class="col-sm-6 col-xs-12">
+                          <img src="Imagem/classes/swordman-01.png"  alt="This is my work" class="img-responsive" width="215" height="345"/>
+                        </span>
+                        <span class="col-sm-6 col-xs-12">
+                          <img src="Imagem/classes/swordman-02.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
+                        </span>
+                        <span class="col-sm-6 col-xs-12">
+                          <img src="Imagem/classes/swordman-03.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
+                        </span>
+                        <span class="col-sm-6 col-xs-12">
+                          <img src="Imagem/classes/swordman-04.png"  alt="This is my work" class="img-responsive" width="265" height="345"/>
+                        </span>
+                      </div>
+
+                      <address class="row">
+                        <span class="col-sm-6 col-xs-12">
+                          <i class="ion-location"></i>
+                          1355 Market Street, Suite 900
+                          San Francisco, CA 94103
+                        </span>
+                        <span class="col-sm-6 col-xs-12">
+                          <i class="ion-ios-telephone"></i>
+                          (123) 456-7890
+                        </span>
+                        <span class="col-sm-6 col-xs-12">
+                          <i class="ion-email"></i>
+                          hello@Code Rarecom
+                        </span>
+                      </address>
+
+                     <!-- <form id="contact_form" class="row" method="post" action="php/mailer.php">
+                        <div class="col-sm-6 col-xs-12">
+                          <input type="name" name="name" class="input-name" placeholder="Name">
+                          <input type="email" name="email" class="input-email" placeholder="Email">
+                        </div>
+
+                        <div class="col-sm-6 col-xs-12">
+                          <textarea name="message" class="input-message" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12">
+                          <button class="submit">Send</button>
+                        </div>
+
+                        <div id="form-messages" class="col-sm-12 col-xs-12">
+                          <span class="success col-sm-12 col-xs-12"></span>
+                          <span class="error col-sm-12 col-xs-12"></span>
+                        </div>
+                      </form> -->
+        </div> 
+
+        <!-- ###################### 05: FOOTER ########################## -->            
+
+        <footer>
+                    <p class="uppercase">RPG © JhinDickson<i class="ion-heart"></i></p>
+                    <div class="drag">
+                      <i class="up ion-arrow-up-c"></i>
+                    </div>
+                  </footer>
+
+</div>
+</section>
+    
+      <!-- Javascript -->
       <script src="js/jquery-1.11.3.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/animsition.min.js"></script>
@@ -561,5 +574,5 @@
       <script src="js/photoswipe-ui-default.min.js"></script>
       <script src="js/jqinstapics.min.js"></script>
       <script src="js/script.js"></script>
-  </body>
+</body>
 </html>

@@ -25,7 +25,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         
       <!--  Meu CSS -->
-      <link href="css/texxte.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/texte2.css" rel="stylesheet" type="text/css" media="all"/>
         
     </head>
 <body>
@@ -38,43 +38,17 @@
   		    <img src="Imagem/logo-game.png" alt="" style="text-align: center; padding-left: 200px; padding-top: 50px" />
 
             <div style="color: white; padding-left: 30px;">
-              
-                 <p> 
-                   <!--<img src="Imagem/perso/lvs/person_espadachin.jpg" align="left"/>
-                    Um RPG em PHP/HTML feito pelo lindo JimyDickson -->
-                     
-                     <br />
-                     • O jogo se desenvolve de acordo com suas escolhas na "Ação do Jogo".
-                     <br />
-                     • Existe ações("Ação do Jogo") especificas para cada missão, no "Ações do Jogo" são suas decisões.
-                     <br /> 
-                     • Se você iniciar um missão "X" e usa no "Ações do Jogo" ERRADO, você voltara para o inicio do jogo, assim perdendo todo progresso.
-                    
-                     <br /><br />
-                     Teletransporte: Tem a função de teletransportar o jogador para cidades ou mapas, os codigos das cidades/mapas aparecem no decorrer do jogo quando você as descobre.
-                     <br /><br />
-                     Código: No decorrer do jogo você ganha bonus e pode participar de eventos, através desses codigos que se consegue durante o jogo use o campo para adquirir a recompensa
-                     <br /><br />
-                     Level: A cada 30 leveis você pode avançar de classe. Toda classe tem suas evoluções, deixando o personagem mais forte e com novas habilidades.
-                     De acordo com os leveis que você vai conseguindo durante o jogo seu personagem ganhara também status por cada nível independete dos itens adquiridos no decorrer do game.
-                   
-                     <!--<b>Sua Classe:</b> Espadachim (Sobre)
-                        <br />
-                    Espadachins podem usar as melhores armaduras no Tekketsu no Orphs, que combinadas 
-                        <br />
-                    com o seu alto vigor e capacidade de se curarem rapidamente, os tornam a frente de ataque em qualquer tipo de combate. 
-                        <br />
-                    São capazes de empunhar tanto lanças quanto espadas de uma ou duas mãos, e estão sempre prontos -->
-                     
-                </p>
                 
                 <div class="center" style="padding-left: 180px;">
                     
                     <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#demo">O Jogo</button>
                       <div id="demo" class="collapse">
                            <br/>
-                        <b>O Jogo:</b> flui e tem consequência de acordo com suas escolhas no "Action the game".<br />Existe ações("Action the game") especificas para cada missão, o "Action the game" são suas decisões.<br /> Se você iniciar um missão X e usa no "Action the game" errado, você voltara para o inicio do jogo, assim perdendo todo progresso.
-                            <br />
+                             • O jogo se desenvolve de acordo com suas escolhas na "Ação do Jogo".
+                             <br />
+                             • Existe ações("Ação do Jogo") especificas para cada missão, no "Ações do Jogo" são suas decisões.
+                             <br /> 
+                             • Se você iniciar um missão "X" e usa no "Ações do Jogo" ERRADO, você voltara para o inicio do jogo, assim perdendo todo progresso.
                       </div>
                     
                       <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#tele">Teletransporte</button>
@@ -105,8 +79,8 @@
                       <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#level">Leveis</button>
                       <div id="level" class="collapse">
                            <br />
-                        <b>Level:</b> A cada 5 leveis você pode avançar de classe. Toda classe tem suas evoluções, deixando o personagem mais forte e com novas habilidades. <br />
-                        De acordo com os leveis que você vai conseguindo durante o jogo seu personagem ganhara também status por cada nível
+                        Level: A cada 30 leveis você pode avançar de classe. Toda classe tem suas evoluções, deixando o personagem mais forte e com novas habilidades.
+                        De acordo com os leveis que você vai conseguindo durante o jogo seu personagem ganhara também status por cada nível independete dos itens adquiridos no decorrer do game.
                             <br />
                         independete dos itens adquiridos no decorrer do game.
                       </div>
@@ -121,7 +95,42 @@
                 </div>
                 
             </div>
-
+            
+            <!-- ####### MODAL do MENU GERAL ######### -->
+            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+                <br/><br/>   
+                        <table class="table">
+                          <thead style="background-color:#011627; color:#ffffff;">
+                            <tr>
+                              <th scope="col">Recompensa</th>
+                              <th scope="col">Missão</th>
+                              <th scope="col">Dificuldade</th>
+                              <th scope="col">Adquirir</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row"> <img src="Imagem/itens/manto-sagrado.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                              <td>Vá a igreja e trabalhe por alguns dias para conseguir 12 pedaços de pano sagrado.</td>
+                              <td>Otto</td>
+                              <td><button type="button" class="btn btn-primary">Criar</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"> <img src="Imagem/itens/armadura-madeira.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                              <td>Adquirir 100 toras de madeira na floresta.</td>
+                              <td>Thornton</td>
+                              <td><button type="button" class="btn btn-primary">Criar</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"> <img src="Imagem/itens/armadura-prata.png"  alt="This is my work" class="img-responsive" width="" height=""/> </th>
+                              <td>Conseguir 20 pedras sagradas.</td>
+                              <td>the Bird</td>
+                              <td><button type="button" class="btn btn-primary">Criar</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+        
             <ul class="social_icons">
               <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
               <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
@@ -137,44 +146,71 @@
 <div id="rightSide">
 
             
-        <!-- ###################### 01: AÇÕES ########################## -->
+        <!-- ################### 01: AÇÕES ########################### -->
 
         <div id="subscribe">
 
-                      <h1 style="text-align:center; color: white;"><b>Ações do Jogo</b></h1>
-
-                        <div class="service row">
-                          <div class="feature col-sm-3 col-xs-3" data-toggle="modal" data-target=".bd-example-modal-lg">
-                            <i class="ion-heart"></i>
+                      <h1 style="text-align:center; color: white;"><b>lBanng</b></h1>
+            
+                      <div class="row">
+                          <div class="feature col-sm-3 col-xs-3" data-toggle="modal" data-target=".bd-example-modal-lg" style="text-align:center;">
+                            <i class="ion-heart" style="font-size:39px;"></i>
                             <h6>STATUS</h6>
                           </div>
 
-                          <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-erlenmeyer-flask"></i>
+                          <div class="feature col-sm-3 col-xs-3" style="text-align:center;">
+                            <i class="ion-erlenmeyer-flask" style="font-size:39px;"></i>
                             <h6>ITENS</h6>
                           </div>
 
-                          <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-waterdrop"></i>
+                          <div class="feature col-sm-3 col-xs-3" style="text-align:center;">
+                            <i class="ion-waterdrop" style="font-size:39px;"></i>
                             <h6>SKILL'S</h6>
                           </div>
 
-                          <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-code"></i>
+                          <div class="feature col-sm-3 col-xs-3" style="text-align:center;">
+                            <i class="ion-code" style="font-size:39px;"></i>
                             <h6>CÓDIGOS</h6>
                           </div>
                         </div>
+                        
+                        <br/>
+                        
+                        <div class="row" style="text-align:center;">
+                            <div class="col-4">
+                                <img src="Imagem/perso/lvs/guerreiro-lv30.gif" style="width: 120px; height: 140px; text-align:right;"/>
+                                Level: 30
+                            </div>
+                            <div class="col-6" style="padding-top:15px;">
+                        HP: 300/1000<div class="progress">
+                                  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                         MP: 245/300<div class="progress">
+                                  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+    EXP: 60% / 20% / 20%<div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" style="width:0%">
+                            verde
+                          </div>
+                          <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                            Experiência: 60%
+                          </div>
+                          <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+                            Dead: 20%
+                          </div>
+                        </div>
 
-                      <BR/>
-
-                      <form action="" method="post">  
+                      <!-- <form action="" method="post">  
                         <p>    <b>Action The Game</b> 
                                 <img src="Imagem/perso/lvs/sowrdGIF.gif" />
                         </p> 
                         <input type="text" name="valor" value="">
                         <button class="buttonA buttonA1">Seguir</button>
                                 <br>
-                     </form>
+                     </form> -->
 
                 <!-- ********** MODAL ********* -->
 
@@ -206,7 +242,7 @@
 
         </div>
 
-        <!-- ###################### 02: MENU GERAL ########################## -->            
+        <!-- ################### 02: MENU GERAL ###################### -->            
 
         <div class="about">
 
@@ -295,7 +331,7 @@
 
         </div>
 
-        <!-- ###################### 03: STATUS PREMIUM ########################## -->
+        <!-- ################### 03: STATUS PREMIUM ################## -->
 
         <div class="pricing">
 
@@ -324,13 +360,22 @@
 
         </div>
 
-        <!-- ###################### 04: MAPAS PARA TELETRANSPORTE ########################## --> 
+        <!-- ################### 04: MAPAS PARA TELETRANSPORTE ####### --> 
 
         <div class="project">
             
-                    <h1 style="text-align:center;">Teletransporte <img src="Imagem/portal2.gif" />  </h1>
-                    <p style="color: grey; text-align:center;">Para se teletransporta para outra cidade, você precisa de 1 ticket ou <br/> 100 de gold. Selecione a cidade e clique em "Teletransporta".</p>
+                    <div class="row">
+                        <div class="col">
+                            <h1 style="text-align:right; padding-top:40px;">Teletransporte</h1>
+                        </div>
+                        <div class="col">
+                            <img src="Imagem/portal2.gif" />
+                        </div>
+                    </div>
             
+                    <p style="color: grey; text-align:center;">Para se teletransporta para outra cidade, você precisa de 1 ticket ou <br/> 100 de gold. Selecione a cidade e clique em "Teletransporta".</p>
+                    
+                
                     <ul class="gallery project_navigation">
                       <li class="item col-sm-6 col-xs-12">
                         <figure>
@@ -379,8 +424,8 @@
                           <img src="Imagem/Cidades/alberta-city.jpg"  alt="This is my work" class="img-responsive" />
                           <figcaption class="caption">
                             <div class="photo-details">
-                              <h4>Camera</h4>
-                              <span>By Code Rare</span>
+                              <h4>Cidade de Alberta</h4>
+                              <span>Porto</span>
                             </div>
                             <a href="#project4" class="view">INFO</a>
                             <a href="#project4" class="view">Entrar!</a>
@@ -393,8 +438,8 @@
                           <img src="Imagem/Cidades/morroc-city.jpg"  alt="This is my work" class="img-responsive" />
                           <figcaption class="caption">
                             <div class="photo-details">
-                              <h4>Swordman lv: 60</h4>
-                              <span>Swordman de Classe 3</span>
+                              <h4>Cidade de Morroc</h4>
+                              <span>Inicio do Deserto</span>
                             </div>
                             <a href="#project5" class="view">INFO</a>
                             <a href="#project5" class="view">Entrar!</a>
@@ -407,8 +452,8 @@
                           <img src="Imagem/Cidades/phantom-city.jpg"  alt="This is my work" class="img img-responsive" />
                           <figcaption class="caption">
                             <div class="photo-details">
-                              <h4>Food</h4>
-                              <span>By Code Rare</span>
+                              <h4>Cidade Fantasma</h4>
+                              <span>Ainda não registrado no mapa</span>
                             </div>
                             <a href="#project6" class="view">INFO</a>
                             <a href="#project6" class="view">Entrar!</a>
@@ -487,7 +532,7 @@
                     </ul>
         </div>             
 
-        <!-- ###################### off: PERSONAGENS ANTIGO ########################## -->          
+        <!-- ################### off: PERSONAGENS ANTIGO ############# -->          
 
         <div id="contact" class="row">
 
@@ -547,7 +592,7 @@
                       </form> -->
         </div> 
 
-        <!-- ###################### 05: FOOTER ########################## -->            
+        <!-- ################### 05: FOOTER ########################## -->            
 
         <footer>
                     <p class="uppercase">RPG © JhinDickson<i class="ion-heart"></i></p>

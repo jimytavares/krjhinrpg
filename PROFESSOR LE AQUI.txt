@@ -1,8 +1,0 @@
-Login 1: jimydickson
-senha: 12345
-
-login 2: pauloandre
-senha: 123456
-
-No lugar de colocar uma tabela com PIZZAS e precos
-como conversei com o senhor coloquei itens do jogo e seus precos.

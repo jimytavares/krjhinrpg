@@ -1287,7 +1287,16 @@ img {
 .ion-icecream {
     color: deepskyblue; }
 .ion-document-text {
-    color: red; }
+    color: blue; }
+.ion-erlenmeyer-flask{
+    color: lawngreen;
+}
+.ion-waterdrop{
+    color: deepskyblue;
+}
+.ion-code{
+    color: orangered;
+}
 
 /* ------------------------------------- */
 /* Plugin styles ................... */

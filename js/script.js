@@ -79,7 +79,7 @@ Copyright (C) 2016 Coderare
         element.innerHTML = html;
     }
 
-      twitterFetcher.fetch(config5);
+    
 })();
 
 

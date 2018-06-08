@@ -97,9 +97,9 @@
             </div>
             
             <!-- ####### MODAL do MENU GERAL ######### -->
-            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">
+            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding-left:55px;">
                 <br/><br/>   
-                        <table class="table">
+                        <table class="table table-dark" style="width:80%; text-align:center;">
                           <thead style="background-color:#011627; color:#ffffff;">
                             <tr>
                               <th scope="col">Recompensa</th>
@@ -179,7 +179,8 @@
                         <div class="row" style="text-align:center;">
                             <div class="col-4">
                                 <img src="Imagem/perso/lvs/guerreiro-lv30.gif" style="width: 120px; height: 140px; text-align:right;"/>
-                                Level: 30
+                                Level: 30 <br/>
+                                Classe: Espadachim
                             </div>
                             <div class="col-6" style="padding-top:15px;">
                         HP: 300/1000<div class="progress">
@@ -203,14 +204,14 @@
                           </div>
                         </div>
 
-                      <!-- <form action="" method="post">  
+                      <form action="" method="post">  
                         <p>    <b>Action The Game</b> 
                                 <img src="Imagem/perso/lvs/sowrdGIF.gif" />
                         </p> 
                         <input type="text" name="valor" value="">
                         <button class="buttonA buttonA1">Seguir</button>
                                 <br>
-                     </form> -->
+                     </form>
 
                 <!-- ********** MODAL ********* -->
 
@@ -373,7 +374,7 @@
                         </div>
                     </div>
             
-                    <p style="color: grey; text-align:center;">Para se teletransporta para outra cidade, você precisa de 1 ticket ou <br/> 100 de gold. Selecione a cidade e clique em "Teletransporta".</p>
+                    <p style="color: grey; text-align:center;">Para se teletransporta para outra cidade, você precisa de 1 ticket ou <br/> 100 de gold. Selecione a cidade e clique em "Entrar!".</p>
                     
                 
                     <ul class="gallery project_navigation">
@@ -608,10 +609,8 @@
       <script src="js/jquery-1.11.3.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/animsition.min.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
       <script src="js/jquery.magnific-popup.min.js"></script>
       <script src="js/jquery.countdown.min.js"></script>
-      <script src="js/twitterFetcher_min.js"></script>
       <script src="js/masonry.pkgd.min.js"></script>
       <script src="js/imagesloaded.pkgd.min.js"></script>
       <script src="js/jquery.flexslider-min.js"></script>

@@ -361,7 +361,7 @@
 
         </div>
 
-        <!-- ################### 04: MAPAS PARA TELETRANSPORTE ####### --> 
+        <!-- ################### 04: Cidades para Teleporte ########## --> 
 
         <div class="project">
             
@@ -387,7 +387,7 @@
                               <span>Cidade das Magias</span>
                             </div>
                             <a href="#project1" class="view">INFO</a>
-                            <a href="#project1" class="view">Entrar!</a>
+                            <a href="#entraraldebaran" class="view">Entrar!</a>
                           </figcaption>
                         </figure>
                       </li>
@@ -465,6 +465,23 @@
                     </ul>
 
                     <ul class="project_info">
+                      <li id="entraraldebaran">
+                        <div class="project_content">
+                            <div class="row">
+                                <div class="col">
+                                  <h2>AL DE BARAN</h2>
+                                  <p>Cidade com 8 NPC's, cidade dos feiticeiros!</p>
+                                </div>    
+                                <div class="col">
+                                  <button type="button" class="btn btn-primary btn-lg">1 Ticket</button>
+                                  <button type="button" class="btn btn-warning btn-lg">100 GOLD!</button>
+                                    <br/><br/>
+                                  <p>Escolha com qual recurso você irá entrar na cidade.</p>
+                                </div>    
+                            </div>    
+                        </div>
+                      </li>
+                        
                       <li id="project1">
                         <div class="project_content">
                           <h2>YOUR TITLE GOES HERE</h2>
@@ -474,7 +491,7 @@
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
                           </p>
                         </div>
-                      </li>
+                      </li>    
 
                       <li id="project2">
                         <div class="project_content">

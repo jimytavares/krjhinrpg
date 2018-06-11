@@ -183,10 +183,10 @@
                                 Classe: Espadachim
                             </div>
                             <div class="col-6" style="padding-top:15px;">
-                        HP: 300/1000<div class="progress">
+                    HP: 300/1000<div class="progress">
                                   <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                         MP: 245/300<div class="progress">
+                     MP: 245/300<div class="progress">
                                   <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>

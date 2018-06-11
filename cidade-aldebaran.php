@@ -70,9 +70,11 @@
          }
          #col-ferreiro
          {
-             background-image: url(Imagem/Pronteira/background-ferreiro4.jpg);
+             background-image: url(Imagem/Pronteira/.jpg);
+             background-color: #262626;
              background-repeat: no-repeat;
-             height:480px;
+             height:350px;
+             border-radius: 20px;
          }
      </style>
     
@@ -143,7 +145,9 @@
                 <div class="col" id="col-fundonpc">
                     <img src="Imagem/Pronteira/npc-dormir-pronteira.gif" /> Kafra
                     <h3>Utilidades</h3>
-                    <p>• Vender <br/>• Missões</p>
+                    <button type="button" class="btn btn-outline-warning">Vender</button> 
+                    <button type="button" class="btn btn-outline-success">Banco</button> <br/><br/>
+                    <button type="button" class="btn btn-outline-info">Missões</button>
                 </div>
                 <div class="col">
                     b
@@ -177,10 +181,25 @@
     
     <div class="row">
         <div class="col">
-        
+         a
         </div>
-        <div class="col" id="col-ferreiro">
-            <img src="Imagem/Pronteira/npc-ferreiro.gif" />
+        <div class="col" id="col-ferreiro" style="padding-top:20px;">
+            <div class="row">
+                <div class="col"><img src="Imagem/Pronteira/npc-ferreiro.gif"/></div>
+                <div class="col"> a </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br/>
+                    <button type="button" class="btn btn-outline-success">Success</button> <br/><br/>
+                    <button type="button" class="btn btn-outline-danger">Danger</button> <br/><br/>
+                    <button type="button" class="btn btn-outline-warning">Warning</button> 
+                </div>
+                <div class="col"> b</div>
+            </div>
+        </div>
+        <div class="col"> 
+            c 
         </div>
     </div>  
     

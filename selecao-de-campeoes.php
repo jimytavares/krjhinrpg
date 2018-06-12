@@ -18,82 +18,50 @@
         .error {color: #FF0000;}
         body
         {
-            background-image: url('Imagem/fundo01.jpg');
-            background-size: cover;
-            background-color:;
-            background-repeat: no-repeat;
-            background-position:;
+            color: #555;
+            background: #222;
+            text-align: center;
+            font-family: 'Roboto Mono';
+            padding: 1em;
         }
-        #row-card
-         {
-            padding-left:90px; 
-            padding-top: 70px;
-         }
-         .card-background
-         {
-            background-color: white;  
-         }
-
+        #row-geral
+        {
+            padding-top: 20px; 
+            padding-left: 8px;
+        }
+            #col-row:hover
+            {
+                opacity: 0.5;
+                /*transform: rotateY(-180deg);*/
+            }
+        p
+        {
+            color: white;
+            font-size: 20px;
+            font-family: "Arial", Times, serif;
+            text-shadow: 1px 1px black;
+        }
     </style>
 
 </head>
 <body>
     
-    <div class="row" id="row-card">
-        <div class="col">
-            
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/perso/lvs/sowrdGIF.gif" style="padding-left:px;"/> Espadachim
-              <img src="Imagem/perso/lvs/cavaleiro.gif" /> Cavaleiro
-                <img src="Imagem/perso/lvs/lordknight.png" /> Lord Knight <br/>
-                <img src="Imagem/perso/lvs/guerreiro.gif" style="padding-left:50px;"/> Rune Knight
-              <div class="card-body">
-                <h5 class="card-title"><b>Classe dos Guerreiros</b></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-danger">Escolher</a>
-              </div>
-            </div>
-            
-        </div>
-        <div class="col">
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/perso/lvs/gatuno.gif"/> Gatuno<BR/>
-              <img src="Imagem/perso/lvs/assassino.gif" /> Mercenário
-              <img src="Imagem/perso/lvs/assasino.gif" style="padding-left:50px;"/> Algoz
-              <img src="Imagem/perso/lvs/imageproxy.gif" /> Assassino
+    <h3>Seleção de Campeções</h3>
     
-              <div class="card-body">
-                <h5 class="card-title">Assassinos!</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Escolher</a>
-              </div>
-            </div>
+    <div class="row" id="row-geral">
+        <div class="col-4" id="col-row">
+            <img src="Imagem/selcaodecampeoes/guerreiro-wall2.jpg" style="width:420px; height:250px; border-radius:20px; opacity: 0.8;"/>
+            <p>Guerreiro</p>
         </div>
-        <div class="col">
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/perso/lvs/mage.gif" /> Mago <br/>
-              <img src="Imagem/perso/lvs/wizard.gif" /> Bruxo <br/>
-              <img src="Imagem/perso/lvs/high-wizard.gif" style="padding-left:30px;"/> Arquimago
-              <div class="card-body">
-                <h5 class="card-title">Magos</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+        <div class="col-4">
+             <img src="Imagem/selcaodecampeoes/assassino-wall2.jpg" style="width:420px; height:250px; border-radius:20px; opacity: 0.9;"/>
+            <p>Assassino</p>
         </div>
-        <div class="col">
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/perso/lvs/mage.gif" /> Mago <br/>
-              <img src="Imagem/perso/lvs/wizard.gif" /> Bruxo <br/>
-              <img src="Imagem/perso/lvs/high-wizard.gif" style="padding-left:30px;"/> Arquimago
-              <div class="card-body">
-                <h5 class="card-title">Magos</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+        <div class="col-3">
+            <img src="Imagem/selcaodecampeoes/guerreiro-wall.jpg" style="width:420px; height:250px;"/>
+            <p>Magos</p>
         </div>
-    </div>  
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

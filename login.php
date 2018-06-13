@@ -51,7 +51,7 @@
                 <div class="well bg-white box-login">
                     <img src="Imagem/2222.png">
                     <!--<h1 class="ls-login-logo">기아보</h1>-->
-                    <form method="" action="Verificando-Login.php" role="form">
+                    <form method="POST" action="Verificando-Login.php" role="form">
                                 <fieldset>
 
                                         <div class="form-group ls-login-user">

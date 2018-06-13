@@ -1,10 +1,17 @@
 <?  
 
-    $servidor = 'localhost';
-    $usuario = 'dbitens';
-    $senha = '12345';
-    $banco = 'dbitens';
+$type = 'mysql';
+    $host = 'localhost';
+        $port = '3306';
+        $name = 'krjhinrpg';
+        $user = 'jimydickson';
+        $pass = 'hunter18';
 
-    $conecta = mysql_conection($servidor, $usuario, $senha, $banco);
 
+$pdo = new \PDO(
+                    "{$type}:host={$host};port={$port};dbname={$name};", $user, $pass,
+                    [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]
+                );
+
+   
 ?>

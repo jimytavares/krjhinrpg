@@ -10,58 +10,43 @@
         }
     ?>
 
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Meu CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Meu CSS -->
+    <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     
     <style>
-        .error {color: #FF0000;}
-        body
-        {
+        body {
             background-image: url('Imagem/fundo01.jpg');
             background-size: cover;
             background-color: ;
             background-repeat: no-repeat;
             background-position:;
         }
-        .margin-top-form 
-        {
-            text-align: center;
-            padding-top: 100px;
-        }
-        .form-a
-        {
-            background-color: red;
-        }
-        .containerex{
-            width: ;
-            padding-right: 600px;
-        }
     </style>
 
 </head>
 <body>
     
-    <div class="margin-top-form">        
     <div class="container">
-    <div class="containerex">
+        <div class="container-geral">
         
-        <div class="row">
-            <div class="col">
-                
-                <div class="box-parent-login">
-                <div class="well bg-white box-login">
-                    <img src="Imagem/2222.png">
-                    <!--<h1 class="ls-login-logo">기아보</h1>-->
-                    <form method="POST" action="Verificando-Login.php" role="form">
+            <div class="row">
+                <div class="col">
+                    
+                    <div class="box-parent-login">
+                        <div class="well bg-white box-login">
+                            <img src="Imagem/2222.png">
+                            <!--<h1 class="ls-login-logo">기아보</h1>-->
+                            <form method="POST" action="Verificando-Login.php" role="form">
                                 <fieldset>
-
                                         <div class="form-group ls-login-user">
                                             <label for="user">Usuário</label>
                                             <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário" name="usuario">
@@ -81,15 +66,14 @@
                                         <p style="text-align:right; color:orange;">Copyright © JihnDickson</p>
                                 </fieldset>
                             </form>
-                            </div>
-                 </div>
-                
+                        </div>
+                     </div>
+                    
+                </div>
             </div>
-        </div>
         
-    </div>    
+        </div>    
     </div>      
-    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -25,7 +25,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         
       <!--  Meu CSS -->
-      <link href="css/texte2.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/rpg-swordman.css" rel="stylesheet" type="text/css" media="all"/>
         
     </head>
 <body>

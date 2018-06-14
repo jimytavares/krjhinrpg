@@ -24,74 +24,17 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
      <!-- Material Design Bootstrap -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">   
-        
+     <!--  Meu CSS -->
+     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     
      <style>
-         body
-         {
+         body {
             background-image: url('Imagem/aldebaran-wallpaper.jpg');
             background-size: cover;
             background-color:;
             background-repeat: no-repeat;
             background-position:;
          }
-         #menu-background
-         {
-            background: #262626;
-            height: 42PX; /* largura do menu */
-         }
-         
-         #col-menu-button
-         {
-             padding-top: ;
-             text-align:center; 
-             padding-top:0px; 
-             color:#e6e600; 
-             font-size:12px;
-         }
-         #input-menu
-         {
-             border-radius: 7px;
-             border-style: ;
-             border-color: darkgray;
-             background-color: ghostwhite;
-             padding-top: ;
-             width: 160px;
-             height: ;
-             border-width: 0.2px;
-         }
-             #input-menu:hover{
-                border-color: blue;
-             }
-         
-         #row-card
-         {
-            padding-left:90px; 
-            padding-top: 70px;
-         }
-         .card-background
-         {
-            background-color: white;  
-         }
-
-         
-         .buttonmenu
-         {
-            border-radius: 20px !important;
-            height: 90% !important;
-            width: 38px !important;
-            background: linear-gradient(to bottom left, red, yellow) !important;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
-            border-style: solid;
-         }
-             .buttonmenu:hover{
-                border-radius: 20px !important;
-                height: 100% !important;
-                width: 40px !important;
-                background: linear-gradient(to bottom right, red, yellow) !important;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
-                border-style: none;
-             }
      </style>
     
 </head>
@@ -116,15 +59,15 @@
             </div>
         
             <div class="col" id="col-menu-button">
-                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm">Status</button> </a>
-                <button type="button" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout!</button>
                 <img src="Imagem/gold2.png" /> GOLD: 99999,999
+                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm">Perfil</button> </a>
+                <button type="button" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out"></i>Deslogar!</button>
             </div>
     </div>
     
     <!-- <button type="button" class="buttonmenu"> <i class="fa fa-sign-out" style="font-size:16px; color:white;"></i> </button> -->
     
-    <div class="row" id="row-card">
+    <div class="row" id="row-card-aldebaran">
         <div class="col">
             
             <div class="card-background" style="width: 18rem;">

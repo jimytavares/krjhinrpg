@@ -19,12 +19,10 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <!--  Meu CSS -->
-    <link href="" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     
     <style>
-        .error {color: #FF0000;}
-        body
-        {
+        body {
             background-image: url('Imagem/foto-index-3.png');
             background-size: cover;
             background-color:;
@@ -33,36 +31,6 @@
             font-family: 'Arial';
             text-align: center;
         }
-        #row-menu
-        {
-            background-color: #262626;
-            height: 40px;
-        }
-        #row-geral
-        {
-            margin-left: 10px;
-        }
-        #col-menu-button
-         {
-             margin-top: 5px;
-             text-align:center; 
-             padding-top:0px; 
-             color:#e6e600; 
-             font-size:12px;
-         }
-        
-        h5
-        {
-            color: midnightblue;
-            font-size: 20px;
-            font-family: "Arial", Times, serif;
-            text-shadow: 0px 0px blue;
-        }
-        .card-background
-         {
-            background-color: white;  
-            opacity: 0.9;
-         }
     </style>
 
 </head>

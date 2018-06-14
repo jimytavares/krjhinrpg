@@ -116,7 +116,7 @@
             </div>
         
             <div class="col" id="col-menu-button">
-                <a href="swordman.php"> <button type="button" class="btn btn-outline-success btn-sm">Status</button> </a>
+                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm">Status</button> </a>
                 <button type="button" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout!</button>
                 <img src="Imagem/gold2.png" /> GOLD: 99999,999
             </div>

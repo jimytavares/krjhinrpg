@@ -1,6 +1,14 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
+    
+    <?php 
+        session_start();  
+        if( $_SESSION['logado']) 
+        {
+            header('location:selecao-de-campeoes.php');
+        }
+    ?>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">

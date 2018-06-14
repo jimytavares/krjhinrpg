@@ -1,17 +1,23 @@
-<!DOCTYPE HTML>  
+<!DOCTYPE HTML>
 <html>
 <head>
-
-    <!-- Required meta tags -->
+    
+    <?php  
+        session_start();  
+        if(!isset ($_SESSION['logado']) or !$_SESSION['logado'] )
+        {
+            header('location:index.php');
+        }
+    ?>
+    
     <meta charset="utf-8">
     <title>RPG | JhinLindo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-      
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-        
     <!--  Meu CSS -->
     <link href="" rel="stylesheet" type="text/css" media="all"/>
     
@@ -71,7 +77,7 @@
         </div>
         <div class="col" id="col-menu-button">
             <img src="Imagem/gold2.png" /> GOLD: 99999,999
-            <button type="button" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout!</button>
+            <a href="logout-login.php" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout! </a>
         </div>
     </div>
     

@@ -46,11 +46,9 @@
     #row-geral {
         margin-left: 10px;
     }
-    #col-menu-button {
+    #col-menu-button-selecao {
          margin-top: 5px;
-         text-align:center; 
-         padding-top:0px; 
-         color:#e6e600; 
+         color: yellow; 
          font-size:12px;
      }
     .card-background {

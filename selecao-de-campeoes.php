@@ -41,10 +41,23 @@
             <img src="img/favicon-72.png" />
         </div>
         <div class="col">
-            b
+            a
         </div>
-        <div class="col" id="col-menu-button">
-            <img src="Imagem/gold2.png" /> GOLD: 99999,999
+        <div class="col" id="col-menu-button-selecao">
+            
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-warning btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Status
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> <b>Conta:</b> <?php echo $_SESSION['usuario'] ?> </a>
+                <a class="dropdown-item" href="#" style="color:#b3b300;"> <img src="Imagem/gold2.png" /> Gold: 9999,99 </a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"> <i class="fa fa-sign-out" style="font-size:px;"></i> Deslogar!</a>
+              </div>
+            </div>
+            
             <a href="logout-login.php" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout! </a>
         </div>
     </div>

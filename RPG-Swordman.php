@@ -3,6 +3,63 @@
 <html>
     <head>
         
+      <?php  
+        session_start();  
+        if(!isset ($_SESSION['logado']) or !$_SESSION['logado'] )
+        {
+            header('location:index.php');
+        }
+ 
+        require_once("database/Connection.class.php");
+
+        $conn = Connection::get()->connect();
+        $sql= "SELECT * FROM personagem WHERE id = :id;";
+      
+        $sth = $conn->prepare($sql);
+        $sth->bindValue(":id", 1);
+        
+            if ($sth->execute()) 
+            {
+                $result = $sth->fetchAll(PDO::FETCH_OBJ);
+                $object = '';
+
+                foreach ($result as $row) 
+                {
+                    $object = $row;
+                }
+            }
+        
+        $object->nome;
+        $object->classe;
+        $object->level;
+        $object->ticket;
+        $object->hp;
+        $object->mp;
+        $object->exp;
+        $object->atk;
+        $object->def;
+        $object->magia;
+        /*var_dump($object->level);*/
+        
+        $sql= "SELECT * FROM cash";
+      
+        $sth = $conn->prepare($sql);
+        
+            if ($sth->execute()) 
+            {
+                $result = $sth->fetchAll(PDO::FETCH_OBJ);
+                $object2 = '';
+
+                foreach ($result as $row) 
+                {
+                    $object2 = $row;
+                }
+            }
+        
+        $object2->gold;
+        $object2->rop;
+        ?>    
+        
       <meta charset="utf-8">
       <title>RPG | JhinLindo</title>
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -32,12 +89,10 @@
 <section class="animsition">
 
 <div id="leftSide" class="gradient">
-    
     <div id="home" >
         
-  		    <img src="Imagem/logo-game.png" alt="" style="text-align: center; padding-left: 200px; padding-top: 50px" />
 
-            <div style="color: white; padding-left: 30px;">
+            <!-- <div style="color: white; padding-left: 30px;">
                 
                 <div class="center" style="padding-left: 180px;">
                     
@@ -94,7 +149,7 @@
                       </div>              
                 </div>
                 
-            </div>
+            </div> -->
             
             <!-- ####### MODAL do MENU GERAL ######### -->
             <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding-left:55px;">
@@ -140,7 +195,6 @@
             </ul>
 
     </div>
-    
 </div>
 
 <div id="rightSide">
@@ -150,7 +204,7 @@
 
         <div id="subscribe">
 
-                      <h1 style="text-align:center; color: white;"><b>lBanng</b></h1>
+                      <h1 style="text-align:center; color: white;"><b><?php echo ($object->nome); ?></b></h1>
             
                       <div class="row">
                           <div class="feature col-sm-3 col-xs-3" data-toggle="modal" data-target=".bd-example-modal-lg" style="text-align:center;">
@@ -177,21 +231,31 @@
                         <br/>
                         
                         <div class="row" style="text-align:center;">
-                            <div class="col-4">
+                            <div class="col">
                                 <img src="Imagem/perso/lvs/guerreiro-lv30.gif" style="width: 120px; height: 140px; text-align:right;"/>
-                                Level: 30 <br/>
-                                Classe: Espadachim
                             </div>
-                            <div class="col-6" style="padding-top:15px;">
-                    HP: 300/1000<div class="progress">
-                                  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                     MP: 245/300<div class="progress">
-                                  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
+                            <div class="col" style="text-align: left;">
+                                <p> <i class="fa fa-optin-monster" style="color: red; font-size: 24px;"></i> <?php echo ($object->classe); ?> </p>
+                                <p> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object2->gold); ?> </p>
+                                <p> <img src="Imagem/itens/ticket-teleporte.png" style="width:35px; height:35px;"/> Ticket: <?php echo $object->ticket ?> <button type="button" class="btn btn-outline-success btn-sm">Comprar</button> </p>
+                                <p> <i class="fa fa-arrow-up" style="color: #33ff33; font-size: 25px;"></i> Level: <?php echo ($object->level); ?></p>
                             </div>
                         </div>
-                    
+                        
+                    <div class="row">
+                        <div class="col">
+                            HP: 300/<?php echo ($object->hp); ?>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                        </div> 
+                        <div class="col">
+                            MP: 245/300<div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                        </div>    
+                    </div>
+            
     EXP: 60% / 20% / 20%<div class="progress">
                           <div class="progress-bar progress-bar-success" role="progressbar" style="width:0%">
                             verde
@@ -241,7 +305,7 @@
                       <!---- Caminho Fogo ou Gelo ---->
                       <?php include ('inc/caminhoFogoGelo.inc'); ?>
 
-        </div>
+        f</div>
 
         <!-- ################### 02: MENU GERAL ###################### -->            
 

@@ -46,15 +46,15 @@
         <div class="col" id="col-menu-button-selecao">
             
             <div class="btn-group">
-              <button type="button" class="btn btn-outline-warning btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button type="button" class="btn btn-outline-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Status
               </button>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> <b>Conta:</b> <?php echo $_SESSION['usuario'] ?> </a>
                 <a class="dropdown-item" href="#" style="color:#b3b300;"> <img src="Imagem/gold2.png" /> Gold: 9999,99 </a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Configurações</a>
                 <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#"> <i class="fa fa-sign-out" style="font-size:px;"></i> Deslogar!</a>
+                  <a class="dropdown-item" href="logout-login.php"> <i class="fa fa-sign-out" style="font-size:px;"></i> Deslogar!</a>
               </div>
             </div>
             
@@ -87,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Bruxo</h5>
                 <p class="card-text"> <b>Classe:</b> Mago <br/> <b>Max Level:</b> 100 <br/> <b>Sub Classes:</b> 3  </p>
-                <a href="#" class="btn btn-success">Escolher</a>
+                <a href="#" class="btn btn-danger disabled">Escolher</a>
                 <a href="#" class="btn btn-outline-info">Info!</a>
               </div>
             </div>
@@ -98,7 +98,7 @@
               <div class="card-body">
                 <h5 class="card-title">Caçador</h5>
                 <p class="card-text"> <b>Classe:</b> Caçador <br/> <b>Max Level:</b> 100 <br/> <b>Sub Classes:</b> 4 </p>
-                <a href="#" class="btn btn-success">Escolher</a>
+                <a href="#" class="btn btn-danger disabled">Escolher</a>
                 <a href="#" class="btn btn-outline-info">Info!</a>
               </div>
             </div>
@@ -109,13 +109,61 @@
               <div class="card-body">
                 <h5 class="card-title">Algoz</h5>
                 <p class="card-text"> <b>Classe:</b> Assassino <br/> <b>Max Level:</b> 100 <br/> <b>Sub Classes:</b> 4 </p>
-                <a href="#" class="btn btn-success">Escolher</a>
+                <a href="#" class="btn btn-danger disabled">Escolher</a>
                 <a href="#" class="btn btn-outline-info">Info!</a>
               </div>
             </div>
         </div>
     </div>  
     
+    <div class="row" id="row-geral2">
+        <div class="col">
+            
+            <div class="card-background" style="width: 18rem;">
+              <img src="Imagem/perso/lvs/arcebispo.png" style="padding-left:10px;"/>
+              <div class="card-body">
+                <h5 class="card-title"><b>Arcebispo</b></h5>
+                <p class="card-text">Classe: Sacerdote <br/> Max.Level: 100 <br/> Sub Classes: 3 <br/> </p>
+                <a href="RPG-Swordman.php" class="btn btn-danger disabled">Escolher</a>
+                <a href="#" class="btn btn-outline-info">Info!</a>
+              </div>
+            </div>
+            
+        </div>
+        <div class="col">
+            <div class="card-background" style="width: 18rem;">
+              <img src="Imagem/perso/lvs/monge-ult.gif" style="padding-left:10px;"/>
+              <div class="card-body">
+                <h5 class="card-title">Monge</h5>
+                <p class="card-text"> <b>Classe:</b> Monge <br/> <b>Max Level:</b> 100 <br/> <b>Sub Classes:</b> 3  </p>
+                <a href="#" class="btn btn-danger disabled">Escolher</a>
+                <a href="#" class="btn btn-outline-info">Info!</a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card-background" style="width: 18rem;">
+              <img src="Imagem/perso/lvs/Sephiroth.gif" style="padding-left:10px;"/>
+              <div class="card-body">
+                <h5 class="card-title">Guardião Real</h5>
+                <p class="card-text"> <b>Classe:</b> Espadachim <br/> <b>Max Level:</b> 100 <br/> <b>Sub Classes:</b> 3 </p>
+                <a href="#" class="btn btn-danger disabled">Escolher</a>
+                <a href="#" class="btn btn-outline-info">Info!</a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card-background" style="width: 18rem;">
+              <img src="Imagem/perso/lvs/ceifador.gif" style="padding-left:10px;"/>
+              <div class="card-body">
+                <h5 class="card-title">Ceifador</h5>
+                <p class="card-text"> <b>Classe:</b> Ceifador <br/> <b>Max Level:</b> 100 <br/> <b>Sub Classes:</b> 2 </p>
+                <a href="#" class="btn btn-danger disabled">Escolher</a>
+                <a href="#" class="btn btn-outline-info">Info!</a>
+              </div>
+            </div>
+        </div>
+    </div> 
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

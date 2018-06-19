@@ -8,6 +8,28 @@
         {
             header('location:index.php');
         }
+        
+        require_once("database/Connection.class.php");
+
+        $conn = Connection::get()->connect();
+        $sql= "SELECT * FROM cash";
+      
+        $sth = $conn->prepare($sql);
+        
+        if ($sth->execute()) 
+        {
+            $result = $sth->fetchAll(PDO::FETCH_OBJ);
+            $object = '';
+
+            foreach ($result as $row) 
+            {
+                $object = $row;
+            }
+        }
+        
+        $object->gold;
+        $object->rop;
+    
     ?>
     
     <meta charset="utf-8">
@@ -51,7 +73,7 @@
               </button>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> <b>Conta:</b> <?php echo $_SESSION['usuario'] ?> </a>
-                <a class="dropdown-item" href="#" style="color:#b3b300;"> <img src="Imagem/gold2.png" /> Gold: 9999,99 </a>
+                <a class="dropdown-item" href="#" style="color:#b3b300;"> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object->gold) ?> </a>
                 <a class="dropdown-item" href="#">Configurações</a>
                 <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="logout-login.php"> <i class="fa fa-sign-out" style="font-size:px;"></i> Deslogar!</a>

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        
-      <?php  
+<head>
+    <?php  
         session_start();  
+    
         if(!isset ($_SESSION['logado']) or !$_SESSION['logado'] )
         {
             header('location:index.php');
         }
- 
-        require_once("database/Connection.class.php");
 
-        $conn = Connection::get()->connect();
-        $sql= "SELECT * FROM personagem WHERE id = :id;";
-      
-        $sth = $conn->prepare($sql);
-        $sth->bindValue(":id", 1);
-        
+            require_once("database/Connection.class.php");
+
+            $conn = Connection::get()->connect();
+            $sql= "SELECT * FROM personagem WHERE id = :id;";
+
+            $sth = $conn->prepare($sql);
+            $sth->bindValue(":id", 1);
+
             if ($sth->execute()) 
             {
                 $result = $sth->fetchAll(PDO::FETCH_OBJ);
@@ -28,128 +27,95 @@
                     $object = $row;
                 }
             }
-        
-        $object->nome;
-        $object->classe;
-        $object->level;
-        $object->ticket;
-        $object->hp;
-        $object->mp;
-        $object->exp;
-        $object->atk;
-        $object->def;
-        $object->magia;
-        /*var_dump($object->level);*/
-        
-        $sql= "SELECT * FROM cash";
-      
-        $sth = $conn->prepare($sql);
-        
+
+            $object->nome;
+            $object->classe;
+            $object->level;
+            $object->ticket;
+            $object->hp;
+            $object->mp;
+            $object->exp;
+            $object->atk;
+            $object->def;
+            $object->magia;
+            /*var_dump($object->level);*/
+
+            $sql= "SELECT * FROM cash";
+
+            $sth = $conn->prepare($sql);
+
             if ($sth->execute()) 
             {
                 $result = $sth->fetchAll(PDO::FETCH_OBJ);
                 $object2 = '';
-
                 foreach ($result as $row) 
                 {
                     $object2 = $row;
                 }
             }
-        
-        $object2->gold;
-        $object2->rop;
-        ?>    
-        
-      <meta charset="utf-8">
-      <title>RPG | JhinLindo</title>
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-      <!-- Standard -->
-      <link rel="shortcut icon" href="img/favicon-144.png">
-      <!-- Retina iPad Touch Icon-->
-      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
-      <!-- Retina iPhone Touch Icon-->
-      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
-      <!-- Standard iPad Touch Icon-->
-      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
-      <!-- Standard iPhone Touch Icon-->
-      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
+            $object2->gold;
+            $object2->rop;
+    ?>    
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-      
-      <!-- Add icon library -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <meta charset="utf-8">
+    <title>RPG | JhinLindo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- Standard -->
+    <link rel="shortcut icon" href="img/favicon-144.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <!--  Meu CSS -->
+    <link href="css/rpg-swordman.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <style>
+        #menu-action{
+            background-color: #121619 !important;
+            height: 40px;
+        }
+        #input-menu {
+         border-radius: 7px;
+         border-style: ;
+         border-color: darkgray;
+         background-color: ghostwhite;
+         padding-top: ;
+         width: 160px;
+         height: ;
+         border-width: 0.2px;
+        }
+         #input-menu:hover{
+            border-color: blue;
+         }
+    </style>    
         
-      <!--  Meu CSS -->
-      <link href="css/rpg-swordman.css" rel="stylesheet" type="text/css" media="all"/>
-        
-    </head>
+</head>
 <body>
 <section class="animsition">
 
-<div id="leftSide" class="gradient">
+<div id="leftSide" class="gradient" style="background-image: url('Imagem/fundo01.jpg') !important;">
     <div id="home" >
-        
-
-            <!-- <div style="color: white; padding-left: 30px;">
-                
-                <div class="center" style="padding-left: 180px;">
-                    
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#demo">O Jogo</button>
-                      <div id="demo" class="collapse">
-                           <br/>
-                             • O jogo se desenvolve de acordo com suas escolhas na "Ação do Jogo".
-                             <br />
-                             • Existe ações("Ação do Jogo") especificas para cada missão, no "Ações do Jogo" são suas decisões.
-                             <br /> 
-                             • Se você iniciar um missão "X" e usa no "Ações do Jogo" ERRADO, você voltara para o inicio do jogo, assim perdendo todo progresso.
-                      </div>
-                    
-                      <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#tele">Teletransporte</button>
-                      <div id="tele" class="collapse">
-                             <br/>
-                          <b>Teletransporte:</b>Tem a função de teletransportar o jogador para cidades ou mapas, os codigos das cidades/mapas aparecem no decorrer do jogo quando você as descobre.
-                              <br/>
-                      </div>
-
-                      <button type="button" class="btn btn-success btn-xs" data-toggle="collapse" data-target="#classe">Sua Classe</button>
-                      <div id="classe" class="collapse">
-                               <br/>
-                        <b>Sua Classe:</b> Espadachim (Sobre)
-                                <br />
-                             Espadachins podem usar as melhores armaduras no Tekketsu no Orphs, que combinadas 
-                                <br />
-                             com o seu alto vigor e capacidade de se curarem rapidamente, os tornam a frente de ataque em qualquer tipo de combate. 
-                                <br />
-                             São capazes de empunhar tanto lanças quanto espadas de uma ou duas mãos, e estão sempre prontos 
-                                 <br/>
-                      </div>
-
-                      <button type="button" class="btn btn-info btn-xs" data-toggle="collapse" data-target="#classeM">Mudar Classe</button>
-                      <div id="classeM" class="collapse">
-                        11Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                      </div>
-
-                      <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#level">Leveis</button>
-                      <div id="level" class="collapse">
-                           <br />
-                        Level: A cada 30 leveis você pode avançar de classe. Toda classe tem suas evoluções, deixando o personagem mais forte e com novas habilidades.
-                        De acordo com os leveis que você vai conseguindo durante o jogo seu personagem ganhara também status por cada nível independete dos itens adquiridos no decorrer do game.
-                            <br />
-                        independete dos itens adquiridos no decorrer do game.
-                      </div>
-
-                      <button type="button" class="btn btn-danger btn-xs" data-toggle="collapse" data-target="#codigos">Codigos</button>
-                      <div id="codigos" class="collapse">
-                            <br />
-                        <b>Códigod do Jogo:</b> Algumas missões podem liberar código, que lhe darão itens ou missões secretas
-                        digitando eles nesse campo.
-                           <br />
-                      </div>              
+    
+            <div class="row" id="menu-action">
+                <div class="col">
                 </div>
-                
-            </div> -->
+                <div class="col" style="margin-top:4px;">
+                        <form action="/action_page.php">
+                            <i class="fa fa-pied-piper-alt" style="font-size:22px; color:#6666ff;"></i> <input type="text" name="FirstName" id="input-menu" value=""><br>
+                        </form>
+                </div>
+            </div>
             
             <!-- ####### MODAL do MENU GERAL ######### -->
             <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding-left:55px;">
@@ -186,13 +152,13 @@
                         </table>
                     </div>
         
-            <ul class="social_icons">
+            <!-- <ul class="social_icons">
               <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
               <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
               <li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
               <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
               <li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
-            </ul>
+            </ul> -->
 
     </div>
 </div>

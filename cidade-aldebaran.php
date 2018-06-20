@@ -26,7 +26,9 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">   
      <!--  Meu CSS -->
      <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
+     <!-- Funções -->
     
+     <!-- Background -->
      <style>
          body {
             background-image: url('Imagem/aldebaran-wallpaper.jpg');
@@ -59,7 +61,7 @@
             </div>
         
             <div class="col" id="col-menu-button">
-                <img src="Imagem/gold2.png" /> GOLD: 99999,999
+                <img src="Imagem/gold2.png" /> GOLD: 
                 <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm">Perfil</button> </a>
                 <button type="button" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out"></i>Deslogar!</button>
             </div>

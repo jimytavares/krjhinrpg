@@ -14,7 +14,7 @@
             {
                 echo "<br />";
                 
-                echo '<div class="container">';
+                echo '<div class="container" style="color:white">';
 
                     print "<h2><small>Bem Vindo à Cidade</small> Vestrigio Arcano</h2> <br />";
                     echo '<img src="Imagem/caminhodofogo.png" alt="testejim" width="" height=""/> <br /><br />';

@@ -38,6 +38,7 @@
             $object->atk;
             $object->def;
             $object->magia;
+
             /*var_dump($object->level);*/
 
             $sql= "SELECT * FROM cash";
@@ -76,7 +77,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--  Meu CSS -->
     <link href="css/rpg-swordman.css" rel="stylesheet" type="text/css" media="all"/>
 
@@ -98,6 +99,9 @@
          #input-menu:hover{
             border-color: blue;
          }
+        #button-logout{
+            margin-top: 3px;
+        }
     </style>    
         
 </head>
@@ -108,11 +112,16 @@
     <div id="home" >
     
             <div class="row" id="menu-action">
-                <div class="col">
+                <div class="col" style="margin-top:3px;">
+                    <button type="button" class="btn btn-outline-warning btn-sm" id="button-logout"> <i class="fab fa-fort-awesome-alt" style="font-size:15px;"></i> Loja</button>
+                    <button type="button" class="btn btn-outline-info btn-sm" id="button-logout"> <i class="fa fa-book"></i> Atualizações</button>
+                    <a class="" href="logout-login.php"> <button type="button" class="btn btn-outline-danger btn-sm" id="button-logout"> <i class="fas fa-sign-out-alt"></i> Deslogar!</button> </a>
                 </div>
-                <div class="col" style="margin-top:4px;">
-                        <form action="/action_page.php">
-                            <i class="fa fa-pied-piper-alt" style="font-size:22px; color:#6666ff;"></i> <input type="text" name="FirstName" id="input-menu" value=""><br>
+                <div class="col" style="margin-top:4px; text-align: right;">
+                        <form action="" method="post">
+                            <i class="fab fa-mandalorian" style="font-size:25px; color:yellow;"></i>
+                            <input type="text" name="valor" id="input-menu" value="">
+                            <button class="buttonA buttonA1 btn btn-outline-info">.</button>
                         </form>
                 </div>
             </div>
@@ -151,6 +160,9 @@
                           </tbody>
                         </table>
                     </div>
+            
+            <!---- Caminho Fogo ou Gelo ---->
+            <?php include ('inc/caminho-aldebaran.php'); ?>
         
             <!-- <ul class="social_icons">
               <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
@@ -201,7 +213,7 @@
                                 <img src="Imagem/perso/lvs/guerreiro-lv30.gif" style="width: 120px; height: 140px; text-align:right;"/>
                             </div>
                             <div class="col" style="text-align: left;">
-                                <p> <i class="fa fa-optin-monster" style="color: red; font-size: 24px;"></i> <?php echo ($object->classe); ?> </p>
+                                <p> <i class="fab fa-optin-monster" style="color: red; font-size: 24px;"></i> <?php echo ($object->classe); ?> </p>
                                 <p> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object2->gold); ?> </p>
                                 <p> <img src="Imagem/itens/ticket-teleporte.png" style="width:35px; height:35px;"/> Ticket: <?php echo $object->ticket ?> <button type="button" class="btn btn-outline-success btn-sm">Comprar</button> </p>
                                 <p> <i class="fa fa-arrow-up" style="color: #33ff33; font-size: 25px;"></i> Level: <?php echo ($object->level); ?></p>
@@ -234,15 +246,6 @@
                           </div>
                         </div>
 
-                      <form action="" method="post">  
-                        <p>    <b>Action The Game</b> 
-                                <img src="Imagem/perso/lvs/sowrdGIF.gif" />
-                        </p> 
-                        <input type="text" name="valor" value="">
-                        <button class="buttonA buttonA1">Seguir</button>
-                                <br>
-                     </form>
-
                 <!-- ********** MODAL ********* -->
 
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -268,10 +271,7 @@
                         </div>
                       </form> -->
 
-                      <!---- Caminho Fogo ou Gelo ---->
-                      <?php include ('inc/caminhoFogoGelo.inc'); ?>
-
-        f</div>
+        </div>
 
         <!-- ################### 02: MENU GERAL ###################### -->            
 

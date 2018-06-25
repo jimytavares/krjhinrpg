@@ -114,7 +114,7 @@
             <div class="row" id="menu-action">
                 <div class="col" style="margin-top:3px;">
                     <button type="button" class="btn btn-outline-warning btn-sm" id="button-logout"> <i class="fab fa-fort-awesome-alt" style="font-size:15px;"></i> Loja</button>
-                    <button type="button" class="btn btn-outline-info btn-sm" id="button-logout"> <i class="fa fa-book"></i> Atualizações</button>
+                    <button type="button" class="btn btn-outline-info btn-sm" id="button-logout" data-toggle="modal" data-target="#modalatualizacoes"> <i class="fa fa-book"></i> Atualizações</button>
                     <a class="" href="logout-login.php"> <button type="button" class="btn btn-outline-danger btn-sm" id="button-logout"> <i class="fas fa-sign-out-alt"></i> Deslogar!</button> </a>
                 </div>
                 <div class="col" style="margin-top:4px; text-align: right;">
@@ -126,8 +126,8 @@
                 </div>
             </div>
             
-            <!-- ####### MODAL do MENU GERAL ######### -->
-            <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding-left:55px;">
+            <!-- ####### MODAL: Missões ######### -->
+                <div id="trogglemissoes" class="collapse" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding-left:55px;">
                 <br/><br/>   
                         <table class="table table-dark" style="width:80%; text-align:center;">
                           <thead style="background-color:#011627; color:#ffffff;">
@@ -160,6 +160,26 @@
                           </tbody>
                         </table>
                     </div>
+        
+            <!-- ####### MODAL: Atualizações ######### -->
+                <div class="modal fade" id="modalatualizacoes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"> <h3>Atualizações</h3> 2018.06.25</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             
             <!---- Caminho Fogo ou Gelo ---->
             <?php include ('inc/caminho-aldebaran.php'); ?>
@@ -246,7 +266,7 @@
                           </div>
                         </div>
 
-                <!-- ********** MODAL ********* -->
+                <!-- ********** MODAL: Status ********* -->
 
                         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">

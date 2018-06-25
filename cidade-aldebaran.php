@@ -61,9 +61,9 @@
             </div>
         
             <div class="col" id="col-menu-button">
-                <img src="Imagem/gold2.png" /> GOLD: 
-                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm">Perfil</button> </a>
-                <button type="button" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out"></i>Deslogar!</button>
+                <img src="Imagem/gold2.png" />  
+                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm" style="font-size:8px; border-radius:10px;">Perfil</button> </a>
+                <button type="button" class="btn btn-outline-danger btn-sm" style="font-size:8px; border-radius:10px;"> <i class="fa fa-sign-out"></i>Sair!</button>
             </div>
     </div>
     

@@ -18,14 +18,14 @@
       <!-- Standard iPhone Touch Icon-->
       <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
 
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!-- Bootstrap core CSS -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-     <!-- Material Design Bootstrap -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">   
-     <!--  Meu CSS -->
-     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Meu CSS -->
+    <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
      <!-- Funções -->
     
      <!-- Background -->
@@ -36,7 +36,7 @@
             background-color:;
             background-repeat: no-repeat;
             background-position:;
-         }
+             border-c
      </style>
     
 </head>
@@ -56,63 +56,31 @@
             
             <div class="col" style="padding-top:8px; color:white;">
                 <form action="/action_page.php">
-                    <i class="fa fa-pied-piper-alt" style="font-size:22px; color:#6666ff;"></i> <input type="text" name="FirstName" id="input-menu" value=""><br>
+                    <i class="fa fa-pied-piper-alt" style="font-size:22px; color:#6666ff;"></i> <input type="text" name="FirstName" id="input-menu" value="" placeholder="Ações do Jogo"><br>
                 </form>
             </div>
         
             <div class="col" id="col-menu-button">
-                <img src="Imagem/gold2.png" />  
-                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm" style="font-size:8px; border-radius:10px;">Perfil</button> </a>
-                <button type="button" class="btn btn-outline-danger btn-sm" style="font-size:8px; border-radius:10px;"> <i class="fa fa-sign-out"></i>Sair!</button>
+                <img src="Imagem/gold2.png" /> 999,99 
+                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm" style="border-style: solid; border-color:green;">Perfil</button> </a>
+                <button type="button" class="btn btn-outline-danger btn-sm" style="border-style: solid; border-color:red;"> <i class="fa fa-sign-out"></i>Sair!</button>
             </div>
     </div>
     
     <!-- <button type="button" class="buttonmenu"> <i class="fa fa-sign-out" style="font-size:16px; color:white;"></i> </button> -->
     
-    <div class="row" id="row-card-aldebaran">
-        <div class="col">
-            
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/Pronteira/npc-info.gif" style="padding-left:80px;"/>
-              <div class="card-body">
-                <h5 class="card-title"><b>Guarda da Cidade</b></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Info!</a>
-              </div>
-            </div>
-            
+    <div class="row col01-apresentacao-aldebaran">
+        <div class="col" style="background-image: url(Imagem/background-apresentacao-aldebaran.jpg); height: 700px;">
+            <div class="texto-apresentacao-aldebaran-center">
+                <h4>Al de Baram</h4>
+                <p>Al de Baran</p>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+            </div> 
         </div>
         <div class="col">
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/Pronteira/npc-dormir-pronteira.gif" style="padding-left:80px;"/>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+            b
         </div>
-        <div class="col">
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/Pronteira/npc-ralph-pronteira.gif" style="padding-left:80px;"/>
-              <div class="card-body">
-                <h5 class="card-title">Cavaleiro Ralph</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card-background" style="width: 18rem;">
-              <img src="Imagem/Pronteira/npc-ralph-pronteira.gif" style="padding-left:80px;"/>
-              <div class="card-body">
-                <h5 class="card-title">Cavaleiro Ralph</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-        </div>
-    </div>    
+    </div>
     
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

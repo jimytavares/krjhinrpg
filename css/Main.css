@@ -72,44 +72,35 @@
         background: #262626;
         height: 42PX; /* largura do menu */
      }
+
      #col-menu-button {
          color:#e6e600;
-         margin-top: auto;
+         margin-top: 7px;;
      }
+
      #input-menu {
          border-radius: 7px;
-         border-style: ;
          border-color: darkgray;
-         background-color: ghostwhite;
-         padding-top: ;
-         width: 160px;
-         height: ;
          border-width: 0.2px;
+         width: 160px;
      }
          #input-menu:hover{
-            border-color: blue;
+            border-color: red;
          }
 
-     #row-card-aldebaran {
-        padding-left: 25px; 
-        padding-top: 70px;
-     }
-     .card-background {
-        background-color: white;  
-     }
-     .buttonmenu {
-        border-radius: 20px !important;
-        height: 90% !important;
-        width: 38px !important;
-        background: linear-gradient(to bottom left, red, yellow) !important;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
-        border-style: solid;
-     }
-         .buttonmenu:hover{
-            border-radius: 20px !important;
-            height: 100% !important;
-            width: 40px !important;
-            background: linear-gradient(to bottom right, red, yellow) !important;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
-            border-style: none;
-         }
+    .col01-apresentacao-aldebaran {
+        margin-top: 80px; 
+        margin-left: 50px;
+    }
+    .texto-apresentacao-aldebaran-center{
+        margin-top: 20%;
+        color: whitesmoke;
+        text-shadow: 1px 0px 0px black, 
+                 -1px 0px 0px black, 
+                 0px 1px 0px black, 
+                 0px -1px 0px black;
+        font-size: 80px;
+        background-color: white;
+        border-radius: 10px;
+        text-indent: 150px;
+    }

@@ -14,10 +14,10 @@
             require_once("database/Connection.class.php");
 
             $conn = Connection::get()->connect();
-            $sql= "SELECT * FROM personagem WHERE id = :id;";
+            $sql= "SELECT * FROM personagem";
 
             $sth = $conn->prepare($sql);
-            $sth->bindValue(":id", 1);
+            /*$sth->bindValue(":id", 1);*/ 
 
             if ($sth->execute()) 
             {
@@ -32,7 +32,7 @@
 
             $object->nome;
             $object->classe;
-            $object->level;
+            $object->lv;
             $object->ticket;
             $object->hp;
             $object->mp;
@@ -41,7 +41,7 @@
             $object->def;
             $object->magia;
 
-            /*var_dump($object->level);*/
+            /*var_dump($object->level);
 
             $sql= "SELECT * FROM cash";
 
@@ -58,7 +58,7 @@
             }
 
             $object2->gold;
-            $object2->rop;
+            $object2->rop;*/
     ?>    
     
     <meta charset="utf-8">
@@ -145,7 +145,7 @@
                 <div class="row" style="color:white; font-weight: ; font-size:16px;">
                     <div class="col" style="text-align:left;">
                         <p>Nome: <?php echo $object->nome ?> </p>
-                        <p>Level: <?php echo $object->level ?> </p>
+                        <p>Level: <?php echo $object->lv ?> </p>
                         <p>Classe: <?php echo $object->classe ?> </p>
                     </div>
                     <div class="col" style="text-align:left;">

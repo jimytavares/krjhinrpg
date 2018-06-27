@@ -12,10 +12,9 @@
             require_once("database/Connection.class.php");
 
             $conn = Connection::get()->connect();
-            $sql= "SELECT * FROM personagem WHERE id = :id;";
+            $sql= "SELECT * FROM personagem;";
 
             $sth = $conn->prepare($sql);
-            $sth->bindValue(":id", 1);
 
             if ($sth->execute()) 
             {
@@ -30,7 +29,7 @@
 
             $object->nome;
             $object->classe;
-            $object->level;
+            $object->lv;
             $object->ticket;
             $object->hp;
             $object->mp;
@@ -38,8 +37,10 @@
             $object->atk;
             $object->def;
             $object->magia;
+            $object->gold;
+            $object->cash
 
-            /*var_dump($object->level);*/
+            /*var_dump($object->level);
 
             $sql= "SELECT * FROM cash";
 
@@ -56,7 +57,7 @@
             }
 
             $object2->gold;
-            $object2->rop;
+            $object2->rop; */
     ?>    
 
     <meta charset="utf-8">
@@ -234,9 +235,9 @@
                             </div>
                             <div class="col" style="text-align: left;">
                                 <p> <i class="fab fa-optin-monster" style="color: red; font-size: 24px;"></i> <?php echo ($object->classe); ?> </p>
-                                <p> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object2->gold); ?> </p>
+                                <p> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object->gold); ?> </p>
                                 <p> <img src="Imagem/itens/ticket-teleporte.png" style="width:35px; height:35px;"/> Ticket: <?php echo $object->ticket ?> <button type="button" class="btn btn-outline-success btn-sm">Comprar</button> </p>
-                                <p> <i class="fa fa-arrow-up" style="color: #33ff33; font-size: 25px;"></i> Level: <?php echo ($object->level); ?></p>
+                                <p> <i class="fa fa-arrow-up" style="color: #33ff33; font-size: 25px;"></i> Level: <?php echo ($object->lv); ?></p>
                             </div>
                         </div>
                         

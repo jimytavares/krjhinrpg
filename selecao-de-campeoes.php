@@ -4,31 +4,42 @@
     
     <?php  
         session_start();  
+    
         if(!isset ($_SESSION['logado']) or !$_SESSION['logado'] )
         {
             header('location:index.php');
         }
-        
-        require_once("database/Connection.class.php");
 
-        $conn = Connection::get()->connect();
-        $sql= "SELECT * FROM cash";
-      
-        $sth = $conn->prepare($sql);
-        
-        if ($sth->execute()) 
-        {
-            $result = $sth->fetchAll(PDO::FETCH_OBJ);
-            $object = '';
+            require_once("database/Connection.class.php");
 
-            foreach ($result as $row) 
+            $conn = Connection::get()->connect();
+            $sql= "SELECT * FROM personagem";
+
+            $sth = $conn->prepare($sql);
+
+            if ($sth->execute()) 
             {
-                $object = $row;
+                $result = $sth->fetchAll(PDO::FETCH_OBJ);
+                $object = '';
+
+                foreach ($result as $row) 
+                {
+                    $object = $row;
+                }
             }
-        }
-        
-        $object->gold;
-        $object->rop;
+
+            $object->nome;
+            $object->classe;
+            $object->lv;
+            $object->ticket;
+            $object->hp;
+            $object->mp;
+            $object->exp;
+            $object->atk;
+            $object->def;
+            $object->magia;
+            $object->gold;
+            $object->cash;
     
     ?>
     

@@ -40,6 +40,8 @@
             $object->atk;
             $object->def;
             $object->magia;
+            $object->gold;
+            $object->cash;
 
             /*var_dump($object->level);
 
@@ -89,7 +91,7 @@
      <!-- Background -->
      <style>
          body {
-            background-image: url('Imagem/aldebaran-wallpaper.jpg');
+            background-image: url('Imagem/.jpg');
             background-size: cover;
             background-color:;
             background-repeat: no-repeat;
@@ -118,9 +120,22 @@
             </div>
         
             <div class="col" id="col-menu-button">
-                <img src="Imagem/gold2.png" /> 999,99 
-                <a href="RPG-Swordman.php"> <button type="button" class="btn btn-outline-success btn-sm" style="border-style: solid; border-color:green;">Perfil</button> </a>
-                <button type="button" class="btn btn-outline-danger btn-sm" style="border-style: solid; border-color:red;"> <i class="fa fa-sign-out"></i>Sair!</button>
+                <div class="row">
+                    <div class="col-3">
+                        
+                    </div>
+                    <div class="col-1">
+                        <a href="RPG-Swordman.php"> <i class="fa fa-user" style="font-size:23px; color:#ffe88c; text-shadow: 1px 0px 0px #a6a6a6, -1px 0px 0px #a6a6a6, 0px 1px 0px #a6a6a6, 0px -1px 0px #a6a6a6;" placeholder="teste"></i> </a> 
+                    </div>
+                    <div class="col-1">
+                        <i class="fa fa-sign-out" style="font-size:23px; color:#ffe88c; text-shadow:2px 1px #a6a6a6;"></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fa fa-cogs" style="font-size:23px; color:#ffe88c; text-shadow:2px 1px #a6a6a6;"></i>
+                    </div>
+                </div>
+                
+                <!-- <button type="button" class="btn btn-outline-danger btn-sm" style="border-style: solid; border-color:red;"> <i class="fa fa-sign-out"></i>Sair!</button> -->
             </div>
     </div>
     
@@ -134,10 +149,9 @@
                 </div> 
             </div>
             <div class="col-5 offset-1" style="background-color:#121619; border-radius:6px; text-align:center;">
-                
                 <img src="Imagem/perso/lvs/guerreiro.gif" style="margin-top:10px;"/>
                     <br/><br/>
-                <img src="Imagem/gold.png" style="width:36px; height:30px;"/> 999,99
+                <img src="Imagem/gold.png" style="width:36px; height:30px;"/> <?php echo $object->gold ?>
                 <img src="Imagem/itens/ticket-teleporte.png" style="width:43px; height:40px;"/> 100
                 <i class="fa fa-signal" style="font-size:28px; color:#33ff33;"></i> 999
                     <hr style="height:2px; border:none; color:#ffffff; background-color:white; margin-top:10px; margin-bottom:10px; width:70%;"/>
@@ -165,8 +179,8 @@
     </div>
     
     <div class="container">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary" id="hide">Primary</button>
+        <button type="button" class="btn btn-primary" id="show">Primary</button>
     </div>
     
     

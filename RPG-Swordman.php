@@ -199,7 +199,7 @@
 <div id="rightSide">
 
             
-        <!-- ################### 01: AÇÕES ########################### -->
+        <!-- ################### 01: PERFIL ########################### -->
 
         <div id="subscribe">
 
@@ -294,7 +294,7 @@
 
         </div>
 
-        <!-- ################### 02: MENU GERAL ###################### -->            
+        <!-- ################### 02: Menu de Ações ###################### -->            
 
         <div class="about">
 
@@ -383,7 +383,7 @@
 
         </div>
 
-        <!-- ################### 03: STATUS PREMIUM ################## -->
+        <!-- ################### 03: PREMIUM ################## -->
 
         <div class="pricing">
 
@@ -412,7 +412,7 @@
 
         </div>
 
-        <!-- ################### 04: Cidades para Teleporte ########## --> 
+        <!-- ################### 04: Teleporte ########## --> 
 
         <div class="project">
             
@@ -434,10 +434,9 @@
                           <img src="Imagem/Cidades/aldebaran-city.jpg" alt="This is my work" class="img-responsive" />
                           <figcaption class="caption">
                             <div class="photo-details">
-                              <h4>Cidade de Al de Baran</h4>
+                              <h4>Al de Baran</h4>
                               <span>Cidade das Magias</span>
                             </div>
-                            <a href="#project1" class="view">INFO</a>
                             <a href="#entraraldebaran" class="view">Entrar!</a>
                           </figcaption>
                         </figure>
@@ -524,10 +523,9 @@
                                   <p>Cidade com 8 NPC's, cidade dos feiticeiros!</p>
                                 </div>    
                                 <div class="col">
-                                  <button type="button" class="btn btn-primary btn-lg">1 Ticket</button>
-                                  <button type="button" class="btn btn-warning btn-lg">100 GOLD!</button>
-                                    <br/><br/>
-                                  <p>Escolha com qual recurso você irá entrar na cidade.</p>
+                                  <p>Meio de pagamento para o teletransporte.</p>
+                                  <a href="cidade-aldebaran.php"> <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-ticket-alt"></i> Ticket</button>
+                                  <button type="button" class="btn btn-warning btn-lg"> <i class="fas fa-dollar-sign"></i> GOLD!</button> </a>
                                 </div>    
                             </div>    
                         </div>

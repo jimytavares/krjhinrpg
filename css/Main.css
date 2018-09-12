@@ -38,27 +38,48 @@
     }
 
 /* ########## selecao-de-campeoes.php ############ */
+    
+    .body-selecao{
+        background-image: url('../Imagem/fundo01.jpg');
+        background-size: auto;
+        background-repeat: repeat;
+            background-position:;
+            font-family: 'Arial';
+            text-align: center;
+    }
 
-    #row-menu {
-        background-color: #262626;
-        height: 40px;
-    }
-    #row-geral {
-        margin-left: 10px;
-    }
-    #row-geral2 {
-        margin-left: 10px;
-        margin-top: 35px;
-    }
-    #col-menu-button-selecao {
-         margin-top: 5px;
-         color: yellow; 
-         font-size:12px;
-     }
-    .card-background {
+        #row-menu {
+            background-color: #262626;
+            height: 40px;
+        }
+        #row-geral {
+            margin-left: 10px;
+        }
+        #row-geral2 {
+            margin-left: 10px;
+            margin-top: 35px;
+        }
+        #col-menu-button-selecao {
+             margin-top: 5px;
+             color: yellow; 
+             font-size:12px;
+         }
+        .card-background {
         background-color: white;  
         opacity: 0.9;
      }
+
+    #col-01{
+        
+    }
+
+    .box-characters{
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    #col-02{
+    }
 
 /* ############ RPG_swordman.php ################# */
 
@@ -89,20 +110,8 @@
             border-color: red;
          }
 
-    .col01-apresentacao-aldebaran {
-        margin-top: 80px; 
-        margin-left: 0px;
-    }
-    .texto-apresentacao-aldebaran-center{
-        background-color: white;
-        opacity: 0.8;
-        color: whitesmoke;
-        text-shadow: 1px 0px 0px black, 
-                 -1px 0px 0px black, 
-                 0px 1px 0px black, 
-                 0px -1px 0px black;
-        margin-top: 20%;
-        font-size: 50px;
-        border-radius: 10px;
-        text-indent: 150px;
+    #section01{
+        background-color: #6699ff; 
+        padding-top:200px;
+        margin-top: 100px;
     }

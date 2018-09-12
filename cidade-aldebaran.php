@@ -101,6 +101,7 @@
 </head>
 <body>
     
+    <!-- Menu -->
     <div class="row" id="menu-background">
             <div class="col-5" style="color:white; padding-left:120px;">
                 <div class="row">
@@ -139,50 +140,10 @@
             </div>
     </div>
     
-    <!-- <button type="button" class="buttonmenu"> <i class="fa fa-sign-out" style="font-size:16px; color:white;"></i> </button> -->
-    <div class="container">
-        <div class="row col01-apresentacao-aldebaran">
-            <div class="col" style="background-image: url(Imagem/background-apresentacao-aldebaran.jpg); background-size: cover; height: 400px; border-radius: 6px;" >
-                <div class="texto-apresentacao-aldebaran-center">
-                    <p>Al de Baran</p>
-                    <button type="button" class="btn btn-outline-primary" style="border-style: solid; border-color:green;">Primary</button>
-                </div> 
-            </div>
-            <div class="col-5 offset-1" style="background-color:#121619; border-radius:6px; text-align:center;">
-                <img src="Imagem/perso/lvs/guerreiro.gif" style="margin-top:10px;"/>
-                    <br/><br/>
-                <img src="Imagem/gold.png" style="width:36px; height:30px;"/> <?php echo $object->gold ?>
-                <img src="Imagem/itens/ticket-teleporte.png" style="width:43px; height:40px;"/> 100
-                <i class="fa fa-signal" style="font-size:28px; color:#33ff33;"></i> 999
-                    <hr style="height:2px; border:none; color:#ffffff; background-color:white; margin-top:10px; margin-bottom:10px; width:70%;"/>
-                
-                <div class="row" style="color:white; font-weight: ; font-size:16px;">
-                    <div class="col" style="text-align:left;">
-                        <p>Nome: <?php echo $object->nome ?> </p>
-                        <p>Level: <?php echo $object->lv ?> </p>
-                        <p>Classe: <?php echo $object->classe ?> </p>
-                    </div>
-                    <div class="col" style="text-align:left;">
-                        <p> a: </p>
-                        <p> b: </p>
-                        <p> c: </p>
-                    </div>
-                </div>
-                    <br />
-                <form action="/action_page.php">
-                    <i class="fa fa-pied-piper-alt" style="font-size:42px; color:#6666ff;"></i> 
-                    <input type="text" name="FirstName" id="input-menu" value="" placeholder="Ações do Jogo"><br>
-                </form>
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <button type="button" class="btn btn-primary" id="hide">Primary</button>
-        <button type="button" class="btn btn-primary" id="show">Primary</button>
-    </div>
-    
+    <!-- -->
+    <section>
+        <div class="container-fluir" id="section01">a</div>
+    </section>
     
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

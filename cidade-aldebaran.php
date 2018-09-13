@@ -103,7 +103,7 @@
     
     <!-- Menu -->
     <div class="row" id="menu-background">
-            <div class="col-5" style="color:white; padding-left:120px;">
+            <div class="col-4" style="color:white; padding-left:120px;">
                 <div class="row">
                     <div class="col-2">
                         <img src="Imagem/perso/lvs/guerreiro.gif" />
@@ -114,25 +114,25 @@
                 </div>
             </div>
             
-            <div class="col" style="padding-top:8px; color:white;">
+            <div class="col-2" style="padding-top:8px; color:white;">
                 <form action="/action_page.php">
                     <i class="fa fa-pied-piper-alt" style="font-size:22px; color:#6666ff;"></i> <input type="text" name="FirstName" id="input-menu" value="" placeholder="Ações do Jogo"><br>
                 </form>
             </div>
         
-            <div class="col" id="col-menu-button">
+            <div class="col-5" id="col-menu-button">
                 <div class="row">
-                    <div class="col-3">
-                        
+                   
+                    <div class="col">
+                        <a href="RPG-Swordman.php">
+                            <button type="button" class="btn btn-outline-warning" > <i class="fa fa-user" style="font-size:20px; color:white; color:yellow;" placeholder="teste"></i> Perfil</button>
+                        </a>
                     </div>
-                    <div class="col-1">
-                        <a href="RPG-Swordman.php"> <i class="fa fa-user" style="font-size:23px; color:#ffe88c; text-shadow: 1px 0px 0px #a6a6a6, -1px 0px 0px #a6a6a6, 0px 1px 0px #a6a6a6, 0px -1px 0px #a6a6a6;" placeholder="teste"></i> </a> 
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-secondary"> <i class="fa fa-cogs"></i> Settings</button>
                     </div>
-                    <div class="col-1">
-                        <i class="fa fa-sign-out" style="font-size:23px; color:#ffe88c; text-shadow:2px 1px #a6a6a6;"></i>
-                    </div>
-                    <div class="col-1">
-                        <i class="fa fa-cogs" style="font-size:23px; color:#ffe88c; text-shadow:2px 1px #a6a6a6;"></i>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-danger"> <i class="fa fa-sign-out"></i> Logout!</button>
                     </div>
                 </div>
                 
@@ -144,6 +144,8 @@
     <section>
         <div class="container-fluir" id="section01">a</div>
     </section>
+    
+    
     
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

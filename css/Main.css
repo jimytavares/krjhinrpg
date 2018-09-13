@@ -21,7 +21,10 @@
         text-shadow: 0px 0px blue;
     } /* selecao-de-campeoes */
 
+
+/* ############################################### */
 /* ################## index.php ################## */
+/* ############################################### */
 
     .margin-top-form {
         text-align: center;
@@ -37,11 +40,13 @@
         text-align: center;
     }
 
+/* ############################################### */
 /* ########## selecao-de-campeoes.php ############ */
+/* ############################################### */
     
     .body-selecao{
         background-image: url('../Imagem/fundo01.jpg');
-        background-size: auto;
+        background-size: cover;
         background-repeat: repeat;
             background-position:;
             font-family: 'Arial';
@@ -68,17 +73,40 @@
         background-color: white;  
         opacity: 0.9;
      }
-
-    #col-01{
-        
+    
+    #box-character-principal{
+        margin-left: 7%;
     }
 
-    .box-characters{
-        background-color: #eeeeee;
-        border-radius: 5px;
+    #box-characters3{
+        margin-left:10%;
+        margin-top: 50px;
     }
 
-    #col-02{
+    .card-box{
+        background-color: #AB202D;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+        height: 115px;
+    }
+
+    #icon-wizzard{
+        color:greenyellow;
+    }
+        #icon-wizzard:hover{
+            font-size: 20px;
+            transform: rotate(20deg);
+        }
+
+    #icon-sacer{
+        color: yellow;
+        font-size: 33px;
+        transform: rotate(20deg);
+    }
+    
+    #icon-monk{
+        color:#ff66ff;
     }
 
 /* ############ RPG_swordman.php ################# */
@@ -87,7 +115,13 @@
     * @css dessa página é: rpg-swordman.css
     */
 
+/* ############################################### */
 /* ########### cidade-aldebaran.php ############## */
+/* ############################################### */
+    
+    /* 
+     * @css: Menu
+    */
 
     #menu-background {
         background: #262626;
@@ -109,7 +143,11 @@
          #input-menu:hover{
             border-color: red;
          }
-
+    
+    /* 
+     * @css: 
+    */
+    
     #section01{
         background-color: #6699ff; 
         padding-top:200px;

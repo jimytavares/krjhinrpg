@@ -16,13 +16,13 @@
                 a
             </div>
             <div class="col" id="col-menu-button-selecao">
-
+                
                 <div class="btn-group">
                   <button type="button" class="btn btn-outline-light btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Status
+                    <i class="fa fa-user"></i> Account
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> <b>Conta:</b> <?php echo $_SESSION['usuario'] ?> </a>
+                    <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> <b>User:</b> <?php echo $_SESSION['usuario'] ?> </a>
                     <a class="dropdown-item" href="#" style="color:#b3b300;"> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object->gold) ?> </a>
                     <a class="dropdown-item" href="#"> <i class="fa fa-cog"></i> Configurações</a>
                     <div class="dropdown-divider"></div>
@@ -39,9 +39,11 @@
     <!-- Section 02: Title -->
     <section>
         
-        <div class="" style="margin-top:20px;">
-            <h3>Seleção de Campeções</h3>
-            <p>Selecione a classe que você quer iniciar sua aventura, apos escolher determinada classe <br/>todo o progesso que foi feito com ela será salvo. Você também pode jogar com mais de uma classe.</p>
+        <div class="container alert alert-success alert-dismissible fade show" style="margin-top:30px;" role="alert">
+          <strong>Champion Select!</strong> You should check in on some of those fields below.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         
     </section>
@@ -49,182 +51,126 @@
     <!-- Section 03: Characters -->
     <section>
         
-        <div class="container-fluid">
-            <div class="row">
-                
-                <!-- Coluna Geral 01: Personagens -->
-                <div class="col-5" id="col-01">
-                    
-                    <div class="box-characters">
-                        
-                        
-                        <!-- ### Linha: Guerreiro & Wizzard ### -->
-                        <div class="row" style="margin-top:60px;">
-                            
-                            <!-- Personagem 01: Guerreiro -->
-                            <div class="col" style="margin-left:20px; text-align:center;">
-                                
-                                <img class="" src="Imagem/perso/lvs/guerreiro.gif" alt="" style="text-align:center;">
-                                
-                                <!-- Card Geral Branco: abaixo do personagem 01 -->
-                                <div class="card" style="width: 18rem;">
-                                  
-                                  <h3>Hight Lord</h3>
-                                    
-                                  <div class="card-body">
-                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Info!</button>
-                                    <a href="RPG-Swordman.php" > <button type="button" class="btn btn-success">Jogar</button> </a>
-                                  </div>
-                                    
-                                    <!-- Collapse Guerreiro, Personagem: 01 -->
-                                    <div class="collapse" id="collapseExample">
-                                        
-                                      <div class="card" style="width: 18rem;">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Sub-Classes</h5>
-                                            <p class="card-text">Espadachim, Cavaleiro, Guerreiro e Hight Lord.</p>
-                                          </div>
-                                          <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Max.Lével: 100</li>
-                                            <li class="list-group-item">Sub-Classes: 4</li>
-                                            <li class="list-group-item">Armar: <img src="Imagem/armas/arma-guerreiro.png" style="width:260px;"/> </li>
-                                          </ul>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            
-                            <!-- Personagem 02: Wizzard -->
-                            <div class="col" style="margin-left:20px; text-align:center;">
-                                
-                                <img class="" src="Imagem/perso/lvs/wizard.gif" alt="" style="text-align:center;">
-                                
-                                <!-- Card Geral Branco: abaixo do personagem 01 -->
-                                <div class="card" style="width: 18rem;">
-                                  
-                                  <h3>Wizzard</h3>
-                                    
-                                  <div class="card-body">
-                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bruxocollapse" aria-expanded="false" aria-controls="collapseExample">Info!</button>
-                                    <button type="button" class="btn btn-success">Jogar</button>
-                                  </div>
-                                    
-                                    <!-- Collapse Guerreiro, Personagem: 01 -->
-                                    <div class="collapse" id="bruxocollapse">
-                                        
-                                      <div class="card" style="width: 18rem;">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Sub-Classes</h5>
-                                            <p class="card-text">Mago, Feiticeiro, Bruxo e Hight Wizzard.</p>
-                                          </div>
-                                          <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Max.Lével: 100</li>
-                                            <li class="list-group-item">Sub-Classes: 4</li>
-                                            <li class="list-group-item">Armar: <img src="Imagem/armas/arma-wizzard.png" style="width:240px;"/> </li>
-                                          </ul>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            
+        <!-- Guerreiro -->
+        <div class="row" id="box-character-principal">
+            <div class="col">
+            </div>
+            <div class="col">
+                <div class="card-box" style="width: 18rem; border-radius:10px;">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Imagem/perso/lvs/guerreiro.gif" />
                         </div>
-                        
-                        <!-- ### Linha: Sacerdote & Monk ### -->
-                        <div class="row" style="margin-top:60px; padding-bottom: 50px;">
-                            
-                            <!-- Personagem 03: Sacerdote -->
-                            <div class="col" style="margin-left:20px;">
-                                
-                                <img class="" src="Imagem/perso/lvs/arcebispo.png" alt="">
-                                
-                                <!-- Card Geral Branco: abaixo do personagem 03 -->
-                                <div class="card" style="width: 18rem;">
-                                  
-                                  <h3>Sacerdote</h3>
-                                    
-                                  <div class="card-body">
-                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sacerdotecollapse" aria-expanded="false" aria-controls="collapseExample">Info!</button>
-                                    <button type="button" class="btn btn-success">Jogar</button>
-                                  </div>
-                                    
-                                    <!-- Collapse Guerreiro, Personagem: 03 -->
-                                    <div class="collapse" id="sacerdotecollapse">
-                                        
-                                      <div class="card" style="width: 18rem;">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Sub-Classes</h5>
-                                            <p class="card-text">Noviço, Sacerdote, Sumo Sacerdote e Arcebispo.</p>
-                                          </div>
-                                          <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Max.Lével: 120</li>
-                                            <li class="list-group-item">Sub-Classes: 4</li>
-                                            <li class="list-group-item">Armar: <img src="Imagem/armas/" style="width:260px;"/> </li>
-                                          </ul>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            
-                            <!-- Personagem 04: Monk -->
-                            <div class="col" style="margin-left:20px;">
-                                
-                                <img class="" src="Imagem/perso/lvs/monkei.gif" alt="">
-                                
-                                <!-- Card Geral Branco: abaixo do personagem 04 -->
-                                <div class="card" style="width: 18rem;">
-                                  
-                                  <h3>Monk</h3>
-                                    
-                                  <div class="card-body">
-                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mongecollapse" aria-expanded="false" aria-controls="collapseExample">Info!</button>
-                                    <button type="button" class="btn btn-success">Jogar</button>
-                                  </div>
-                                    
-                                    <!-- Collapse Guerreiro, Personagem: 01 -->
-                                    <div class="collapse" id="mongecollapse">
-                                        
-                                      <div class="card" style="width: 18rem;">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Sub-Classes</h5>
-                                            <p class="card-text">Monge, Mestre e Shura.</p>
-                                          </div>
-                                          <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Max.Lével: 110</li>
-                                            <li class="list-group-item">Sub-Classes: 3</li>
-                                            <li class="list-group-item">Armar: <img src="Imagem/armas/arma-monk.png" style="width:230px;"/> </li>
-                                          </ul>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            
+                        <div class="col-8">
+                            <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;"><i class="fas fa-spa" id="icon-rotate"></i> Hight Lord</p>
+                            <button type="button" class="btn btn-info" data-target="#collapseguerreiro" data-toggle="collapse" > <i class="fab fa-linode"></i> Info! </button>
+                            <a href="RPG-Swordman.php" > <button type="button" class="btn btn-outline-light"> Play</button> </a>
                         </div>
-                        
                     </div>
-                    
+
                 </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        
+        <!-- Linha: Personagens -->
+        <div class="row container" id="box-characters3">
+            
+            <!-- Wizzard -->
+            <div class="col">
+                <div class="card-box" style="width: 18rem; background-color:darkslategray;">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Imagem/perso/lvs/wizard.gif" />
+                        </div>
+                        <div class="col-8">
+                            <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;">  Wi <i class="fab fa-ethereum" id="icon-wizzard"></i> zzard</p>
+                            <button type="button" class="btn btn-info button-play" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled> <i class="fab fa-linode"></i> Info!</button>
+                            <a href="" > <button type="button" class="btn btn-outline-success" disabled> Play</button> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Sacerdote -->
+            <div class="col">
+                <div class="card-box" style="width: 18rem; background-color:#4d4d4d;">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Imagem/perso/lvs/sumoSacer.gif" />
+                        </div>
+                        <div class="col-8">
+                            <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;"> <i class="fab fa-fulcrum" id="icon-sacer"></i> Priest </p>
+                            <button type="button" class="btn btn-info button-play" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled> <i class="fab fa-linode"></i> Info!</button>
+                            <a href="" > <button type="button" class="btn btn-outline-success" disabled> Play</button> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Monk -->
+            <div class="col">
+                <div class="card-box" style="width: 18rem; background-color: saddlebrown;">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Imagem/perso/lvs/monkei.gif" />
+                        </div>
+                        <div class="col-8">
+                            <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;"> M <i class="fab fa-cloudsmith" id="icon-monk"></i> nk </p>
+                            <button type="button" class="btn btn-info button-play" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled> <i class="fab fa-linode"></i> Info!</button>
+                            <a href="" > <button type="button" class="btn btn-outline-success" disabled> Play</button> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <!-- Collapse dos Personagens -->
+        
+            <!-- Collapse: Guerreiro -->
+            <div class="collapse" id="collapseguerreiro">
+              
+                <div class="container">
                 
-                <!-- Coluna Geral 02: Em Branco -->
-                <div class="col-6" id="col-02">
-                    b
+                    <div class="row" style="margin-top:50px;">
+                        <div class="col">
+                              <img src="Imagem/champion-select/Personagens.png"  style="width:500px;"/>    
+                        </div>
+                        <div class="col" style="margin-top:50px;">
+                              <div class="card card-body">
+                                
+                                <div class="card" style="width: 18rem; margin-left:19%;">
+                                  <div class="card-body">
+                                    <h3 class="card-title">Cavaleiro Rúnico</h3>
+                                      <p style="color:gray;">Espadachim / Cavaleiro / Lorde / Cavaleiro Rúnico</p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Max.Lével: 100</li>
+                                    <li class="list-group-item">Sub-Classes: 4</li>
+                                    <li class="list-group-item">Armas: <img src="Imagem/armas/arma-guerreiro.png" style="width:250px;"/> </li>
+                                  </ul>
+                                </div>
+                                  
+                                <p style="margin-top:20px;">Em RPGjhin, você sempre começa com um personagem de primeira classe e vai evoluindo. É possível escolher sua classe e evoluções, montar sua própria árvore de habilidades e definir o seu estilo de luta! </p>
+                                  
+                              </div>
+                        </div>
+                    </div>
+                
                 </div>
                 
             </div>
-        </div>
-    
+        
+        
     </section>
+    
+
     
     <!-- Personagens antigos 
     <section>

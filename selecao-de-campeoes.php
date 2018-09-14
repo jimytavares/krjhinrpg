@@ -8,16 +8,42 @@
     <!-- Section 01: Menu -->
     <section>
         
-        <div class="row" id="row-menu">
-            <div class="col">
-                <img src="img/favicon-72.png"/>
-            </div>
-            <div class="col">
-                a
-            </div>
-            <div class="col" id="col-menu-button-selecao">
+        <div class="row-menu">
+            
+            <div class="row no-gutters ">
                 
-                <div class="btn-group">
+                <div class="col-md-auto" style="margin-top:10px;">
+                    <i class="fas fa-bars" id="icon-menu"></i>
+                </div>
+                
+                <div class="col-md-auto button-geral" style="">
+                    <button type="button" class="btn button-acction" style="background-color: #4f5563;"> <i class="fa fa-user"></i> User: <?php echo $_SESSION['usuario'] ?> </button>
+                </div>
+                
+                <div class="col-md-auto button-geral">
+                    <div class="btn-group">
+                      <button type="button" class="btn button-acction dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i> Settings
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> <b>User:</b> <?php echo $_SESSION['usuario'] ?> </a>
+                        <a class="dropdown-item" href="#" style="color:#b3b300;"> <img src="Imagem/gold2.png" /> Gold: <?php echo ($object->gold) ?> </a>
+                        <a class="dropdown-item" href="#"> <i class="fa fa-cog"></i> Configurações </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="logout-login.php"> <i class="fa fa-sign-out" style="font-size:px;"></i> Exit!</a>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-auto button-geral">
+                    <a href="logout-login.php"> <button type="button" class="btn button-acction"> <i class="fa fa-sign-out" style="font-size:px;"></i> Logout!</button> </a>
+                </div>
+                
+            </div>
+            
+        </div>
+                
+                <!-- <div class="btn-group">
                   <button type="button" class="btn btn-outline-light btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-user"></i> Account
                   </button>
@@ -30,9 +56,7 @@
                   </div>
                 </div>
 
-                <a href="logout-login.php" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout! </a>
-            </div>
-        </div>
+                <a href="logout-login.php" class="btn btn-outline-light btn-sm"> <i class="fa fa-sign-out" style="font-size:px;"></i>Logout! </a> -->
         
     </section>
     
@@ -40,7 +64,7 @@
     <section>
         
         <div class="container alert alert-success alert-dismissible fade show" style="margin-top:30px;" role="alert">
-          <strong>Champion Select!</strong> You should check in on some of those fields below.
+          <strong>Champion Select!</strong> Please select your champion and start the game.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -49,14 +73,11 @@
     </section>
      
     <!-- Section 03: Characters -->
-    <section>
+    <section style="margin-top: 20px;">
         
         <!-- Guerreiro -->
-        <div class="row" id="box-character-principal">
-            <div class="col">
-            </div>
-            <div class="col">
-                <div class="card-box" style="width: 18rem; border-radius:10px;">
+        <div class="container box-main-character">
+                <div class="card-guerreiro box-item">
                     <div class="row">
                         <div class="col-4">
                             <img src="Imagem/perso/lvs/guerreiro.gif" />
@@ -69,17 +90,14 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="col">
-            </div>
         </div>
         
         <!-- Linha: Personagens -->
-        <div class="row container" id="box-characters3">
+        <div class="container row box-main-character" id="espaco-characters">
             
             <!-- Wizzard -->
             <div class="col">
-                <div class="card-box" style="width: 18rem; background-color:darkslategray;">
+                <div class="card-wizzard box-item">
                     <div class="row">
                         <div class="col-4">
                             <img src="Imagem/perso/lvs/wizard.gif" />
@@ -96,7 +114,7 @@
             
             <!-- Sacerdote -->
             <div class="col">
-                <div class="card-box" style="width: 18rem; background-color:#4d4d4d;">
+                <div class="card-sacerdote box-item">
                     <div class="row">
                         <div class="col-4">
                             <img src="Imagem/perso/lvs/sumoSacer.gif" />
@@ -113,7 +131,7 @@
             
             <!-- Monk -->
             <div class="col">
-                <div class="card-box" style="width: 18rem; background-color: saddlebrown;">
+                <div class="card-monk box-item">
                     <div class="row">
                         <div class="col-4">
                             <img src="Imagem/perso/lvs/monkei.gif" />
@@ -135,7 +153,6 @@
         
             <!-- Collapse: Guerreiro -->
             <div class="collapse" id="collapseguerreiro">
-              
                 <div class="container">
                 
                     <div class="row" style="margin-top:50px;">
@@ -143,9 +160,10 @@
                               <img src="Imagem/champion-select/Personagens.png"  style="width:500px;"/>    
                         </div>
                         <div class="col" style="margin-top:50px;">
+                            
                               <div class="card card-body">
-                                
-                                <div class="card" style="width: 18rem; margin-left:19%;">
+                                <button type="button" class="btn btn-danger" data-target="#collapseguerreiro" data-toggle="collapse" > <i class="fas fa-window-close"></i> Close! </button> <br/>
+                                <div class="card" style="width: 18rem; margin-left:21%;">
                                   <div class="card-body">
                                     <h3 class="card-title">Cavaleiro Rúnico</h3>
                                       <p style="color:gray;">Espadachim / Cavaleiro / Lorde / Cavaleiro Rúnico</p>
@@ -164,7 +182,6 @@
                     </div>
                 
                 </div>
-                
             </div>
         
         
@@ -279,8 +296,11 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap tooltips -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
     
 </body>
 </html>

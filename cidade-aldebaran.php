@@ -1,148 +1,65 @@
 <!DOCTYPE html>
 
 <html>
-<head>
     
-    <?php  
-        session_start();  
-    
-        if(!isset ($_SESSION['logado']) or !$_SESSION['logado'] )
-        {
-            header('location:index.php');
-        }
-
-            require_once("database/Connection.class.php");
-
-            $conn = Connection::get()->connect();
-            $sql= "SELECT * FROM personagem";
-
-            $sth = $conn->prepare($sql);
-            /*$sth->bindValue(":id", 1);*/ 
-
-            if ($sth->execute()) 
-            {
-                $result = $sth->fetchAll(PDO::FETCH_OBJ);
-                $object = '';
-
-                foreach ($result as $row) 
-                {
-                    $object = $row;
-                }
-            }
-
-            $object->nome;
-            $object->classe;
-            $object->lv;
-            $object->ticket;
-            $object->hp;
-            $object->mp;
-            $object->exp;
-            $object->atk;
-            $object->def;
-            $object->magia;
-            $object->gold;
-            $object->cash;
-
-            /*var_dump($object->level);
-
-            $sql= "SELECT * FROM cash";
-
-            $sth = $conn->prepare($sql);
-
-            if ($sth->execute()) 
-            {
-                $result = $sth->fetchAll(PDO::FETCH_OBJ);
-                $object2 = '';
-                foreach ($result as $row) 
-                {
-                    $object2 = $row;
-                }
-            }
-
-            $object2->gold;
-            $object2->rop;*/
-    ?>    
-    
-    <meta charset="utf-8">
-    <title>RPG | JhinLindo</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-
-    <!-- Standard -->
-    <link rel="shortcut icon" href="img/favicon-144.png">
-    <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
-    <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
-    <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
-    <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
-
-     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Meu CSS -->
-    <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
-     <!-- Funções -->
-    
-     <!-- Background -->
-     <style>
-         body {
-            background-image: url('Imagem/.jpg');
-            background-size: cover;
-            background-color:;
-            background-repeat: no-repeat;
-            background-position:;
-     </style>
-    
-</head>
+    <?php include ('.globals/header.php'); ?>
+        
 <body>
     
     <!-- Menu -->
-    <div class="row" id="menu-background">
-            <div class="col-4" style="color:white; padding-left:120px;">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="Imagem/perso/lvs/guerreiro.gif" />
-                    </div>
-                    <div class="col-7" style="padding-top:12px; font-family: 'Verdana', Times, serif;">
-                        Cidade de Al de Baran
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-2" style="padding-top:8px; color:white;">
-                <form action="/action_page.php">
-                    <i class="fa fa-pied-piper-alt" style="font-size:22px; color:#6666ff;"></i> <input type="text" name="FirstName" id="input-menu" value="" placeholder="Ações do Jogo"><br>
-                </form>
-            </div>
+    <section>
         
-            <div class="col-5" id="col-menu-button">
-                <div class="row">
+        <div class="row">
+            <div class="col-md-auto">
+                <div class="nav flex-column nav-pills menu-all" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  
+                    <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <i class="fas fa-home"></i> </a>
                    
-                    <div class="col">
-                        <a href="RPG-Swordman.php">
-                            <button type="button" class="btn btn-outline-warning" > <i class="fa fa-user" style="font-size:20px; color:white; color:yellow;" placeholder="teste"></i> Perfil</button>
+                    <div class="dropright">
+                        <a class="nav-link dropdown-toggle" id="v-pills-home-tab" data-toggle="dropdown" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> 
+                                <i class="fas fa-user"></i> 
                         </a>
+                        <!-- Itens do DropRoght -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"> <strong>Nome:</strong> <?php echo $_SESSION['usuario'] ?> </a>
+                            <a class="dropdown-item" href="#"> <img src="Imagem/gold2.png" /> <strong>Gold:</strong> <?php echo ($object->gold) ?> </a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-secondary"> <i class="fa fa-cogs"></i> Settings</button>
+                    
+                    <div class="dropright">
+                        <a class="nav-link dropdown-toggle" id="v-pills-home-tab" data-toggle="dropdown" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true"> 
+                                <i class="fas fa-box-open"></i> 
+                        </a>
+                        <!-- Itens do DropRoght -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Itens</a>
+                            <a class="dropdown-item" href="#">Armars</a>
+                            <a class="dropdown-item" href="#"> <i class="fas fa-tshirt"></i> Equipamentos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-danger"> <i class="fa fa-sign-out"></i> Logout!</button>
-                    </div>
+                    
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"> <i class="fas fa-cogs"></i> </a>
+                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"> <i class="fas fa-sign-out-alt"></i> </a>
                 </div>
-                
-                <!-- <button type="button" class="btn btn-outline-danger btn-sm" style="border-style: solid; border-color:red;"> <i class="fa fa-sign-out"></i>Sair!</button> -->
             </div>
-    </div>
+            <div class="col">
+              
+            </div>
+        </div>
+        
+    </section>
+    
     
     <!-- -->
     <section>
-        <div class="container-fluir" id="section01">a</div>
+        <div class="container-fluir" id="" style="padding-top:1000px;">
+            
+        </div>
     </section>
     
     
@@ -155,4 +72,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    
 </body>

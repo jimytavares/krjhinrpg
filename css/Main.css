@@ -53,61 +53,147 @@
             text-align: center;
     }
 
-        #row-menu {
-            background-color: #262626;
-            height: 40px;
+    /* 
+     * @css: Menu 
+    */
+
+        .row-menu{
+            background-color: #353942;
+            height: 65px;
         }
-        #row-geral {
-            margin-left: 10px;
+
+        #icon-menu{
+            color: yellow;
+            font-size: 35px;
+            margin-left: 20px;
+            margin-top: 8px;
         }
-        #row-geral2 {
-            margin-left: 10px;
-            margin-top: 35px;
+            #icon-menu:hover{
+                color: white;
+            }
+
+        .button-geral{
+            height: 65px;
+            margin-left: 20px;
         }
-        #col-menu-button-selecao {
-             margin-top: 5px;
-             color: yellow; 
-             font-size:12px;
-         }
-        .card-background {
-        background-color: white;  
-        opacity: 0.9;
-     }
+
+        .button-acction{
+            background-color: transparent;
+            height: 65px;
+            border-radius: 0px;
+            color: white;
+            font-size: 15px;
+        }
+            .button-acction {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              position: relative;
+              background: ;
+              -webkit-transition-property: color;
+              transition-property: color;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+            }
+            .button-acction:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: #4f5563;
+              -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+              -webkit-transform-origin: 50%;
+              transform-origin: 50%;
+              -webkit-transition-property: transform;
+              transition-property: transform;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+            }
+            .button-acction:hover, .button-acction:focus, .button-acction:active {
+              color: white;
+            }
+            .button-acction:hover:before, .button-acction:focus:before, .button-acction:active:before {
+              -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+            }
+        .button-logout{
+            background-color: transparent;
+            height: 65px;
+        }
+
+
+    /* 
+     * @css: Characters
+    */
     
-    #box-character-principal{
-        margin-left: 7%;
-    }
+        .box-main-character{
+            margin: auto;
+        }
 
-    #box-characters3{
-        margin-left:10%;
-        margin-top: 50px;
-    }
+        #espaco-characters{
+            margin-top:50px;
+        }
 
-    .card-box{
-        background-color: #AB202D;
-        border: 1px solid;
-        padding: 10px;
-        box-shadow: 5px 10px;
-        height: 115px;
-    }
+        .box-item{
+            width: 18rem; 
+            border-radius:10px;
+            margin: auto;
+        }
 
-    #icon-wizzard{
-        color:greenyellow;
-    }
-        #icon-wizzard:hover{
-            font-size: 20px;
+        .card-guerreiro{
+            background-color: #AB202D;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px;
+            height: 115px;
+        }
+        .card-wizzard{
+                background-color: transparent;
+                border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px;
+                height: 115px;
+            }
+        .card-sacerdote{
+                background-color:;
+                border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px;
+                height: 115px;
+            }
+        .card-monk{
+                background-color: ;
+                border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px;
+                height: 115px;
+        }
+
+        #icon-wizzard{
+            color:greenyellow;
+        }
+            #icon-wizzard:hover{
+                font-size: 20px;
+                transform: rotate(20deg);
+            }
+
+        #icon-sacer{
+            color: skyblue;
+            font-size: 33px;
             transform: rotate(20deg);
         }
 
-    #icon-sacer{
-        color: yellow;
-        font-size: 33px;
-        transform: rotate(20deg);
-    }
-    
-    #icon-monk{
-        color:#ff66ff;
-    }
+        #icon-monk{
+            color:#ff66ff;
+        }
 
 /* ############ RPG_swordman.php ################# */
 
@@ -123,26 +209,13 @@
      * @css: Menu
     */
 
-    #menu-background {
-        background: #262626;
-        height: 42PX; /* largura do menu */
-     }
-
-     #col-menu-button {
-         color:#e6e600;
-         margin-top: 10px;
-     }
-
-     #input-menu {
-         border-radius: 4px;
-         border-color: darkgray;
-         border-width: 0.2px;
-         width: 160px;
-         height: 25px;
-     }
-         #input-menu:hover{
-            border-color: red;
-         }
+        .menu-all{
+            background-color: black;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 30PX;
+            position: fixed;
+        }
     
     /* 
      * @css: 

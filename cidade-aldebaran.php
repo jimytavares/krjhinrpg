@@ -4,9 +4,9 @@
     
     <?php include ('.globals/header.php'); ?>
         
-<body>
+<body class="body-aldebaran">
     
-    <!-- Menu -->
+    <!-- Menu 
     <section>
         
         <div class="row">
@@ -19,7 +19,6 @@
                         <a class="nav-link dropdown-toggle" id="v-pills-home-tab" data-toggle="dropdown" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> 
                                 <i class="fas fa-user"></i> 
                         </a>
-                        <!-- Itens do DropRoght -->
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#"> <strong>Nome:</strong> <?php echo $_SESSION['usuario'] ?> </a>
                             <a class="dropdown-item" href="#"> <img src="Imagem/gold2.png" /> <strong>Gold:</strong> <?php echo ($object->gold) ?> </a>
@@ -33,7 +32,6 @@
                         <a class="nav-link dropdown-toggle" id="v-pills-home-tab" data-toggle="dropdown" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true"> 
                                 <i class="fas fa-box-open"></i> 
                         </a>
-                        <!-- Itens do DropRoght -->
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Itens</a>
                             <a class="dropdown-item" href="#">Armars</a>
@@ -52,14 +50,58 @@
             </div>
         </div>
         
-    </section>
+    </section> -->
     
-    
-    <!-- -->
+    <!-- NPC:s -->
     <section>
-        <div class="container-fluir" id="" style="padding-top:1000px;">
-            
+
+        
+        <div class="container-fluid" id="row-npc">
+            <div class="row">
+                
+                <div class="col-md-auto" style="background-color:red;">
+                    <img src="Imagem/perso/lvs/guerreiro.gif" />
+                    <p><strong>Nome:</strong> <?php echo $_SESSION['usuario'] ?></p>
+                </div>
+                <div class="col-1">
+                    
+                </div>
+                <div class="col" id="col-options">
+                    <img src="Imagem/Pronteira/npc-info.gif" id="npc-options"/> <br> 
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Olá aventureiro, seja Bem Vindo! Explore todos os cantos da cidade.">
+                      Popover on bottom
+                    </button>
+                </div>
+                <div class="col-2" id="col-options">
+                    <img src="Imagem/Pronteira/kafra-prontera.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
+                </div>
+                <div class="col-2" id="col-options">
+                    <img src="Imagem/Pronteira/npc-ferreiro.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
+                </div>
+                <div class="col-2" id="col-options">
+                    <img src="Imagem/Pronteira/npc-ralph-pronteira.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
+                </div>
+                <div class="col-2" id="col-options">
+                    <img src="Imagem/Pronteira/npc-dormir-pronteira.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
+                </div>
+                
+            </div>
         </div>
+        
+        <section>
+            <div class="row row-event">
+                <div class="col">
+                    a
+                </div>
+                <div class="col">
+                    b
+                </div>
+                <div class="col">
+                    c
+                </div>
+            </div>
+        </section>
+        
     </section>
     
     

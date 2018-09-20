@@ -32,6 +32,14 @@
         margin-top: 10%;
     }
 
+        .box-input:hover{
+            background-image: url(../Imagem/z21.gif);
+            background-size: cover;
+            height: 420px;
+            border-radius: 15px;
+            padding-top: 35px;
+        }
+
     .btn-input-box{
         width: 45%;
         margin-left: 28%;
@@ -55,7 +63,7 @@
         }
         .btn-input-box:hover, .btn-input-box:focus, .btn-input-box:active {
             background-color: mediumspringgreen;
-            color: white;
+            color: black;
             opacity: 1.0;
         }
 

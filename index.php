@@ -47,43 +47,45 @@
 </head>
 <body>
 
-    
-    <div class="container box-input">
-        <h2 style="text-align:center; color:white;"> <i class="fab fa-keybase"></i> J H I N</h2>
-        
-        <form method="POST" action="Verificando-Login.php" role="form">
-            <fieldset>
-                
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-user"></i> </span>
-                  </div>
-                  <input type="text" class="form-control" aria-label="Usuário" placeholder="Username" name="usuario">
-                </div>
+    <section>
+        <div class="container box-input">
+            
+            <h2 style="text-align:center; color:white;"> <i class="fab fa-keybase"></i> J H I N</h2>
 
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-key"></i> </span>
-                  </div>
-                  <input type="password" class="form-control" aria-label="Senha" placeholder="Password" name="senha">
-                </div>
+            <form method="POST" action="Verificando-Login.php" role="form">
+                <fieldset>
 
-                <input type="submit" value="LOGIN" class="btn btn-input-box">
-                
-                <div class="box-buttons">
-                    <button class="btn btn-forgot btn-sm">Register</button>
-                    <button class="btn btn-forgot btn-sm">Forgot</button>
-                    <button class="btn btn-forgot btn-sm">Account!</button>
-                </div>
-                
-                <p class="txt-center ls-login-signup" style="text-align:center; margin-top:10px; background-color:white;">Wellcome to 기아보?
-                    <a href="#" style="color:orange;">Copyright © JihnDickson</a>
-                </p>
-                
-            </fieldset>
-        </form>
-        
-    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-user"></i> </span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Usuário" placeholder="Username" name="usuario" autocomplete="off" onfocus="this.value='';">
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-key"></i> </span>
+                      </div>
+                      <input type="password" class="form-control" aria-label="Senha" placeholder="Password" name="senha" onfocus="this.value='';">
+                    </div>
+
+                    <input type="submit" value="LOGIN" class="btn btn-input-box">
+
+                    <div class="box-buttons">
+                        <button class="btn btn-forgot btn-sm">Register</button>
+                        <button class="btn btn-forgot btn-sm">Forgot</button>
+                        <button class="btn btn-forgot btn-sm">Account!</button>
+                    </div>
+
+                    <p class="txt-center ls-login-signup" style="text-align:center; margin-top:50px; background-color:white; width: 70%; margin-left:15%;">Wellcome to 기아보?
+                        <a href="#" style="color:orange;">Copyright © JihnDickson</a>
+                    </p>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </section>
     
     
     <!-- Optional JavaScript -->

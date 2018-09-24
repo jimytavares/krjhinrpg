@@ -6,10 +6,10 @@
         
 <body class="body-aldebaran">
     
-    <!-- Menu 
-    <section>
-        
+    <!---- Menu ---->
+    <nav>
         <div class="row">
+            
             <div class="col-md-auto">
                 <div class="nav flex-column nav-pills menu-all" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   
@@ -45,62 +45,21 @@
                   <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"> <i class="fas fa-sign-out-alt"></i> </a>
                 </div>
             </div>
-            <div class="col">
-              
+            <div class="col" id="box-col2-menu">
+              <img src="Imagem/perso/lvs/guerreiro.gif" id="img-perso-menu"/>
+              <p><strong>Name:</strong> <?php echo $_SESSION['usuario'] ?> </p>
+                <div class="progress" style="width:10%; margin-left:-15px;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
             </div>
+            
         </div>
-        
-    </section> -->
+    </nav>
     
     <!-- NPC:s -->
     <section>
-
         
-        <div class="container-fluid" id="row-npc">
-            <div class="row">
-                
-                <div class="col-md-auto" style="background-color:red;">
-                    <img src="Imagem/perso/lvs/guerreiro.gif" />
-                    <p><strong>Nome:</strong> <?php echo $_SESSION['usuario'] ?></p>
-                </div>
-                <div class="col-1">
-                    
-                </div>
-                <div class="col" id="col-options">
-                    <img src="Imagem/Pronteira/npc-info.gif" id="npc-options"/> <br> 
-                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Olá aventureiro, seja Bem Vindo! Explore todos os cantos da cidade.">
-                      Popover on bottom
-                    </button>
-                </div>
-                <div class="col-2" id="col-options">
-                    <img src="Imagem/Pronteira/kafra-prontera.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
-                </div>
-                <div class="col-2" id="col-options">
-                    <img src="Imagem/Pronteira/npc-ferreiro.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
-                </div>
-                <div class="col-2" id="col-options">
-                    <img src="Imagem/Pronteira/npc-ralph-pronteira.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
-                </div>
-                <div class="col-2" id="col-options">
-                    <img src="Imagem/Pronteira/npc-dormir-pronteira.gif" style="background-image: linear-gradient(#0063cc, #4da3ff);; border-radius:5px;"/>
-                </div>
-                
-            </div>
-        </div>
         
-        <section>
-            <div class="row row-event">
-                <div class="col">
-                    a
-                </div>
-                <div class="col">
-                    b
-                </div>
-                <div class="col">
-                    c
-                </div>
-            </div>
-        </section>
         
     </section>
     

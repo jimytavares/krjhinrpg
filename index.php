@@ -50,7 +50,7 @@
     <section>
         <div class="container box-input">
             
-            <h2 style="text-align:center; color:white;"> <i class="fab fa-keybase"></i> J H I N</h2>
+            <h2 style="text-align:center; color:white;"> <i class="fab fa-keybase"></i> Tekketsu no orphans </h2>
 
             <form method="POST" action="Verificando-Login.php" role="form">
                 <fieldset>

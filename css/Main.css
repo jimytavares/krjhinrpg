@@ -2,9 +2,15 @@
 /* ---------->>> MAIN CSS <<<-----------*/
 /* -------------------------------------*/
 
-/* ################## GLOBAL ##################### */
+/* ############### GLOBAL/Body's ################ */
 
     .error {color: #FF0000;}
+
+    .body-index{
+            background-image: url('../Imagem/fundo01.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+    }
 
 
 /* ############################################### */
@@ -15,44 +21,56 @@
      * @css: Box Geral 
     */
 
-    .box-input{
-        width:30%;
-        margin-top: 10%;
-    }
-
-       /* .box-input:hover{
-            background-image: url(../Imagem/z21.gif);
-            background-size: cover;
-            height: 420px;
-            border-radius: 15px;
-            padding-top: 35px;
-        } */
-
-    .btn-input-box{
-        width: 45%;
-        margin-left: 28%;
-        background-color: black;
-        color: white;
-        border-radius: 0px;
-        opacity: 0.5;
-    }
-
-        .btn-input-box {
-          display: inline-block;
-          vertical-align: middle;
-          -webkit-transform: perspective(1px) translateZ(0);
-          transform: perspective(1px) translateZ(0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          overflow: hidden;
-          -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-          -webkit-transition-property: color, background-color;
-          transition-property: color, background-color;
+        .box-input{
+            width:30%;
+            margin-top: 10%;
         }
-        .btn-input-box:hover, .btn-input-box:focus, .btn-input-box:active {
-            background-color: mediumspringgreen;
-            color: black;
-            opacity: 1.0;
+
+           /* .box-input:hover{
+                background-image: url(../Imagem/z21.gif);
+                background-size: cover;
+                height: 420px;
+                border-radius: 15px;
+                padding-top: 35px;
+            } */
+
+        .btn-input-box{
+            width: 45%;
+            margin-left: 28%;
+            background-color: black;
+            color: white;
+            border-radius: 0px;
+            opacity: 0.5;
+        }
+
+            .btn-input-box {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              overflow: hidden;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-property: color, background-color;
+              transition-property: color, background-color;
+            }
+            .btn-input-box:hover, .btn-input-box:focus, .btn-input-box:active {
+                background-color: mediumspringgreen;
+                color: black;
+                opacity: 1.0;
+            }
+
+
+        .input-design{
+            background-color: transparent;
+            border-style: none;
+            color: red;
+            border-bottom-width: 1px;
+            border-bottom-style: solid !important;
+            border-bottom-color: white;
+            margin-top: 30px;
+            width: 50%;
         }
 
     /* 

@@ -33,19 +33,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
     <!--  Meu CSS -->
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
-    
-    <style>
-        body {
-            background-image: url('Imagem/fundo01.jpg');
-            background-size: cover;
-            background-color: ;
-            background-repeat: no-repeat;
-            background-position:;
-        }
-    </style>
 
 </head>
-<body>
+<body class="body-index">
 
     <section>
         <div class="container box-input">
@@ -54,19 +44,13 @@
 
             <form method="POST" action="Verificando-Login.php" role="form">
                 <fieldset>
-
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-user"></i> </span>
-                      </div>
-                      <input type="text" class="form-control" aria-label="Usuário" placeholder="Username" name="usuario" autocomplete="off" onfocus="this.value='';">
+                    
+                    <div class="form-group" style="color:red;">
+                        <input type="text" class="form-control input-design" name="usuario" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="USUÁRIO" autocomplete="off" onfocus="this.value='';">
                     </div>
-
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-key"></i> </span>
-                      </div>
-                      <input type="password" class="form-control" aria-label="Senha" placeholder="Password" name="senha" onfocus="this.value='';">
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control input-design" name="senha" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="PASSWORD" autocomplete="off" onfocus="this.value='';">
                     </div>
 
                     <input type="submit" value="LOGIN" class="btn btn-input-box">

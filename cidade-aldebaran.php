@@ -4,10 +4,10 @@
     
     <?php include ('.globals/header.php'); ?>
         
-<body class="body-aldebaran">
+<body>
     
     <!---- Menu ---->
-    <nav>
+    <nav id="position">
         <div class="row">
             
             <div class="col-md-auto">
@@ -48,8 +48,8 @@
             <div class="col" id="box-col2-menu">
               <img src="Imagem/perso/lvs/guerreiro.gif" id="img-perso-menu"/>
               <p><strong>Name:</strong> <?php echo $_SESSION['usuario'] ?> </p>
-                <div class="progress" style="width:10%; margin-left:-15px;">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                <div class="progress" style="margin-left:-15px;">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 25%; color:black;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">eXp 25%</div>
                 </div>
             </div>
             
@@ -57,9 +57,11 @@
     </nav>
     
     <!-- NPC:s -->
-    <section>
+    <section class="section01">
         
-        
+        <div class="">
+            teste
+        </div>
         
     </section>
     

@@ -46,11 +46,11 @@
                 <fieldset>
                     
                     <div class="form-group" style="color:red;">
-                        <input type="text" class="form-control input-design" name="usuario" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="USUÁRIO" autocomplete="off" onfocus="this.value='';">
+                        <input type="text" class="form-control input-design" name="usuario" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="Usuário" autocomplete="off" onfocus="this.value='';">
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" class="form-control input-design" name="senha" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="PASSWORD" autocomplete="off" onfocus="this.value='';">
+                        <input type="password" class="form-control input-design" name="senha" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="Password" autocomplete="off" onfocus="this.value='';">
                     </div>
 
                     <input type="submit" value="LOGIN" class="btn btn-input-box">
@@ -61,9 +61,9 @@
                         <button class="btn btn-forgot btn-sm">Account!</button>
                     </div>
 
-                    <p class="txt-center ls-login-signup" style="text-align:center; margin-top:50px; background-color:white; width: 70%; margin-left:15%;">Wellcome to 기아보?
+                    <!-- <p class="txt-center ls-login-signup" style="text-align:center; margin-top:50px; background-color:white; width: 70%; margin-left:15%;">Wellcome to 기아보?
                         <a href="#" style="color:orange;">Copyright © JihnDickson</a>
-                    </p>
+                    </p> -->
 
                 </fieldset>
             </form>

@@ -7,7 +7,7 @@
     .error {color: #FF0000;}
 
     .body-index{
-            background-image: url('../Imagem/fundo01.jpg');
+            background-image: url('../Imagem/fundo05.jpg');
             background-size: cover;
             background-repeat: no-repeat;
     }
@@ -37,6 +37,7 @@
         .btn-input-box{
             width: 45%;
             margin-left: 28%;
+            margin-top: 30px;
             background-color: black;
             color: white;
             border-radius: 0px;
@@ -65,12 +66,13 @@
         .input-design{
             background-color: transparent;
             border-style: none;
-            color: red;
+            color: #ff33ff;
             border-bottom-width: 1px;
             border-bottom-style: solid !important;
             border-bottom-color: white;
             margin-top: 30px;
-            width: 50%;
+            width: 90%;
+            margin-left: 5%;
         }
 
     /* 
@@ -295,10 +297,23 @@
 /* ########### cidade-aldebaran.php ############## */
 /* ############################################### */
     
+    /* 
+     * @css: Sections
+    */
+
+        .section01{
+            background-image: url(../Imagem/Cidades/aldebaran/01.jpg);
+            background-size: cover;
+            height: 1000px;
+        }
 
     /* 
      * @css: Menu Fixo: Col 1 & Col 2
     */
+        
+        #position{
+            position: fixed;
+        }
 
         .menu-all{
             background-color: black;

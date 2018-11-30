@@ -56,11 +56,22 @@
         </div>
     </nav>
     
-    <!-- NPC:s -->
+    <!-- 01 Section: Show Houses -->
     <section class="section01">
         
-        <div class="">
-            teste
+        <div class="row container-fluid" style="text-align:center; margin-top:">
+            <div class="col">
+                a
+            </div>
+            <div class="col">
+                b
+            </div>
+            <div class="col">
+                c
+            </div>
+            <div class="col">
+                d
+            </div>
         </div>
         
     </section>

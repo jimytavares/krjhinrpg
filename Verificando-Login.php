@@ -8,7 +8,7 @@
         $senhaUser = $_POST['senha'];
 
         $pdo = Connection::get()->connect();
-        $stmt = $pdo->query( "SELECT * FROM usuarios WHERE usuario = '{$loginUser}' and senha = '{$senhaUser}';" );
+        $stmt = $pdo->query( "SELECT * FROM usuario WHERE usuario = '{$loginUser}' and senha = '{$senhaUser}';" );
 
         if( $stmt->rowCount() > 0 )
         {

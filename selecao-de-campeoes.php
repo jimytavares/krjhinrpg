@@ -78,17 +78,10 @@
         <!-- Guerreiro -->
         <div class="container box-main-character">
                 <div class="card-guerreiro box-item">
-                    <div class="row">
-                        <div class="col-4">
                             <img src="Imagem/perso/lvs/guerreiro.gif" />
-                        </div>
-                        <div class="col-8">
                             <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;"><i class="fas fa-spa" id="icon-rotate"></i> Hight Lord</p>
                             <button type="button" class="btn btn-info" data-target="#collapseguerreiro" data-toggle="collapse" > <i class="fab fa-linode"></i> Info! </button>
                             <a href="RPG-Swordman.php" > <button type="button" class="btn btn-outline-light"> Play</button> </a>
-                        </div>
-                    </div>
-
                 </div>
         </div>
         
@@ -98,58 +91,37 @@
             <!-- Wizzard -->
             <div class="col">
                 <div class="card-wizzard box-item">
-                    <div class="row">
-                        <div class="col-4">
                             <img src="Imagem/perso/lvs/wizard.gif" />
-                        </div>
-                        <div class="col-8">
                             <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;">  Wi <i class="fab fa-ethereum" id="icon-wizzard"></i> zzard</p>
                             <button type="button" class="btn btn-info button-play" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled> <i class="fab fa-linode"></i> Info!</button>
                             <a href="" > <button type="button" class="btn btn-outline-success" disabled> Play</button> </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             
             <!-- Sacerdote -->
             <div class="col">
                 <div class="card-sacerdote box-item">
-                    <div class="row">
-                        <div class="col-4">
                             <img src="Imagem/perso/lvs/sumoSacer.gif" />
-                        </div>
-                        <div class="col-8">
                             <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;"> <i class="fab fa-fulcrum" id="icon-sacer"></i> Priest </p>
                             <button type="button" class="btn btn-info button-play" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled> <i class="fab fa-linode"></i> Info!</button>
                             <a href="" > <button type="button" class="btn btn-outline-success" disabled> Play</button> </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             
             <!-- Monk -->
             <div class="col">
                 <div class="card-monk box-item">
-                    <div class="row">
-                        <div class="col-4">
                             <img src="Imagem/perso/lvs/monkei.gif" />
-                        </div>
-                        <div class="col-8">
                             <p style="color:white; font-size:25px; font-family: 'Times New Roman', Times, serif;"> M <i class="fab fa-cloudsmith" id="icon-monk"></i> nk </p>
                             <button type="button" class="btn btn-info button-play" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled> <i class="fab fa-linode"></i> Info!</button>
                             <a href="" > <button type="button" class="btn btn-outline-success" disabled> Play</button> </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             
         </div>
         
         
-        <!-- Collapse dos Personagens -->
+        <!-- #### COLLAPSE PERSONAGENS #### -->
         
             <!-- Collapse: Guerreiro -->
             <div class="collapse" id="collapseguerreiro">

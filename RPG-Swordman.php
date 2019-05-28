@@ -3,35 +3,37 @@
 
 <?php include ('.globals/header.php'); $page_name = "Lua Sangrentae"?>
     
-<body>
+<body style="background-image: url('Imagem/img245.jpg'); background-size: cover;">
     
     <?php include ('.globals/nav-menu.php'); ?>
     
-    <!-- Menu -->
+    <!-- Menu: page -->
     <section>
         <div id="home" >
-
-                <div class="" style="background-image: url('Imagem/bg-login-index.jpg'); height: 300px;">
-
-                            <div class="row" style="padding-top:20px; width:45%; margin-left:27%; color:white;">
-                                <div class="col creat_button" data-target="#statusModal" data-toggle="modal">
-                                    <i class="fas fa-heart" style="font-size:30px; margin-top:20px; color:red;"></i>
-                                    <h6>STATUS</h6>
-                                </div>
-                                <div class="col creat_button" style="margin-left:10px;" data-target="#itensModal" data-toggle="modal">
-                                    <i class="fas fa-flask" style="font-size:30px; margin-top:20px; color:#ff00ff;"></i>
-                                    <h6>ITENS</h6>
-                                </div>
-                                <div class="col creat_button" style="margin-left:10px;" data-target="#skillsModal" data-toggle="modal">
-                                    <i class="fas fa-tint" style="font-size:30px; margin-top:20px; color:#4d4dff;"></i>
-                                    <h6>SKILL'S</h6>
-                                </div>
-                                <div class="col creat_button" style="margin-left:10px;" data-target="#codigosModal" data-toggle="modal">
-                                    <i class="fas fa-code" style="font-size:30px; margin-top:20px;"></i>
-                                    <h6>CÓDIGOS</h6>
-                                </div>
+          
+                <div class="">
+                        <div class="row menu-row-icons">
+                            <div class="col-md-auto">
+                                <button class="btn creat_button creat_button_status" style="width:200px;" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> 
+                                    <i class="fas fa-heart" style="font-size:25px;"></i> STATUS
+                                </button>
                             </div>
-                    
+                            <div class="col-md-auto" style="margin-left:10px;">
+                                <button class="btn creat_button creat_button_itens" style="width:200px;" data-target="#itensModal" data-toggle="modal"> 
+                                    <i class="fas fa-flask" style="font-size:25px; color:#ff00ff;"></i> ITENS
+                                </button>
+                            </div>
+                            <div class="col-md-auto" style="margin-left:10px;" data-target="#skillsModal" data-toggle="modal">
+                                <button class="btn creat_button creat_button_skill" style="width:200px;" data-target="#itensModal" data-toggle="modal"> 
+                                    <i class="fas fa-tint" style="font-size:25px;"></i> SKILL'S
+                                </button>
+                            </div>
+                            <div class="col-md-auto" style="margin-left:10px;">
+                                <button class="btn creat_button creat_button_codigos" style="width:200px;" data-target="#itensModal" data-toggle="modal"> 
+                                    <i class="fas fa-code" style="font-size:27px;"></i> CODIGOS
+                                </button>
+                            </div>
+                        </div>
                 </div>
 
                 <!-- ####### MODAL: Missões ######### -->
@@ -104,7 +106,8 @@
     </section>
     
     <!-- Player / Bar / Status -->
-    <section>
+    <section class="collapse show" id="collapseExample" style="margin-top:150px;">
+        
         <div class="row" style="width:80%; margin-left:10%; margin-top:-8%;  height:250px; position:; z-index:1;">
             <div class="col" style="background-color:#d8514b;">
                 <p style="text-align:center; color: white;"> <i class="fas fa-male"></i> <?php echo ($object->nome); ?> </p>
@@ -161,59 +164,100 @@
     </section>
     
     <!-- 4'NPC -->
-    <section>
+    <section style="margin-top:70px;">
         
-        <div class="row" style="margin-top:40px; width:90%; margin-left:12%;">
-            <div class="col">
-                <img src="Imagem/npc/npc-info.gif" alt="This is my work" class="img-responsive" style="width:65px;margin-top:-15px;"/>
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#npcguarda">Guarda</button>
+        <div class="container">
+            
+            <div class="row" style="background-image: url('Imagem/Cidades/city-lua-sangrenta2.jpg'); border-radius:10px;">
+                <div class="col" style="text-align:center; margin-top: 20px;">
+                    
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                      <strong>Lua Sangrenta!</strong> Bem vindo a cidade da lua sangrenta, area destinada a principais informações.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                      <strong>Noticias!</strong> Evento dia 00/00 itens escondidos pela cidade e dobro de gold.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                      <strong>NPC!</strong> Informações da cidade, criações e compra de poções, ferreiro e muito mais.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                      <strong>Teletrnasporte!</strong> Você pode usar a area de teletransporte pagando em gold ou cash.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <img src="Imagem/npc/npc-info.gif" alt="This is my work" class="img-responsive" style="width:65px;margin-top:-15px;"/>
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#npcguarda" style="width:80%; margin-left:10px;">Guarda</button>
+
+                    <img src="Imagem/npc/npc-fernanda.gif" alt="This is my work" class="img-responsive" />
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#npcporcao" style="width:80%; margin-left:12px;"> <i class="fas fa-bong" style="color:; font-size:20px;"></i> Porções</button>
+
+                    <img src="Imagem/npc/npc-ralph-pronteira.gif" alt="This is my work" class="img-responsive" />
+                    <button type="button" class="btn btn-primary" style="width:80%; margin-left:16px;">teste</button>
+
+                    <img src="Imagem/npc/npc-mercador-pronteira.gif" alt="This is my work" class="img-responsive" style="margin-top:-17px;"/>
+                    <button type="button" class="btn btn-primary" style="width:80%; margin-left:-6px;">teste1</button>
+                </div>
             </div>
-            <div class="col">
-                <img src="Imagem/npc/npc-fernanda.gif" alt="This is my work" class="img-responsive" />
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#npcporcao"> <i class="fas fa-bong" style="color:; font-size:20px;"></i> Porções</button>
-            </div>
-            <div class="col">
-                <img src="Imagem/npc/npc-ralph-pronteira.gif" alt="This is my work" class="img-responsive" />
-                <button type="button" class="btn btn-primary btn-sm"></button>
-            </div>
-            <div class="col">
-                <img src="Imagem/npc/npc-mercador-pronteira.gif" alt="This is my work" class="img-responsive" style="margin-top:-17px;"/>
-                <button type="button" class="btn btn-primary btn-sm"></button>
-            </div>
+            s
         </div>
         
+        <!-- ####### MODAL ######### -->
         
-        <!-- MODAL -->
-            <!-- Guarda -->
+            <!-- ####### GUARDA ######### -->
             <div class="modal fade bd-example-modal-lg" id="npcguarda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Guarda</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
+                <div class="modal-content" style="background-color:transparent;">
                     
-                      <div class="alert alert-success" role="alert">
-                          <h4 class="alert-heading">Bem Vindo a Cidade da Lua Sangrenta!</h4>
-                          <p>A cidade que surgiu depois do primeiro eclipse lunar a anos luz atras, cidade com porções, livros e informações unicas, onde magos e assassinos exploram e usufriem dos recursos da cidade.</p>
+                      <div class="alert alert-danger" role="alert">
+                          
+                            <div class="row">
+                                <div class="col">
+                                    <h4 class="alert-heading">Bem Vindo a Cidade da Lua Sangrenta!</h4> 
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" style="color:Red; font-size:40px;">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                          
+                          
+                          <p>A cidade que surgiu depois do primeiro eclipse lunar anos luz atras, cidade rica em croação e vemda de poções, livros e informações secretas onde magos e assassinos exploram e usufriem dos recursos da cidade.</p>
                           <hr>
-                          <p class="mb-0">Contas com essa Classe tem acesso free à cidade.</p>
+                          
+                            <img src="Imagem/Cidades/city-lua-sangrenta.jpg" style="width:600px; margin-left:60px; border-radius:10px;"/>
+                          
+                         <img src="Imagem/npc/npc-info.gif" alt="This is my work" class="img-responsive" style="width:65px; margin-left:45%;"/>
+                          
+                          <p class="mb-0" style="text-align:center;">Contas com essa Classe tem acesso free à cidade.</p>
+                          
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="width:200px;">Sair</button>
+                          </div>
+
                       </div>
-                      
-                      <img src="Imagem/Cidades/city-lua-sangrenta.jpg" style="width:600px; margin-left:90px;"/>
-                      
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                  </div>
+                    
                 </div>
               </div>
             </div>
         
-            <!-- Potions -->
+            <!-- ####### POTION'S ######### -->
             <div class="modal fade bd-example-modal-lg" id="npcporcao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -389,8 +433,6 @@
               </div>
             </div>
         
-        
-        
     </section>
     
     <!-- Blacksmith/Ferreiro -->
@@ -439,7 +481,7 @@
     </section>
     
     <!-- Teleporte: Map's -->
-    <section style="background-color:#f4f4f4;">
+    <section>
         
         <div class="row" style="margin-top:60px; margin-left:20px;">
             <div class="col-md-auto">

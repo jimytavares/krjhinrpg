@@ -59,6 +59,10 @@
     <!-- 01 Section: Show Houses -->
     <section class="section01">
         
+<<<<<<< .mine
+        a<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>a
+||||||| .r43
+=======
         <div class="row container-fluid" style="text-align:center; margin-top:">
             <div class="col">
                 a
@@ -73,6 +77,7 @@
                 d
             </div>
         </div>
+>>>>>>> .r46
         
     </section>
     

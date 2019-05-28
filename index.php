@@ -3,8 +3,9 @@
 <head>
     
     <?php 
-        session_start();  
-        if( $_SESSION['logado']) 
+        $logado = "abc";
+        session_start();
+        if( $_SESSION['logado'])
         {
             header('location:selecao-de-campeoes.php');
         }
@@ -33,43 +34,94 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
     <!--  Meu CSS -->
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
+    
 
 </head>
 <body class="body-index">
 
+    
     <section>
-        <div class="container box-input">
+        <div class="" style="width:30%; margin-left: 38%; margin-top: 10%;">
             
             <h2 style="text-align:center; color:white;"> <i class="fab fa-keybase"></i> Tekketsu no orphans </h2>
 
-            <form method="POST" action="Verificando-Login.php" role="form">
-                <fieldset>
-                    
-                    <div class="form-group" style="color:red;">
-                        <input type="text" class="form-control input-design" name="usuario" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="Usuário" autocomplete="off" onfocus="this.value='';">
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="password" class="form-control input-design" name="senha" id="exampleInputEmail1" aria-describedby="Usuario" placeholder="Password" autocomplete="off" onfocus="this.value='';">
-                    </div>
+                <form method="POST" action="Verificando-Login.php" role="form">
+                    <fieldset>
 
-                    <input type="submit" value="LOGIN" class="btn btn-input-box">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" aria-label="Usuário" placeholder="Username" name="usuario" autocomplete="off" onfocus="this.value='';" style="background-color:transparent;">
+                        </div>
 
-                    <div class="box-buttons">
-                        <button class="btn btn-forgot btn-sm">Register</button>
-                        <button class="btn btn-forgot btn-sm">Forgot</button>
-                        <button class="btn btn-forgot btn-sm">Account!</button>
-                    </div>
+                        <div class="input-group mb-3">
+                          <input type="password" class="form-control" aria-label="Senha" placeholder="Password" name="senha" onfocus="this.value='';">
+                        </div>
 
-                    <!-- <p class="txt-center ls-login-signup" style="text-align:center; margin-top:50px; background-color:white; width: 70%; margin-left:15%;">Wellcome to 기아보?
-                        <a href="#" style="color:orange;">Copyright © JihnDickson</a>
-                    </p> -->
+                        <input class="btn btn-input-box" type="submit" value="LOGIN">
 
-                </fieldset>
-            </form>
+                        <div class="box-buttons">
+                            <button class="btn btn-forgot btn-sm">Register</button>
+                            <button class="btn btn-forgot btn-sm">Forgot</button>
+                            <button class="btn btn-forgot btn-sm">Account!</button>
+                        </div>
 
+                        <p class="txt-center ls-login-signup" style="text-align:center; margin-top:50px; background-color:white; width: 70%; margin-left:15%;">Wellcome to 기아보?
+                            <a href="#" style="color:orange;">Copyright © JihnDickson</a>
+                        </p>
+
+                    </fieldset>
+                </form>
+            
         </div>
     </section>
+    
+    <!-- <section>
+        <div class="container box-input">
+            
+            <div class="row">
+                <div class="col" style="background-color:;">
+                    
+                    <h2 style="text-align:center; color:white;"> <i class="fab fa-keybase"></i> Teeekketsu no orphans </h2>
+
+                    <form method="POST" action="Verificando-Login.php" role="form">
+                        <fieldset>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-user"></i> </span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Usuário" placeholder="Username" name="usuario" autocomplete="off" onfocus="this.value='';">
+                    </div>
+                            
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> <i class="fas fa-key"></i> </span>
+                      </div>
+                      <input type="password" class="form-control" aria-label="Senha" placeholder="Password" name="senha" onfocus="this.value='';">
+                    </div>
+
+                            <input type="submit" value="LOGIN" class="btn btn-input-box">
+
+                            <div class="box-buttons">
+                                <button class="btn btn-forgot btn-sm">Register</button>
+                                <button class="btn btn-forgot btn-sm">Forgot</button>
+                                <button class="btn btn-forgot btn-sm">Account!</button>
+                            </div>
+
+                    <p class="txt-center ls-login-signup" style="text-align:center; margin-top:50px; background-color:white; width: 70%; margin-left:15%;">Wellcome to 기아보?
+                        <a href="#" style="color:orange;">Copyright © JihnDickson</a>
+                    </p>
+
+                        </fieldset>
+                    </form>
+                    
+                </div>
+                <div class="col" style="background-color:; text-align:center;">
+                    <img src="Imagem/Mob2022.gif" style="margin-top:30px;"/>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
     
     
     <!-- Optional JavaScript -->

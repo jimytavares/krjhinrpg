@@ -7,7 +7,7 @@
     .error {color: #FF0000;}
 
     .body-index{
-            background-image: url('../Imagem/fundo05.jpg');
+            background-image: url('../Imagem/pj0h7aO.jpg');
             background-size: cover;
             background-repeat: no-repeat;
     }
@@ -21,10 +21,22 @@
      * @css: Box Geral 
     */
 
+<<<<<<< .mine
+    .box-input{
+        width:50%;
+        margin-top: 10%;
+    }
+||||||| .r43
+    .box-input{
+        width:30%;
+        margin-top: 10%;
+    }
+=======
         .box-input{
             width:30%;
             margin-top: 10%;
         }
+>>>>>>> .r46
 
            /* .box-input:hover{
                 background-image: url(../Imagem/z21.gif);
@@ -33,35 +45,6 @@
                 border-radius: 15px;
                 padding-top: 35px;
             } */
-
-        .btn-input-box{
-            width: 45%;
-            margin-left: 28%;
-            margin-top: 30px;
-            background-color: black;
-            color: white;
-            border-radius: 0px;
-            opacity: 0.5;
-        }
-
-            .btn-input-box {
-              display: inline-block;
-              vertical-align: middle;
-              -webkit-transform: perspective(1px) translateZ(0);
-              transform: perspective(1px) translateZ(0);
-              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-              overflow: hidden;
-              -webkit-transition-duration: 0.3s;
-              transition-duration: 0.3s;
-              -webkit-transition-property: color, background-color;
-              transition-property: color, background-color;
-            }
-            .btn-input-box:hover, .btn-input-box:focus, .btn-input-box:active {
-                background-color: mediumspringgreen;
-                color: black;
-                opacity: 1.0;
-            }
-
 
         .input-design{
             background-color: transparent;
@@ -151,21 +134,20 @@
 
         .row-menu{
             background-color: #353942;
-            height: 65px;
+            height: 40px;
         }
 
         #icon-menu{
             color: yellow;
-            font-size: 35px;
+            font-size: 20px;
             margin-left: 20px;
-            margin-top: 8px;
         }
             #icon-menu:hover{
                 color: white;
             }
 
         .button-geral{
-            height: 65px;
+            height: 30px;
             margin-left: 20px;
         }
 
@@ -197,7 +179,7 @@
               bottom: 0;
               left: 0;
               right: 0;
-              background: #4f5563;
+              background: indianred;
               -webkit-transform: scaleX(0);
               transform: scaleX(0);
               -webkit-transform-origin: 50%;
@@ -235,7 +217,7 @@
         }
 
         .box-item{
-            width: 18rem; 
+            width: 15rem; 
             border-radius:10px;
             margin: auto;
         }
@@ -245,28 +227,28 @@
             border: 1px solid;
             padding: 10px;
             box-shadow: 5px 10px;
-            height: 115px;
+            height: 210px;
         }
         .card-wizzard{
                 background-color: transparent;
                 border: 1px solid;
                 padding: 10px;
                 box-shadow: 5px 10px;
-                height: 115px;
+                height: 210px;
             }
         .card-sacerdote{
                 background-color:;
                 border: 1px solid;
                 padding: 10px;
                 box-shadow: 5px 10px;
-                height: 115px;
+                height: 210px;
             }
         .card-monk{
                 background-color: ;
                 border: 1px solid;
                 padding: 10px;
                 box-shadow: 5px 10px;
-                height: 115px;
+                height: 210px;
         }
 
         #icon-wizzard{
@@ -287,26 +269,28 @@
             color:#ff66ff;
         }
 
-/* ############ RPG_swordman.php ################# */
-
-    /*
-    * @css dessa página é: rpg-swordman.css
-    */
-
 /* ############################################### */
-/* ########### cidade-aldebaran.php ############## */
+/* ######### RPG-Assassino.class.php ############# */
 /* ############################################### */
     
     /* 
      * @css: Sections
     */
 
+<<<<<<< .mine
+        .left_degrad{
+            background-image: linear-gradient(to right, #7253C3 , #AE4AC7);
+        }
+
+||||||| .r43
+=======
         .section01{
             background-image: url(../Imagem/Cidades/aldebaran/01.jpg);
             background-size: cover;
             height: 1000px;
         }
 
+>>>>>>> .r46
     /* 
      * @css: Menu Fixo: Col 1 & Col 2
     */
@@ -333,5 +317,109 @@
         }
     
     /* 
-     * @css: NPC's Section
+     * (SECTION:02) @css: coluna do personagem
     */
+        .col_char{
+            background-color:black;
+            color:white;
+        }
+
+/* 
+ * (SECTION:01) @css: buttons menu 1
+*/
+
+        .menu-row-icons{
+            margin-left: 15%;
+            margin-top: 30px;
+        }
+
+        .creat_button{
+            background-color:transparent;
+            border-style: solid;
+            border-width: 1px;
+            text-align: center;
+            height: 45px;
+            border-radius: 10px;
+            font-family: "Arial", Times, serif;
+        } .creat_button:hover{
+            background-color: white; 
+        }
+    
+        .creat_button_status{
+            border-color: red;
+            color: red;
+        } .creat_button_status:hover{
+            background-color:white;
+        }
+
+        .creat_button_itens{
+            border-color: hotpink;
+            color: #ff00ff;
+        } .creat_button_itens:hover{
+            background-color:white;
+        }
+
+        .creat_button_skill{
+            border-color: skyblue;
+            color: skyblue;
+        } .creat_button_skill:hover{
+            background-color:white;
+        }
+
+        .creat_button_codigos{
+            border-color: slategray;
+            color: slategray;
+        } .creat_button_codigos:hover{
+            background-color:white;
+        }
+
+    /* 
+     * (SECTION:03) @css: Status
+    */
+
+        .box_status{
+            height: 70px;
+            padding-top: 13px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+            .box_status {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              position: relative;
+              background: #f2f2f2;
+              -webkit-transition-property: color;
+              transition-property: color;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+            }
+            .box_status:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: white;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+              -webkit-transition-property: transform;
+              transition-property: transform;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+            }
+            .box_status:hover, .box_status:focus, .box_status:active {
+              color: black;
+                font-size: 15px;
+            }
+            .box_status:hover:before, .box_status:focus:before, .box_status:active:before {
+              -webkit-transform: scale(0);
+              transform: scale(0);
+            }
